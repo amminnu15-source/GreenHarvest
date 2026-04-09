@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  /* ── WhatsApp checkbox ── */
+
   const waCheck = document.getElementById('waCheck');
 
   window.toggleWA = function () {
@@ -13,7 +13,7 @@
     if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); toggleWA(); }
   });
 
-  /* ── Helpers ── */
+
   function validate(inputId, errId, checkFn) {
     const el  = document.getElementById(inputId);
     const err = document.getElementById(errId);
@@ -23,13 +23,13 @@
     return ok;
   }
 
-  /* clear error on typing */
+ 
   ['cf-fname','cf-lname','cf-email','cf-role','cf-subject','cf-message'].forEach(function (id) {
     var el = document.getElementById(id);
     if (el) el.addEventListener('input', function () { el.classList.remove('error'); });
   });
 
-  /* ── Form submit ── */
+
   const form       = document.getElementById('contactForm');
   const sendBtn    = document.getElementById('sendBtn');
   const formBody   = document.getElementById('formBody');
@@ -49,7 +49,7 @@
 
     if (!ok) return;
 
-    /* loading */
+
     sendBtn.classList.add('loading');
     sendBtn.disabled = true;
 
@@ -57,17 +57,17 @@
       sendBtn.classList.remove('loading');
       sendBtn.disabled = false;
 
-      /* hide form, show success */
+ 
       formBody.style.display = 'none';
       formSuccess.classList.add('show');
 
-      /* toast */
+
       toast.classList.add('show');
       setTimeout(function () { toast.classList.remove('show'); }, 3500);
     }, 1800);
   });
 
-  /* ── Reset ── */
+
   window.resetForm = function () {
     form.reset();
     formBody.style.display = '';

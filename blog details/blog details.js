@@ -1,7 +1,7 @@
 (function(){
   'use strict';
 
-  /* ─── Post data ─── */
+
   const posts = [
     {
       title:   'How AI is Predicting Harvest Yields',
@@ -79,7 +79,7 @@
 
   let currentPost = 0;
 
-  /* ─── Build sidebar: all posts list ─── */
+ 
   function buildSidebarPosts(){
     const el = document.getElementById('bdAllPosts');
     el.innerHTML = posts.map((p, i) => `
@@ -99,7 +99,7 @@
     });
   }
 
-  /* ─── Build TOC ─── */
+
   function buildTOC(postIdx){
     const toc = posts[postIdx].toc;
     document.getElementById('bdTOC').innerHTML = toc.map((item, i) => `
@@ -116,7 +116,7 @@
     });
   }
 
-  /* ─── Build related articles ─── */
+ 
   function buildRelated(postIdx){
     const others = posts.filter((_, i) => i !== postIdx).slice(0, 3);
     document.getElementById('bdRelatedGrid').innerHTML = others.map(p => `
@@ -141,17 +141,17 @@
     `).join('');
   }
 
-  /* ─── Switch post ─── */
+ 
   function switchPost(idx){
     if(idx === currentPost) return;
 
-    // Hide current panel
+  
     document.getElementById('bdPanel'+currentPost).classList.remove('active');
 
     currentPost = idx;
     const p = posts[idx];
 
-    // Update header
+  
     document.getElementById('bdBreadcrumbCurrent').textContent = p.title;
     document.getElementById('bdCatText').textContent = p.cat;
     document.getElementById('bdDate').textContent = p.date;
@@ -165,52 +165,52 @@
     document.getElementById('bdCoverImg').src = p.cover;
     document.getElementById('bdCoverCaption').textContent = p.caption;
 
-    // Update tabs
+   
     document.querySelectorAll('.bd-post-tab').forEach((t,i) => t.classList.toggle('active', i === idx));
 
-    // Show new panel
+  
     document.getElementById('bdPanel'+idx).classList.add('active');
 
-    // Update sidebar
+   
     buildTOC(idx);
     buildRelated(idx);
     buildSidebarPosts();
 
-    // Reset reading progress
+    
     document.getElementById('bdProgress').style.width = '0%';
     document.getElementById('bdRiFill').style.width = '0%';
     document.getElementById('bdRiPct').textContent = '0%';
     const mins = parseInt(p.readTime);
     document.getElementById('bdTimeLeft').textContent = mins + ' min';
 
-    // Re-run reveal
+
     document.querySelectorAll('#bdPanel'+idx+' .reveal').forEach(el => {
       el.classList.remove('visible');
       setTimeout(() => el.classList.add('visible'), 100);
     });
 
-    // Scroll to top of article
+ 
     document.querySelector('.bd-hero').scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
-  /* ─── Switch by title (for related cards) ─── */
+  
   window.switchPostByTitle = function(title){
     const idx = posts.findIndex(p => p.title === title);
     if(idx !== -1) switchPost(idx);
   };
 
-  /* ─── Post tab clicks ─── */
+
   document.getElementById('bdPostTabs').addEventListener('click', e => {
     const tab = e.target.closest('.bd-post-tab');
     if(tab) switchPost(parseInt(tab.dataset.post));
   });
 
-  /* ─── Init ─── */
+
   buildSidebarPosts();
   buildTOC(0);
   buildRelated(0);
 
-  /* ─── Scroll reveal ─── */
+
   if('IntersectionObserver' in window){
     const obs = new IntersectionObserver(entries => {
       entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); obs.unobserve(e.target); } });
@@ -220,7 +220,7 @@
     document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
   }
 
-  /* ─── Reading progress ─── */
+
   const bdProgress  = document.getElementById('bdProgress');
   const bdRiFill    = document.getElementById('bdRiFill');
   const bdRiPct     = document.getElementById('bdRiPct');
@@ -238,7 +238,7 @@
     bdTimeLeft.textContent = remaining <= 0 ? 'Done!' : remaining + ' min';
   }, { passive: true });
 
-  /* ─── Copy link ─── */
+
   document.getElementById('bdCopyBtn').addEventListener('click', () => {
     const btn = document.getElementById('bdCopyBtn');
     const orig = btn.innerHTML;
@@ -248,7 +248,7 @@
     }).catch(() => {});
   });
 
-  /* ─── Comment submit ─── */
+  
   const cmtBtn = document.getElementById('bdCommentBtn');
   if(cmtBtn){
     cmtBtn.addEventListener('click', () => {
@@ -263,7 +263,7 @@
     });
   }
 
-  /* ─── Newsletter subscribe ─── */
+  
   document.getElementById('bdNlBtn').addEventListener('click', () => {
     const btn = document.getElementById('bdNlBtn');
     const orig = btn.innerHTML;
@@ -278,14 +278,6 @@
 })();
 
 
-
-
-
-
-
-
-
-// simple fade-in animation
 window.addEventListener("load", () => {
   document.querySelector(".bdh-inner").style.opacity = "1";
 });

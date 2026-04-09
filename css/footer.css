@@ -1,13 +1,8 @@
-/* ═══════════════════════════════════════════════════
-   FOOTER — GreenHarvest
-   Full light / dark mode colour switching
-═══════════════════════════════════════════════════ */
 
-/* ── Light mode footer tokens ── */
 :root {
   --wave-fill: #f5f7f2;
 
-  /* 🌿 LIGHT MODE (NEW CLEAN DESIGN) */
+
   --footer-bg: #f9fbf8;
   --footer-bg-bottom: #eef3ee;
 
@@ -37,12 +32,11 @@
   --footer-sub-hover: #1e4d2b;
 }
 
-/* ── Dark mode footer tokens ── */
-/* ── DARK MODE (FIXED — better contrast) ── */
+
 [data-theme="dark"] {
   --wave-fill: #0e1810;
 
-  /* 🎯 Your custom black */
+
   --footer-bg: rgba(14, 24, 16, 0.97);
   --footer-bg-bottom: rgba(10, 18, 12, 1);
 
@@ -68,19 +62,17 @@
   --footer-sub-bg: #2d8a3e;
   --footer-sub-hover: #3aad50;
 }
-/* ════════════════════════════════
-   SHELL
-════════════════════════════════ */
+
 .footer {
   position: relative;
   background: var(--footer-bg);
   font-family: 'DM Sans', sans-serif;
- margin-top: 0 !important;
+ margin-top: 0 ;
   padding-top: 40px;
   transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
-/* ── Wave divider ── */
+
 .footer-wave {
   line-height: 0;
   overflow: hidden;
@@ -91,9 +83,7 @@
   height: 60px;
 }
 
-/* ════════════════════════════════
-   INNER GRID
-════════════════════════════════ */
+
 .footer-inner {
   display: grid;
   grid-template-columns: 1.6fr 1fr 1fr 1.2fr 1.5fr;
@@ -103,9 +93,7 @@
   padding: 3rem 2.5rem 2.5rem;
 }
 
-/* ════════════════════════════════
-   BRAND
-════════════════════════════════ */
+
 .footer-logo {
   display: inline-flex;
   align-items: center;
@@ -139,7 +127,7 @@
   transition: color 0.3s ease;
 }
 
-/* Social buttons */
+
 .footer-socials {
   display: flex;
   gap: 0.55rem;
@@ -165,9 +153,7 @@
   transform: translateY(-2px);
 }
 
-/* ════════════════════════════════
-   COLUMN TITLE
-════════════════════════════════ */
+
 .footer-col-title {
   font-size: 0.73rem;
   font-weight: 600;
@@ -178,9 +164,7 @@
   transition: color 0.3s ease;
 }
 
-/* ════════════════════════════════
-   LINK LIST
-════════════════════════════════ */
+
 .footer-links {
   list-style: none;
   display: flex;
@@ -201,9 +185,7 @@
   padding-left: 6px;
 }
 
-/* ════════════════════════════════
-   CONTACT LIST
-════════════════════════════════ */
+
 .footer-contact {
   list-style: none;
   display: flex;
@@ -231,9 +213,7 @@
 }
 .footer-contact a:hover { color: var(--footer-text-hover); }
 
-/* ════════════════════════════════
-   NEWSLETTER
-════════════════════════════════ */
+
 .newsletter-desc {
   font-size: 0.875rem;
   color: var(--footer-text);
@@ -294,7 +274,7 @@
 .newsletter-msg.success { color: #60d978; }
 .newsletter-msg.error   { color: #f08080; }
 
-/* Badges */
+
 .footer-badges {
   display: flex;
   flex-wrap: wrap;
@@ -316,9 +296,7 @@
   transition: background 0.3s, border-color 0.3s, color 0.3s;
 }
 
-/* ════════════════════════════════
-   BOTTOM BAR
-════════════════════════════════ */
+
 .footer-bottom {
   border-top: 1px solid var(--footer-border);
   background: var(--footer-bg-bottom);
@@ -353,9 +331,7 @@
 }
 .footer-legal a:hover { color: var(--footer-text-hover); }
 
-/* ════════════════════════════════
-   RESPONSIVE
-════════════════════════════════ */
+
 @media (max-width: 1100px) {
   .footer-inner {
     grid-template-columns: 1fr 1fr 1fr;
@@ -381,9 +357,7 @@
   .footer-legal { justify-content: center; gap: 1rem; }
 }
 
-/* ════════════════════════════════
-   RTL
-════════════════════════════════ */
+
 [dir="rtl"] .footer-links a:hover  { padding-left: 0; padding-right: 6px; }
 [dir="rtl"] .footer-contact li     { flex-direction: row-reverse; }
 [dir="rtl"] .footer-socials        { flex-direction: row-reverse; }
@@ -393,9 +367,6 @@
 
 
 
-/* ================= FOOTER MOBILE & TABLET STACKED ================= */
-
-/* Tablet & Mobile (≤992px) */
 @media (max-width: 992px) {
   .footer-inner {
     display: flex;
@@ -404,7 +375,7 @@
     padding: 2.5rem 1.5rem 2rem;
   }
 
-  /* Make each section full width and stacked */
+
   .footer-brand,
   .footer-links-wrapper,
   .footer-shop,
@@ -413,7 +384,7 @@
     width: 100%;
   }
 
-  /* Footer brand (logo + desc + socials) */
+
   .footer-brand {
     display: flex;
     flex-direction: column;
@@ -425,7 +396,7 @@
     justify-content: flex-start;
   }
 
-  /* Quick Links & Shop Links stacked vertically */
+
   .footer-links-wrapper,
   .footer-shop {
     display: flex;
@@ -433,14 +404,14 @@
     gap: 0.75rem;
   }
 
-  /* Contact stacked */
+
   .footer-contact {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
   }
 
-  /* Newsletter / Stay Fresh stacked */
+
   .footer-newsletter {
     display: flex;
     flex-direction: column;
@@ -457,7 +428,7 @@
     width: 100%;
   }
 
-  /* Footer bottom */
+
   .footer-bottom-inner {
     flex-direction: column;
     align-items: center;
@@ -473,7 +444,7 @@
   }
 }
 
-/* Extra small mobile (≤480px) */
+
 @media (max-width: 480px) {
   .footer-inner {
     padding: 2rem 1rem 1.5rem;
@@ -493,14 +464,14 @@
 
 
 .contact-icon {
-  color: var(--leaf); /* Your brand green */
+  color: var(--leaf); 
   font-size: 1rem;
-  width: 20px; /* Ensures vertical alignment */
+  width: 20px; 
   text-align: center;
-  margin-top: 3px; /* Fine-tune alignment with first line of text */
+  margin-top: 3px; 
 }
 
-/* Dark Mode support */
+
 [data-theme="dark"] .contact-icon {
-  color: #60d978; /* Brighter green for dark mode */
+  color: #60d978; 
 }

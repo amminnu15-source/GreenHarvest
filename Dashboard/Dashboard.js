@@ -3,7 +3,7 @@
 
   const html = document.documentElement;
 
-  /* ── Theme ── */
+
   let dark = localStorage.getItem('gh-theme') === 'dark';
   function applyTheme(d){
     html.setAttribute('data-theme', d ? 'dark' : 'light');
@@ -20,7 +20,7 @@
   applyTheme(dark);
   document.getElementById('themeBtn').addEventListener('click', () => { dark = !dark; applyTheme(dark); });
 
-  /* ── Direction ── */
+
   let rtl = localStorage.getItem('gh-dir') === 'rtl';
   function applyDir(r){
     html.setAttribute('dir', r ? 'rtl' : 'ltr');
@@ -30,7 +30,7 @@
   applyDir(rtl);
   document.getElementById('dirBtn').addEventListener('click', () => { rtl = !rtl; applyDir(rtl); });
 
-  /* ── Sidebar ── */
+
   const sidebar  = document.getElementById('sidebar');
   const overlay  = document.getElementById('overlay');
   const menuBtn  = document.getElementById('menuBtn');
@@ -59,7 +59,7 @@
     });
   });
 
-  /* ── Animated counters ── */
+
   function counter(elId, end, duration, fmt){
     const el = document.getElementById(elId);
     if(!el) return;
@@ -79,7 +79,7 @@
   counter('statProducts',34,     950,  v => Math.round(v));
   counter('statRating',  4.7,    1000, v => v.toFixed(1));
 
-  /* ── Activity ── */
+
   const activities = [
     { cls:'a-green',  icon:'M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4zM3 6h18M16 10a4 4 0 0 1-8 0', title:'New order received', sub:'Order GH-1021 • Fresh Tomatoes' },
     { cls:'a-blue',   icon:'M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z', title:'Product updated', sub:'Spinach stock updated to 42 units' },
@@ -102,7 +102,7 @@
     </li>
   `).join('');
 
-  /* ── Orders ── */
+
   const orders = [
     { id:'GH-1021', customer:'Akhil',   product:'Fresh Tomatoes',  status:'paid',      amount:1290,  date:'Feb 28' },
     { id:'GH-1020', customer:'Meena',   product:'Organic Spinach', status:'pending',   amount:560,   date:'Feb 27' },
@@ -122,7 +122,7 @@
     </tr>
   `).join('');
 
-  /* ── Chart ── */
+
   const canvas = document.getElementById('salesChart');
   const ctx    = canvas.getContext('2d');
 
@@ -152,7 +152,6 @@
     const min = Math.min(...values) * 0.80;
     const xStep = (W - pad*2) / (values.length - 1);
 
-    /* Grid lines */
     ctx.globalAlpha = 0.3;
     ctx.strokeStyle = border;
     ctx.lineWidth   = 1;
@@ -167,7 +166,7 @@
       y: pad + (H-pad*2) * (1-(v-min)/(max-min))
     }));
 
-    /* Fill gradient */
+
     const grad = ctx.createLinearGradient(0,pad,0,H-pad);
     grad.addColorStop(0,'rgba(43,122,43,0.22)');
     grad.addColorStop(1,'rgba(43,122,43,0)');
@@ -176,7 +175,7 @@
     pts.forEach((p,i)=>i===0?ctx.moveTo(p.x,p.y):ctx.lineTo(p.x,p.y));
     ctx.lineTo(W-pad,H-pad); ctx.lineTo(pad,H-pad); ctx.closePath(); ctx.fill();
 
-    /* Line */
+
     ctx.strokeStyle = green;
     ctx.lineWidth   = 2.5;
     ctx.lineJoin    = 'round';
@@ -185,7 +184,7 @@
     pts.forEach((p,i)=>i===0?ctx.moveTo(p.x,p.y):ctx.lineTo(p.x,p.y));
     ctx.stroke();
 
-    /* Dots */
+
     pts.forEach((p,i)=>{
       ctx.beginPath();
       ctx.arc(p.x,p.y,i===pts.length-1?5:3,0,Math.PI*2);

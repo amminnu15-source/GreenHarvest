@@ -1,15 +1,11 @@
-/* =========================
-   FADE ANIMATION (YOUR CODE)
-========================= */
+
 window.addEventListener("load", () => {
   document.querySelectorAll(".fade-up").forEach(el => {
     el.style.animationPlayState = "running";
   });
 });
 
-/* =========================
-   RTL / LTR TOGGLE
-========================= */
+
 document.getElementById("dirToggle").onclick = () => {
   const body = document.body;
   const html = document.documentElement;
@@ -89,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const section = document.querySelector('.impact');
   const counters = document.querySelectorAll('.counter');
 
-  if (!section || counters.length === 0) return; // safety check
+  if (!section || counters.length === 0) return; 
 
   const startCounter = () => {
     counters.forEach(counter => {

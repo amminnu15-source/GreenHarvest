@@ -1,12 +1,12 @@
 const themeToggle = document.getElementById("themeToggle");
 const dirToggle = document.getElementById("dirToggle");
 
-// DARK MODE
+
 themeToggle.onclick = () => {
   document.body.classList.toggle("dark");
 };
 
-// RTL / LTR
+
 dirToggle.onclick = () => {
   if(document.documentElement.dir === "ltr"){
     document.documentElement.dir = "rtl";

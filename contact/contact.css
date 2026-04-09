@@ -1,21 +1,18 @@
 
-/* =========================
-   CONTACT HERO
-========================= */
 .contact-hero {
   position: relative;
   min-height: 80vh;
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* ✅ move content to left */
-  text-align: left; /* ✅ left align text */
-  padding-left: 8%; /* ✅ spacing from left */
+  justify-content: flex-start; 
+  text-align: left; 
+  padding-left: 8%; 
 
   background: url('../images/contact-hero.jpg') center/cover no-repeat;
   overflow: hidden;
 }
 
-/* Overlay */
+
 .contact-overlay {
   position: absolute;
   inset: 0;
@@ -27,7 +24,7 @@
   );
 }
 
-/* Content */
+
 .contact-content {
   position: relative;
   z-index: 2;
@@ -35,9 +32,7 @@
   padding: 20px;
 }
 
-/* =========================
-   TITLE
-========================= */
+
 .contact-title {
   font-family: 'Cormorant Garamond', serif;
   font-size: 3.5rem;
@@ -46,7 +41,7 @@
   margin-bottom: 15px;
 }
 
-/* Gradient highlight */
+
 .contact-title span {
   background: linear-gradient(45deg, #F0800A, #E8B840);
   background-clip: text;
@@ -54,9 +49,7 @@
   color: transparent;
 }
 
-/* =========================
-   SUBTEXT
-========================= */
+
 .contact-sub {
   font-size: 1.1rem;
   color: rgba(255,255,255,0.8);
@@ -64,9 +57,7 @@
   margin-bottom: 30px;
 }
 
-/* =========================
-   BUTTONS
-========================= */
+
 .contact-buttons {
   display: flex;
   justify-content: center;
@@ -74,7 +65,7 @@
   flex-wrap: wrap;
 }
 
-/* Primary */
+
 .btn-primary {
   padding: 14px 34px;
   border-radius: 50px;
@@ -91,7 +82,7 @@
   transition: all 0.35s ease;
 }
 
-/* GOLD SHINE ON HOVER */
+
 .btn-primary::before {
   content: "";
   position: absolute;
@@ -110,7 +101,7 @@
   transform: translateY(-5px) scale(1.04);
   box-shadow: 0 14px 40px rgba(45,138,62,0.45);
 }
-/* Outline */
+
 .btn-outline {
   padding: 14px 34px;
   border-radius: 50px;
@@ -124,7 +115,7 @@
   transition: all 0.35s ease;
 }
 
-/* HOVER EFFECT */
+
 .btn-outline:hover {
   background: linear-gradient(135deg, rgba(240,128,10,0.2), rgba(232,184,64,0.2));
   border-color: #E8B840;
@@ -134,9 +125,6 @@
 }
 
 
-/* =========================
-   ANIMATIONS
-========================= */
 .fade-up {
   opacity: 0;
   transform: translateY(40px);
@@ -153,9 +141,7 @@
   }
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+
 @media (max-width: 768px) {
   .contact-title {
     font-size: 2.4rem;
@@ -168,16 +154,13 @@
 
 
 
-/* =========================
-   DARK MODE — CONTACT HERO
-========================= */
 
 [data-theme="dark"] .contact-hero {
   background: url('/images/contact-hero.jpg') center/cover no-repeat;
   color: #f5f5f5;
 }
 
-/* Background image tone */
+
 [data-theme="dark"] .contact-hero::before {
   content: "";
   position: absolute;
@@ -188,7 +171,7 @@
   z-index: 1;
 }
 
-/* Overlay (stronger for readability) */
+
 [data-theme="dark"] .contact-overlay {
   background: linear-gradient(
     110deg,
@@ -198,48 +181,40 @@
   );
 }
 
-/* =========================
-   TEXT STYLING
-========================= */
 
-/* Main title */
 [data-theme="dark"] .contact-title {
   color: #f8f4ec;
   text-shadow: 0 10px 40px rgba(0,0,0,0.6);
 }
 
-/* Highlight word */
+
 [data-theme="dark"] .contact-title span {
   background: linear-gradient(45deg, #ff9a2f, #ffd76a);
 
-  /* standard */
+
   background-clip: text;
 
-  /* required for Chrome/Safari */
+
   -webkit-background-clip: text;
 
-  /* fallback */
+
   color: transparent;
 
-  /* WebKit support */
+
   -webkit-text-fill-color: transparent;
 }
-/* Subtitle */
+
 [data-theme="dark"] .contact-subtitle {
   color: rgba(255,255,255,0.7);
 }
 
-/* Small label (GET IN TOUCH) */
+
 [data-theme="dark"] .contact-eyebrow {
   color: #ffd76a;
   border-color: rgba(255,215,106,0.3);
 }
 
-/* =========================
-   BUTTONS
-========================= */
 
-/* PRIMARY BUTTON */
 [data-theme="dark"] .btn-primary {
   background: linear-gradient(135deg, #3d8c3d, #66bb6a);
   color: #0a1408;
@@ -253,7 +228,7 @@
   box-shadow: 0 18px 50px rgba(61,140,61,0.8);
 }
 
-/* OUTLINE BUTTON */
+
 [data-theme="dark"] .btn-outline {
   border: 1.5px solid rgba(255,215,106,0.5);
   color: #ffd76a;
@@ -273,9 +248,7 @@
   box-shadow: 0 12px 35px rgba(255,215,106,0.35);
 }
 
-/* =========================
-   GLASS CARD (if any)
-========================= */
+
 
 [data-theme="dark"] .contact-card {
   background: rgba(255,255,255,0.05);
@@ -283,9 +256,7 @@
   backdrop-filter: blur(18px);
 }
 
-/* =========================
-   ANIMATION IMPROVEMENT
-========================= */
+
 
 [data-theme="dark"] .fade-up {
   animation: fadeUpDark 0.8s ease forwards;
@@ -302,23 +273,12 @@
   }
 }
 
-/* =========================
-   EXTRA PREMIUM EFFECT
-========================= */
 
-/* subtle glow on hover for section */
 [data-theme="dark"] .contact-hero:hover {
   box-shadow: inset 0 0 120px rgba(61,140,61,0.08);
 }
 
 
-
-
-
-/* ══════════════════════════════
-   CONTACT SECTION ONLY
-   add inside your existing <style>
-══════════════════════════════ */
 
 .contact-wrap {
   padding: 5rem 2rem;
@@ -334,7 +294,7 @@
   align-items: start;
 }
 
-/* ── Left info cards ── */
+
 .info-col {
   display: flex;
   flex-direction: column;
@@ -375,30 +335,30 @@
 
 
 
-/* Aligning the bubble icons */
+
 .ic-bubble {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem; /* Adjusted for Font Awesome */
+  font-size: 1.2rem;
 }
 
-/* Social Icon Specifics */
+
 .soc-btn {
   display: flex !important;
   align-items: center;
   justify-content: center;
-  font-size: 14px !important; /* Proper size for social icons */
+  font-size: 14px !important; 
 }
 
-/* Color Tweaks for the bubbles to match your design */
+
 .ic-pink   { color: #2e7d32; }
 .ic-coral  { color: #2e7d32; }
 .ic-mint   { color: #2e7d32; }
 .ic-purple { color: #2e7d32; }
 .ic-blue   { color: #2e7d32; }
 
-/* Dark mode icon visibility */
+
 [data-theme="dark"] .ic-bubble {
   filter: brightness(1.2);
 }
@@ -484,10 +444,10 @@
   transform: translateY(-2px);
 }
 
-/* ── Right form card ── */
+
 .form-col {
   background: #FAF8F4;
-border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
+border: 1.5px solid rgba(28,28,10,0.12); 
   border-radius: 20px;
   padding: 2.4rem 2.2rem;
   box-shadow: 0 4px 28px rgba(28,28,10,0.06);
@@ -693,7 +653,7 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
   gap: 6px;
 }
 
-/* ── Success state — hidden by default ── */
+
 .form-success {
   display: none;
   flex-direction: column;
@@ -740,7 +700,7 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
   border-color: rgba(28,28,10,0.25);
 }
 
-/* ── Toast ── */
+
 .ct-toast {
   position: fixed;
   bottom: 2rem;
@@ -766,7 +726,7 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
   opacity: 1;
 }
 
-/* ── Responsive ── */
+
 @media (max-width: 900px) {
   .contact-section { grid-template-columns: 1fr; }
   .form-col { padding: 1.75rem 1.25rem; }
@@ -778,20 +738,11 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
 
 
 
-
-
-
-
-
-/* ══════════════════════════════
-   DARK MODE — CONTACT SECTION
-══════════════════════════════ */
-
 [data-theme="dark"] .contact-wrap {
   background: black;
 }
 
-/* Cards */
+
 [data-theme="dark"] .info-card,
 [data-theme="dark"] .form-col {
   background: rgba(255,255,255,0.05);
@@ -799,7 +750,7 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
   box-shadow: none;
 }
 
-/* Text */
+
 [data-theme="dark"] .ic-title,
 [data-theme="dark"] .form-heading,
 [data-theme="dark"] .form-success h3 {
@@ -817,7 +768,7 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
   color: rgba(248,244,236,0.5);
 }
 
-/* Links */
+
 [data-theme="dark"] .ic-body a {
   color: #7cd67c;
 }
@@ -825,7 +776,7 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
   color: #a5f0a5;
 }
 
-/* Hours */
+
 [data-theme="dark"] .hours-row {
   background: rgba(255,255,255,0.04);
 }
@@ -836,7 +787,7 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
   color: #f8f4ec;
 }
 
-/* Social buttons */
+
 [data-theme="dark"] .soc-btn {
   background: rgba(255,255,255,0.05);
   border-color: rgba(255,255,255,0.1);
@@ -848,7 +799,7 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
   color: #fff;
 }
 
-/* Inputs */
+
 [data-theme="dark"] .field-input,
 [data-theme="dark"] .field-textarea,
 [data-theme="dark"] .field-select {
@@ -870,12 +821,12 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
   box-shadow: 0 0 0 4px rgba(102,187,106,0.15);
 }
 
-/* Select arrow */
+
 [data-theme="dark"] .select-wrap::after {
   border-top-color: rgba(248,244,236,0.6);
 }
 
-/* Checkbox */
+
 [data-theme="dark"] .custom-check {
   background: rgba(255,255,255,0.05);
   border-color: rgba(255,255,255,0.2);
@@ -885,7 +836,7 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
   border-color: #66bb6a;
 }
 
-/* Label */
+
 [data-theme="dark"] .field-label {
   color: #f8f4ec;
 }
@@ -893,7 +844,7 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
   color: rgba(248,244,236,0.7);
 }
 
-/* Button */
+
 [data-theme="dark"] .btn-send {
   background: linear-gradient(45deg, #3d8c3d, #66bb6a);
   color: #000;
@@ -904,12 +855,12 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
   box-shadow: 0 10px 30px rgba(61,140,61,0.45);
 }
 
-/* Button icon */
+
 [data-theme="dark"] .btn-arrow {
   background: rgba(0,0,0,0.2);
 }
 
-/* Reset button */
+
 [data-theme="dark"] .btn-reset {
   border-color: rgba(255,255,255,0.2);
   color: #f8f4ec;
@@ -918,37 +869,36 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
   background: rgba(255,255,255,0.06);
 }
 
-/* Toast */
+
 [data-theme="dark"] .ct-toast {
   background: #3d8c3d;
   color: #fff;
 }
 
-/* Success icon */
+
 [data-theme="dark"] .fs-check {
   color: #7cd67c;
 }
 
 
-/* DARK MODE SELECT FIELD */
+
 [data-theme="dark"] .field-select {
   background: rgba(255,255,255,0.06);
   color: #f8f4ec;
   border: 1.5px solid rgba(255,255,255,0.15);
 }
 
-/* DROPDOWN OPTIONS (MAIN FIX) */
 [data-theme="dark"] .field-select option {
-  background-color: #1a1a1a; /* dark background */
-  color: #ffffff;            /* white text */
+  background-color: #1a1a1a; 
+  color: #ffffff;            
 }
 
-/* FIX FIRST OPTION (placeholder) */
+
 [data-theme="dark"] .field-select option[value=""] {
   color: #aaa;
 }
 
-/* ON FOCUS */
+
 [data-theme="dark"] .field-select:focus {
   border-color: #66bb6a;
   box-shadow: 0 0 0 4px rgba(102,187,106,0.15);
@@ -968,31 +918,12 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ══════════════════════════════
-   MAP SECTION — PREMIUM
-══════════════════════════════ */
-
 .map-section {
   padding: 5rem 2rem;
   background: #f5f2eb;
 }
 
-/* HEADING */
+
 .map-head {
   text-align: center;
   margin-bottom: 2.5rem;
@@ -1009,16 +940,16 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
 .map-title span {
   background: linear-gradient(45deg, #F0800A, #E8B840);
 
-  /* Standard */
+ 
   background-clip: text;
 
-  /* Required for Chrome/Safari */
+
   -webkit-background-clip: text;
 
-  /* Fallback */
+
   color: transparent;
 
-  /* Webkit fix (optional but needed for gradient) */
+
   -webkit-text-fill-color: transparent;
 }
 
@@ -1028,7 +959,7 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
   color: #6a6a50;
 }
 
-/* MAP BOX */
+
 .map-wrapper {
   max-width: 1260px;
   margin: 0 auto;
@@ -1039,7 +970,7 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
   box-shadow: 0 12px 40px rgba(28,28,10,0.15);
 }
 
-/* MAP */
+
 .map-wrapper iframe {
   width: 100%;
   height: 420px;
@@ -1053,7 +984,7 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
   filter: grayscale(0%) contrast(100%);
 }
 
-/* FLOAT CARD */
+
 .map-card {
   position: absolute;
   bottom: 30px;
@@ -1091,7 +1022,7 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
   color: #6a6a50;
 }
 
-/* BUTTON */
+
 .map-btn {
   margin-top: 8px;
   padding: 0.5rem 1rem;
@@ -1112,16 +1043,13 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
   transform: translateY(-2px);
 }
 
-/* ANIMATION */
+
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
 
-
-
-/* DARK MODE */
 [data-theme="dark"] .map-section {
   background: black;
 }
@@ -1159,30 +1087,6 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ══════════════════════════════
-   SUPPORT / QUICK HELP SECTION
-══════════════════════════════ */
-
 .support-section {
   padding: 5rem 2rem;
   background: #f5f2eb;
@@ -1193,7 +1097,7 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
   margin: 0 auto;
 }
 
-/* ── Header ── */
+
 .support-header {
   text-align: center;
   margin-bottom: 3.5rem;
@@ -1233,7 +1137,7 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
   font-style: italic;
 }
 
-/* ── Grid ── */
+
 .support-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1241,7 +1145,7 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
   align-items: stretch;
 }
 
-/* ── Card base ── */
+
 .support-card {
   background: #FDFBF7;
   border: 1px solid rgba(28, 28, 10, 0.08);
@@ -1261,7 +1165,7 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
   border-color: rgba(28, 28, 10, 0.13);
 }
 
-/* Featured middle card */
+
 .support-card-featured {
   border-color: rgba(28, 28, 10, 0.11);
   box-shadow: 0 4px 24px rgba(28, 28, 10, 0.08);
@@ -1271,7 +1175,7 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
   box-shadow: 0 16px 48px rgba(28, 28, 10, 0.13);
 }
 
-/* ── Icon wrap ── */
+
 .sc-icon-wrap {
   width: 68px;
   height: 68px;
@@ -1291,7 +1195,7 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
 .sc-icon-purple { background: rgba(149, 117, 205, 0.12); }
 .sc-icon-indigo { background: rgba(92, 107, 192, 0.10); }
 
-/* ── Text ── */
+
 .sc-title {
   font-family: 'Cormorant Garamond', 'Georgia', serif;
   font-size: 1.35rem;
@@ -1310,7 +1214,7 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
   flex: 1;
 }
 
-/* ── Buttons ── */
+
 .sc-btn {
   display: inline-flex;
   align-items: center;
@@ -1356,7 +1260,7 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
   transform: translateY(-1px);
 }
 
-/* ── Responsive ── */
+
 @media (max-width: 900px) {
   .support-grid {
     grid-template-columns: 1fr;
@@ -1371,21 +1275,11 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
 }
 
 
-
-
-
-
-
-
-
-/* ══════════════════════════════
-   DARK MODE — SUPPORT SECTION
-══════════════════════════════ */
 [data-theme="dark"] .support-section {
   background: black;
 }
 
-/* Header */
+
 [data-theme="dark"] .support-title {
   color: #f3f3e9;
 }
@@ -1402,7 +1296,7 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
   background: #ffb347;
 }
 
-/* Cards */
+
 [data-theme="dark"] .support-card {
   background: #151b17;
   border: 1px solid rgba(255,255,255,0.06);
@@ -1414,18 +1308,18 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
   border-color: rgba(255,255,255,0.12);
 }
 
-/* Featured card */
+
 [data-theme="dark"] .support-card-featured {
   background: #18201b;
   border: 1px solid rgba(255,255,255,0.08);
 }
 
-/* Icons */
+
 [data-theme="dark"] .sc-icon-green  { background: rgba(76, 175, 80, 0.18); }
 [data-theme="dark"] .sc-icon-purple { background: rgba(149, 117, 205, 0.20); }
 [data-theme="dark"] .sc-icon-indigo { background: rgba(92, 107, 192, 0.18); }
 
-/* Text */
+
 [data-theme="dark"] .sc-title {
   color: #f3f3e9;
 }
@@ -1434,7 +1328,7 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
   color: #b8b8a0;
 }
 
-/* Buttons */
+
 [data-theme="dark"] .sc-btn-outline {
   background: #2b7a2b;
   border-color: #2b7a2b;
@@ -1447,7 +1341,7 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
   border-color: #7edc7e;
 }
 
-/* Solid button */
+
 [data-theme="dark"] .sc-btn-solid {
   background: linear-gradient(135deg, #2b7a2b, #3fa34d);
   border-color: transparent;
@@ -1455,21 +1349,8 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
 
 
 
-
-
-
-
-
-
-
-
-  /* ══════════════════════════════════════════
-   RESPONSIVE DESIGN — MOBILE & TABLET
-══════════════════════════════════════════ */
-
-/* 📱 TABLET VIEW (640px - 1024px) */
 @media (max-width: 1024px) {
-    /* Contact Hero */
+  
     .contact-hero {
         padding-left: 5%;
         min-height: 60vh;
@@ -1479,15 +1360,15 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
         font-size: 3rem;
     }
 
-    /* Main Contact Section (Grid to 1 Column) */
+    
     .contact-section {
-        grid-template-columns: 1fr; /* Stack form and info */
+        grid-template-columns: 1fr; 
         gap: 3rem;
         padding: 0 1rem;
     }
 
     .info-col {
-        order: 2; /* Move info cards below the form on tablet */
+        order: 2; 
     }
 
     .form-col {
@@ -1495,16 +1376,16 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
         padding: 2rem;
     }
 
-    /* Support Grid (2 Columns) */
+
     .support-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
     }
 }
 
-/* 📱 MOBILE VIEW (< 640px) */
+
 @media (max-width: 640px) {
-    /* Hero Section */
+   
     .contact-hero {
         padding: 100px 1.5rem 60px;
         justify-content: center;
@@ -1534,7 +1415,7 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
         text-align: center;
     }
 
-    /* Form and Info Cards */
+  
     .contact-wrap {
         padding: 3rem 0;
     }
@@ -1547,22 +1428,22 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
     }
 
     .hours-grid {
-        grid-template-columns: 1fr; /* Stack hours vertically */
+        grid-template-columns: 1fr; 
         width: 100%;
     }
 
     .form-col {
         padding: 1.5rem 1rem;
-        border-radius: 0; /* Full width feel on small mobile */
+        border-radius: 0; 
         border-left: none;
         border-right: none;
     }
 
     .field-row {
-        grid-template-columns: 1fr; /* Inputs stack on mobile */
+        grid-template-columns: 1fr; 
     }
 
-    /* Support Section */
+
     .support-grid {
         grid-template-columns: 1fr;
     }
@@ -1571,7 +1452,7 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
         font-size: 1.8rem;
     }
 
-    /* Map Section */
+  
     .map-section {
         padding: 2rem 1rem;
     }
@@ -1581,7 +1462,7 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
     }
 
     .map-card {
-        position: static; /* Move card below map on mobile */
+        position: static; 
         margin-top: 1rem;
         width: 100%;
         backdrop-filter: none;
@@ -1598,13 +1479,8 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
 
 
 
-/* ══════════════════════════════════════════
-   PRECISION RESPONSIVE FIXES
-══════════════════════════════════════════ */
-
-/* 💻 TABLET RANGE (640px to 1024px) */
 @media screen and (max-width: 1024px) {
-    /* Hero Realignment */
+    
     .contact-hero {
         min-height: 500px;
         padding-left: 5%;
@@ -1615,22 +1491,22 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
         font-size: 2.8rem;
     }
 
-    /* Main Grid: Info + Form */
+
     .contact-section {
-        grid-template-columns: 1fr !important; /* Stack them */
+        grid-template-columns: 1fr !important; 
         padding: 0 1.5rem;
         gap: 3rem;
     }
 
-    /* Support Cards (2 per row) */
+ 
     .support-grid {
         grid-template-columns: repeat(2, 1fr) !important;
     }
 }
 
-/* 📱 MOBILE RANGE (Under 640px) */
+
 @media screen and (max-width: 640px) {
-    /* Hero: Center everything for thumb-friendly UI */
+ 
     .contact-hero {
         padding: 120px 1.25rem 60px !important;
         justify-content: center !important;
@@ -1644,209 +1520,196 @@ border: 1.5px solid rgba(28,28,10,0.12); /* ADD THIS */
     }
 
     .contact-title {
-        font-size: 2.2rem !important;
+        font-size: 2.2rem ;
         text-align: center;
     }
 
     .contact-buttons {
-        flex-direction: column !important;
+        flex-direction: column ;
         align-items: center;
         width: 100%;
     }
 
     .btn-primary, .btn-outline {
-        width: 100% !important;
+        width: 100% ;
         text-align: center;
-        padding: 12px 20px !important;
+        padding: 12px 20px ;
     }
 
-    /* Form & Info Cards */
+
     .contact-wrap {
-        padding: 3rem 1rem !important;
+        padding: 3rem 1rem ;
     }
 
     .field-row {
-        grid-template-columns: 1fr !important; /* Name & Email stack vertically */
+        grid-template-columns: 1fr ; 
         gap: 0;
     }
 
     .form-col {
-        padding: 1.5rem 1rem !important;
-        border-radius: 15px !important;
+        padding: 1.5rem 1rem ;
+        border-radius: 15px ;
     }
 
-    /* Hours: Stack them so text doesn't overlap */
+    
     .hours-grid {
-        grid-template-columns: 1fr !important;
-        gap: 8px !important;
+        grid-template-columns: 1fr ;
+        gap: 8px ;
     }
 
     .info-card {
-        padding: 1.2rem !important;
+        padding: 1.2rem ;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
-    /* Map Section: Fix the floating card */
+    
     .map-section {
-        padding: 2rem 1rem !important;
+        padding: 2rem 1rem ;
     }
 
     .map-wrapper iframe {
-        height: 250px !important;
+        height: 250px ;
     }
 
     .map-card {
-        position: relative !important; /* Stops floating */
-        left: 0 !important;
-        bottom: 0 !important;
+        position: relative ; 
+        left: 0 ;
+        bottom: 0 ;
         margin-top: 1rem;
-        width: 100% !important;
-        box-shadow: none !important;
+        width: 100% ;
+        box-shadow: none ;
     }
 
-    /* Support Section: 1 column */
+
     .support-grid {
-        grid-template-columns: 1fr !important;
+        grid-template-columns: 1fr ;
     }
 }
 
-/* 🔄 Extra Small Device Fix (iPhone SE etc.) */
 @media screen and (max-width: 380px) {
     .contact-title {
-        font-size: 1.8rem !important;
+        font-size: 1.8rem ;
     }
     
     .form-heading {
-        font-size: 1.2rem !important;
+        font-size: 1.2rem ;
     }
 }
 
 
 
-
-
-
-
-
-
-
-/* ══════════════════════════════════════════
-   ULTIMATE SCREEN FIX (GLOBAL & CONTACT)
-══════════════════════════════════════════ */
-
-/* Force everything to respect screen width */
 html, body {
-    max-width: 100% !important;
-    overflow-x: hidden !important;
+    max-width: 100% ;
+    overflow-x: hidden ;
     width: 100vw;
 }
 
-/* 💻 TABLET FIX (640px - 1024px) */
+
 @media screen and (max-width: 1024px) {
     .container, .contact-section, .support-inner, .map-wrapper {
-        max-width: 90% !important;
-        width: 90% !important;
-        margin: 0 auto !important;
+        max-width: 90% ;
+        width: 90% ;
+        margin: 0 auto ;
     }
 
     .contact-hero {
-        padding-left: 5% !important;
+        padding-left: 5% ;
     }
 
     .contact-section {
-        grid-template-columns: 1fr !important;
-        display: flex !important;
-        flex-direction: column !important;
+        grid-template-columns: 1fr ;
+        display: flex ;
+        flex-direction: column ;
     }
 }
 
-/* 📱 MOBILE FIX (< 640px) */
+
 @media screen and (max-width: 640px) {
-    /* Stop any horizontal scroll */
+ 
     * {
-        max-width: 100vw !important;
+        max-width: 100vw ;
     }
 
     .contact-hero {
-        padding: 120px 20px 60px !important;
-        text-align: center !important;
-        justify-content: center !important;
-        padding-left: 20px !important; /* Resetting the 8% */
+        padding: 120px 20px 60px ;
+        text-align: center ;
+        justify-content: center ;
+        padding-left: 20px ; 
     }
 
     .contact-title {
-        font-size: 2rem !important;
-        width: 100% !important;
+        font-size: 2rem ;
+        width: 100% ;
     }
 
     .contact-buttons {
-        width: 100% !important;
-        gap: 10px !important;
+        width: 100% ;
+        gap: 10px ;
     }
 
-    /* Force the form to fit the screen */
+    
     .contact-section {
-        width: 100% !important;
-        padding: 0 15px !important;
-        margin: 0 !important;
-        display: block !important;
+        width: 100% ;
+        padding: 0 15px ;
+        margin: 0 ;
+        display: block ;
     }
 
     .form-col {
-        width: 100% !important;
-        padding: 25px 15px !important;
-        margin: 20px 0 !important;
-        box-sizing: border-box !important;
+        width: 100% ;
+        padding: 25px 15px ;
+        margin: 20px 0 ;
+        box-sizing: border-box ;
     }
 
-    /* Fix the dual-input rows (Name/Email) */
+   
     .field-row {
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 0 !important;
+        display: flex ;
+        flex-direction: column ;
+        gap: 0 ;
     }
 
     .field-group {
-        width: 100% !important;
-        margin-bottom: 15px !important;
+        width: 100% ;
+        margin-bottom: 15px ;
     }
 
-    /* Hours Grid overlap fix */
+
     .hours-grid {
-        grid-template-columns: 1fr !important;
+        grid-template-columns: 1fr ;
     }
 
-    /* Support Cards overlap fix */
+   
     .support-grid {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
+        display: flex ;
+        flex-direction: column ;
+        align-items: center ;
     }
 
     .support-card {
-        width: 100% !important;
-        max-width: 100% !important;
+        width: 100% ;
+        max-width: 100% ;
     }
 
-    /* Map Box fix */
+  
     .map-wrapper {
-        border-radius: 0 !important; /* Looks better on mobile */
-        width: 100% !important;
+        border-radius: 0 ; 
+        width: 100% ;
     }
 
     .map-card {
-        position: static !important;
-        transform: none !important;
-        width: 100% !important;
-        margin-top: 10px !important;
-        border-radius: 0 !important;
+        position: static ;
+        transform: none ;
+        width: 100% ;
+        margin-top: 10px ;
+        border-radius: 0 ;
     }
 }
 
-/* ── Final Safety Check for very small phones ── */
+
 @media screen and (max-width: 400px) {
-    .contact-title { font-size: 1.7rem !important; }
-    .form-heading { font-size: 1.3rem !important; }
+    .contact-title { font-size: 1.7rem ; }
+    .form-heading { font-size: 1.3rem ; }
 }

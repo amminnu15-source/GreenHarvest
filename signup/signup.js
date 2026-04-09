@@ -2,14 +2,14 @@ const themeToggle = document.getElementById("themeToggle");
 const dirToggle = document.getElementById("dirToggle");
 const htmlTag = document.getElementById("htmlTag");
 
-/* DARK MODE */
+
 themeToggle.onclick = () => {
   document.body.classList.toggle("dark");
   themeToggle.textContent =
     document.body.classList.contains("dark") ? "☀️" : "🌙";
 };
 
-/* RTL / LTR */
+
 dirToggle.onclick = () => {
   if (htmlTag.getAttribute("dir") === "rtl") {
     htmlTag.setAttribute("dir", "ltr");
@@ -47,9 +47,6 @@ function showToast(message) {
 
 
 
-
-
-/* ================= FORM VALIDATION ================= */
 
 document.querySelector("form").addEventListener("submit", function(e){
   e.preventDefault();

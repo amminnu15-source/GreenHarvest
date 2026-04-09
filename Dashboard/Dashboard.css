@@ -1,6 +1,4 @@
-/* ═══════════════════════════════════════════
-   GREENHARVEST DASHBOARD — Full CSS
-═══════════════════════════════════════════ */
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { font-size: 16px; }
 
@@ -72,7 +70,7 @@ body {
   transition: background var(--ease), color var(--ease);
 }
 
-/* ── OVERLAY ── */
+
 .overlay {
   display: none;
   position: fixed; inset: 0; z-index: 200;
@@ -82,7 +80,7 @@ body {
 }
 .overlay.show { display: block; }
 
-/* ── SIDEBAR ── */
+
 .sidebar {
   position: fixed; top: 0; left: 0; bottom: 0; z-index: 300;
   width: var(--sidebar-w);
@@ -104,7 +102,7 @@ body {
   }
 }
 
-/* Sidebar top — Logo */
+
 .sb-top {
   padding: 1.4rem 1.25rem 1.2rem;
   border-bottom: 1px solid var(--border);
@@ -145,7 +143,7 @@ body {
 .close-btn:hover { background: var(--bg); }
 @media (max-width: 1023px) { .close-btn { display: flex; } }
 
-/* Sidebar nav */
+
 .sb-nav {
   flex: 1; overflow-y: auto; padding: 1rem 0.75rem;
   display: flex; flex-direction: column; gap: 2px;
@@ -181,7 +179,7 @@ body {
   font-size: 0.62rem; font-weight: 700; padding: 1px 6px; border-radius: 100px;
 }
 
-/* Sidebar footer */
+
 .sb-footer {
   padding: 1rem 1.25rem;
   border-top: 1px solid var(--border);
@@ -208,7 +206,7 @@ body {
 }
 .sb-logout:hover { border-color: var(--red); color: var(--red); background: var(--red-l); }
 
-/* ── MAIN AREA ── */
+
 .main {
   margin-left: var(--sidebar-w);
   min-height: 100vh;
@@ -217,7 +215,7 @@ body {
 }
 @media (max-width: 1023px) { .main { margin-left: 0; } }
 
-/* ── TOPBAR ── */
+
 .topbar {
   position: sticky; top: 0; z-index: 100;
   height: var(--topbar-h);
@@ -295,13 +293,13 @@ body {
   background: var(--accent); border: 1.5px solid var(--surface);
 }
 
-/* ── CONTENT ── */
+
 .content {
   flex: 1; padding: 1.75rem;
   display: flex; flex-direction: column; gap: 1.5rem;
 }
 
-/* ── STAT CARDS ── */
+
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -343,7 +341,7 @@ body {
 .chip-down { background: var(--red-l);   color: var(--red); }
 .chip-neu  { background: var(--border2); color: var(--text3); }
 
-/* ── MID GRID ── */
+
 .mid-grid {
   display: grid;
   grid-template-columns: 1fr 340px;
@@ -351,7 +349,6 @@ body {
 }
 @media (max-width: 900px) { .mid-grid { grid-template-columns: 1fr; } }
 
-/* ── CARD BASE ── */
 .card {
   background: var(--surface); border: 1px solid var(--border);
   border-radius: var(--radius-l); padding: 1.5rem;
@@ -367,7 +364,7 @@ body {
   letter-spacing: -0.01em;
 }
 
-/* Range pills */
+
 .pill-group { display: flex; gap: 4px; }
 .pill {
   padding: 0.3rem 0.75rem; border-radius: 8px;
@@ -383,7 +380,7 @@ body {
 canvas#salesChart { width: 100%; display: block; }
 .chart-note { font-size: 0.72rem; color: var(--text3); margin-top: 0.75rem; }
 
-/* Link btn */
+
 .link-btn {
   font-size: 0.8rem; font-weight: 600; color: var(--accent);
   background: none; border: none; cursor: pointer; padding: 0;
@@ -392,7 +389,7 @@ canvas#salesChart { width: 100%; display: block; }
 }
 .link-btn:hover { color: var(--green); }
 
-/* ── ACTIVITY LIST ── */
+
 .activity-list {
   display: flex; flex-direction: column; gap: 0;
   list-style: none;
@@ -415,7 +412,7 @@ canvas#salesChart { width: 100%; display: block; }
 .a-title  { font-size: 0.83rem; font-weight: 600; line-height: 1.3; }
 .a-sub    { font-size: 0.72rem; color: var(--text3); margin-top: 2px; }
 
-/* ── ORDERS TABLE ── */
+
 .table-wrap { overflow-x: auto; }
 table {
   width: 100%; border-collapse: collapse; font-size: 0.855rem;
@@ -449,7 +446,7 @@ td strong { color: var(--text); font-weight: 600; }
 .badge.shipped { background: var(--blue-l);   color: var(--blue); }
 .badge.cancelled { background: var(--red-l);  color: var(--red); }
 
-/* Add Product btn */
+
 .add-btn {
   display: inline-flex; align-items: center; gap: 7px;
   padding: 0.52rem 1.1rem; border-radius: 9px;
@@ -461,7 +458,7 @@ td strong { color: var(--text); font-weight: 600; }
 }
 .add-btn:hover { opacity: 0.88; transform: translateY(-1px); }
 
-/* ── ANIMATIONS ── */
+
 .fade-up {
   opacity: 0; transform: translateY(18px);
   animation: fadeUpAnim 0.55s ease forwards;
@@ -470,14 +467,13 @@ td strong { color: var(--text); font-weight: 600; }
   to { opacity:1; transform:translateY(0); }
 }
 
-/* ── SCROLLBAR ── */
+
 ::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 6px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--text3); }
 
 
-/* ── NAV LOGO (TOPBAR / HEADER) ── */
 .nav-logo {
   display: inline-flex;
   align-items: center;
@@ -506,42 +502,23 @@ td strong { color: var(--text); font-weight: 600; }
   transition: color var(--ease);
 }
 
-/* Highlight "Harvest" */
+
 .nav-logo-text span {
   color: var(--accent);
 }
 
-/* Dark mode fix */
+
 [data-theme="dark"] .nav-logo-text {
   color: #a8d5b5;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ═══════════════════════════════════════
-   ✅ GLOBAL FIX (NO CUT / NO OVERFLOW)
-═══════════════════════════════════════ */
 html, body {
   width: 100%;
   overflow-x: hidden;
 }
 
-/* ═══════════════════════════════════════
-   ✅ MAIN LAYOUT FIX
-═══════════════════════════════════════ */
+
 .main {
   margin-left: var(--sidebar-w);
   width: calc(100% - var(--sidebar-w));
@@ -554,9 +531,7 @@ html, body {
   }
 }
 
-/* ═══════════════════════════════════════
-   ✅ TOPBAR FIX (LOGO + BUTTONS)
-═══════════════════════════════════════ */
+
 .topbar {
   padding: 0 1rem;
 }
@@ -567,7 +542,7 @@ html, body {
   gap: 10px;
 }
 
-/* Fix logo visibility */
+
 .nav-logo {
   display: flex;
   align-items: center;
@@ -583,7 +558,7 @@ html, body {
   font-size: 1.2rem;
 }
 
-/* Mobile logo fix */
+
 @media (max-width: 768px) {
   .nav-logo svg {
     width: 30px;
@@ -595,9 +570,7 @@ html, body {
   }
 }
 
-/* ═══════════════════════════════════════
-   ✅ CONTENT SPACING FIX
-═══════════════════════════════════════ */
+
 .content {
   padding: 1.75rem;
 }
@@ -608,9 +581,7 @@ html, body {
   }
 }
 
-/* ═══════════════════════════════════════
-   ✅ GRID FIX (CARDS RESPONSIVE)
-═══════════════════════════════════════ */
+
 @media (max-width: 1100px) {
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -623,32 +594,26 @@ html, body {
   }
 }
 
-/* Prevent card overflow */
+
 .stat-card,
 .card {
   width: 100%;
 }
 
-/* ═══════════════════════════════════════
-   ✅ MID GRID FIX
-═══════════════════════════════════════ */
+
 @media (max-width: 900px) {
   .mid-grid {
     grid-template-columns: 1fr;
   }
 }
 
-/* ═══════════════════════════════════════
-   ✅ TABLE FIX (NO CUT)
-═══════════════════════════════════════ */
+
 .table-wrap {
   width: 100%;
   overflow-x: auto;
 }
 
-/* ═══════════════════════════════════════
-   ✅ TOPBAR RIGHT BUTTONS FIX
-═══════════════════════════════════════ */
+
 .topbar-right {
   gap: 0.4rem;
 }
@@ -666,36 +631,23 @@ html, body {
   }
 }
 
-/* ═══════════════════════════════════════
-   ✅ SIDEBAR FIX FOR MOBILE
-═══════════════════════════════════════ */
+
 @media (max-width: 1023px) {
   .sidebar {
     width: 240px;
   }
 }
 
-/* ═══════════════════════════════════════
-   ✅ EXTRA SAFETY FIX
-═══════════════════════════════════════ */
+
 * {
   max-width: 100%;
 }
 
 
 
-
-
-
-
-
-
-/* ═══════════════════════════════════════
-   ✅ TABLET VIEW (≤1023px)
-═══════════════════════════════════════ */
 @media (max-width: 1023px) {
 
-  /* Sidebar hidden by default */
+
   .sidebar {
     transform: translateX(-100%);
     position: fixed;
@@ -706,28 +658,28 @@ html, body {
     transform: translateX(0);
   }
 
-  /* Overlay */
+
   .overlay.show {
     display: block;
   }
 
-  /* Main full width */
+
   .main {
     margin-left: 0;
     width: 100%;
   }
 
-  /* Topbar spacing */
+
   .topbar {
     padding: 0 1rem;
   }
 
-  /* SHOW menu button */
+
   .menu-btn {
     display: flex;
   }
 
-  /* ✅ LOGO SHOULD BE VISIBLE */
+
   .nav-logo {
     display: flex;
     align-items: center;
@@ -743,29 +695,27 @@ html, body {
     font-size: 1.05rem;
   }
 
-  /* Stats → 2 columns */
+
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* Mid section → stacked */
+
   .mid-grid {
     grid-template-columns: 1fr;
   }
 
-  /* Content spacing */
+
   .content {
     padding: 1.2rem;
   }
 }
 
 
-/* ═══════════════════════════════════════
-   ✅ MOBILE VIEW (≤768px)
-═══════════════════════════════════════ */
+
 @media (max-width: 768px) {
 
-  /* Topbar tighter */
+ 
   .topbar {
     height: 58px;
     padding: 0 0.8rem;
@@ -775,7 +725,7 @@ html, body {
     gap: 6px;
   }
 
-  /* Logo smaller but visible */
+
   .nav-logo svg {
     width: 28px;
     height: 28px;
@@ -785,17 +735,17 @@ html, body {
     font-size: 0.9rem;
   }
 
-  /* Hide subtitle text if too tight */
+
   .topbar-title p {
     display: none;
   }
 
-  /* Search hidden */
+
   .search-box {
     display: none;
   }
 
-  /* Buttons smaller */
+
   .ctrl-btn {
     width: 32px;
     height: 32px;
@@ -807,13 +757,13 @@ html, body {
     padding: 0 6px;
   }
 
-  /* Stats → 1 column */
+
   .stats-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
 
-  /* Cards padding reduced */
+
   .stat-card {
     padding: 1rem;
   }
@@ -822,7 +772,7 @@ html, body {
     padding: 1.1rem;
   }
 
-  /* Table scroll */
+
   .table-wrap {
     overflow-x: auto;
   }
@@ -831,7 +781,7 @@ html, body {
     min-width: 520px;
   }
 
-  /* Content padding */
+
   .content {
     padding: 1rem;
     gap: 1rem;
@@ -839,34 +789,31 @@ html, body {
 }
 
 
-/* ═══════════════════════════════════════
-   ✅ SMALL MOBILE (≤480px)
-═══════════════════════════════════════ */
+
 @media (max-width: 480px) {
 
-  /* Ultra compact topbar */
+
   .topbar {
     height: 54px;
   }
 
-  /* ONLY show logo text (short) */
+
   .nav-logo-text {
     font-size: 0.8rem;
   }
 
-  /* Reduce icon size */
+
   .nav-logo svg {
     width: 24px;
     height: 24px;
   }
 
-  /* Even tighter buttons */
   .ctrl-btn {
     width: 30px;
     height: 30px;
   }
 
-  /* Cards spacing */
+
   .content {
     padding: 0.8rem;
   }

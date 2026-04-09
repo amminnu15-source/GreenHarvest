@@ -15,7 +15,7 @@ body{
   transition:0.3s;
 }
 
-/* TOP BUTTONS */
+
 .top-controls{
   position:fixed;
   top:20px;
@@ -33,7 +33,7 @@ body{
   box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* CONTAINER */
+
 .container{
   width:95%;
   max-width:1100px;
@@ -47,7 +47,7 @@ body{
    border: 1px solid rgba(255,255,255,0.08);
 }
 
-/* LEFT */
+
 .left{
   padding:50px;
   background:linear-gradient(135deg,#dff3e3,#b7d7be);
@@ -103,7 +103,7 @@ body{
   text-align:center;
 }
 
-/* RIGHT */
+
 .right{
   padding:50px;
   display:flex;
@@ -123,7 +123,7 @@ body{
   color: #22c55e;
 }
 
-/* FORM */
+
 form{display:flex; flex-direction:column; gap:15px;}
 
 .row{display:flex; gap:10px;}
@@ -141,7 +141,7 @@ input:focus{
   border-color:#22c55e;
 }
 
-/* CHECKBOX */
+
 .checkbox{
   display:flex;
   align-items:center;
@@ -155,7 +155,7 @@ input:focus{
   accent-color:#22c55e;
 }
 
-/* BUTTON */
+
 .primary-btn{
   padding:14px;
   border:none;
@@ -165,7 +165,7 @@ input:focus{
   cursor:pointer;
 }
 
-/* SOCIAL */
+
 .socials{
   display:flex;
   gap:10px;
@@ -188,25 +188,25 @@ input:focus{
   overflow:hidden;
 }
 
-/* ICON */
+
 .social-btn i{
   font-size:16px;
   transition:0.3s;
 }
 
-/* HOVER EFFECT 🔥 */
+
 .social-btn:hover{
   transform:translateY(-3px);
   box-shadow:0 10px 25px rgba(0,0,0,0.15);
   border-color:#22c55e;
 }
 
-/* ICON POP */
+
 .social-btn:hover i{
   transform:scale(1.2);
 }
 
-/* CLICK EFFECT */
+
 .social-btn:active{
   transform:scale(0.96);
 }
@@ -232,23 +232,13 @@ input:focus{
 }
 
 
-
-
-
-
-
-
-
-/* ================= DARK MODE ================= */
-
-/* FORCE DARK BACKGROUND */
 body.dark{
   background: black ;
   color: #e2e8f0;
   transition: 0.3s;
 }
 
-/* MAIN CONTAINER */
+
 body.dark .container{
   background: #1e293b;
   color: #e2e8f0;
@@ -257,17 +247,17 @@ body.dark .container{
   backdrop-filter: blur(10px);
 }
 
-/* LEFT PANEL */
+
 body.dark .left{
   background: linear-gradient(135deg,#020617,#0f172a);
 }
 
-/* RIGHT PANEL */
+
 body.dark .right{
   background: #1e293b;
 }
 
-/* LOGO */
+
 body.dark .nav-logo-text{
   color: #a7f3d0;
 }
@@ -275,7 +265,7 @@ body.dark .nav-logo-text span{
   color: #fbbf24;
 }
 
-/* TEXT */
+
 body.dark .tagline{
   color: #94a3b8;
 }
@@ -283,7 +273,7 @@ body.dark .features li{
   color: #e2e8f0;
 }
 
-/* STATS CARDS */
+
 body.dark .stats div{
   background: rgba(255,255,255,0.05);
   border: 1px solid rgba(255,255,255,0.08);
@@ -291,7 +281,7 @@ body.dark .stats div{
   backdrop-filter: blur(8px);
 }
 
-/* INPUTS */
+
 body.dark input{
   background: #334155;
   border: 1px solid #475569;
@@ -307,7 +297,7 @@ body.dark input:focus{
   box-shadow: 0 0 0 2px rgba(34,197,94,0.4);
 }
 
-/* CHECKBOX */
+
 body.dark .checkbox{
   color: #cbd5e1;
 }
@@ -316,7 +306,7 @@ body.dark .checkbox input{
   accent-color: #22c55e;
 }
 
-/* BUTTON */
+
 body.dark .primary-btn{
   background: linear-gradient(135deg,#16a34a,#22c55e);
   color: white;
@@ -327,7 +317,7 @@ body.dark .primary-btn:hover{
   box-shadow: 0 10px 25px rgba(34,197,94,0.5);
 }
 
-/* SOCIAL BUTTONS */
+
 body.dark .social-btn{
   background:#334155;
   border:1px solid #475569;
@@ -344,12 +334,11 @@ body.dark .social-btn i{
   color:#ffffff;
 }
 
-/* DIVIDER */
+
 body.dark .divider{
   color: #64748b;
 }
 
-/* LOGIN LINK */
 body.dark .login-link a{
   color: #22c55e;
 }
@@ -358,7 +347,7 @@ body.dark .login-link a:hover{
   color: #4ade80;
 }
 
-/* TOGGLE BUTTONS */
+
 body.dark .top-controls button{
   background: #1e293b;
   color: #e2e8f0;
@@ -367,98 +356,83 @@ body.dark .top-controls button{
 
 
 
-
-
-
-
-
-
-
-
-
-
-/* ══════════════════════════════════════════
-   SIGN UP PAGE - MOBILE & TABLET RESPONSIVE
-══════════════════════════════════════════ */
-
-/* 📱 TABLET VIEW (640px - 1024px) */
 @media screen and (max-width: 1024px) {
     body {
-        height: auto !important;
-        padding: 60px 20px !important;
-        display: block !important;
+        height: auto ;
+        padding: 60px 20px ;
+        display: block ;
     }
 
     .container {
-        display: flex !important;
-        flex-direction: column !important;
-        height: auto !important;
-        min-height: auto !important;
-        max-width: 600px !important;
-        margin: 0 auto !important;
+        display: flex ;
+        flex-direction: column ;
+        height: auto ;
+        min-height: auto ;
+        max-width: 600px ;
+        margin: 0 auto ;
     }
 
     .left {
-        padding: 40px 30px !important;
+        padding: 40px 30px ;
         text-align: center;
         align-items: center;
     }
 
     .right {
-        padding: 40px 30px !important;
+        padding: 40px 30px ;
     }
 
-    /* Keep stats side by side on tablet */
+
     .stats {
         width: 100%;
     }
 }
 
-/* 📱 MOBILE VIEW (< 640px) */
+
 @media screen and (max-width: 640px) {
     .container {
-        border-radius: 16px !important;
+        border-radius: 16px ;
     }
 
     .left {
-        padding: 35px 20px !important;
+        padding: 35px 20px ;
     }
 
     .nav-logo-text {
-        font-size: 1.2rem !important;
+        font-size: 1.2rem ;
     }
 
-    /* Hide features and stats on mobile to keep form accessible */
+
     .features, .stats {
-        display: none !important;
+        display: none ;
     }
 
     .tagline {
         font-size: 14px;
-        margin-bottom: 0 !important;
+        margin-bottom: 0 ;
     }
 
     .right {
-        padding: 30px 20px !important;
+        padding: 30px 20px ;
     }
 
-    /* Stack First/Last Name inputs vertically */
+   
     .row {
-        flex-direction: column !important;
-        gap: 15px !important;
+        flex-direction: column ;
+        gap: 15px ;
     }
 
-    /* Stack Social Buttons */
+
     .socials {
-        flex-direction: column !important;
-        gap: 10px !important;
+        flex-direction: column ;
+        gap: 10px ;
     }
 
     .social-btn {
-        width: 100% !important;
+        width: 100% ;
     }
 
-    /* Adjust Toggle buttons in the corner */
+  
     .top-controls {
         top: 15px;
         right: 15px;
@@ -470,15 +444,41 @@ body.dark .top-controls button{
     }
 }
 
-/* 🔄 RTL POSITIONING */
+
 html[dir="rtl"] .top-controls {
     right: auto;
     left: 20px;
 }
 
-/* ── Prevent Horizontal Scroll ── */
+
 html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
 
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 16px;
+  color: #374151; 
+}
+
+.features svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: #10b981; 
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+}

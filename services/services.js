@@ -11,7 +11,7 @@ const observer = new IntersectionObserver((entries)=>{
 items.forEach(el => observer.observe(el));
 
 
-// Smooth row highlight animation
+
 const rows = document.querySelectorAll("tbody tr");
 
 rows.forEach(row => {
@@ -24,7 +24,7 @@ rows.forEach(row => {
 
 document.addEventListener("DOMContentLoaded", function() {
   const observerOptions = {
-    threshold: 0.2 // Trigger when 20% of the element is visible
+    threshold: 0.2
   };
 
   const observer = new IntersectionObserver((entries) => {
@@ -35,23 +35,10 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }, observerOptions);
 
-  // Target all elements with the .fade-up class
+ 
   const animatedElements = document.querySelectorAll(".fade-up");
   animatedElements.forEach((el) => observer.observe(el));
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -64,14 +51,14 @@ document.querySelectorAll('.accordion-header').forEach(button => {
   button.addEventListener('click', () => {
     const accordionItem = button.parentElement;
     
-    // Close other items (Optional: remove this if you want multiple open)
+ 
     document.querySelectorAll('.accordion-item').forEach(item => {
       if (item !== accordionItem) {
         item.classList.remove('active');
       }
     });
 
-    // Toggle current item
+   
     accordionItem.classList.toggle('active');
   });
 });

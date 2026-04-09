@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GreenHarvest</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../blog details/blog details.css">
+</head>
+<body>
+
+
+<header class="navbar" id="navbar">
+  <div class="container nav-container">
+
+   
+    <a href="../index.html" class="nav-logo">
+      <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 32C18 32 6 22 6 14C6 8 11 4 18 4C25 4 30 8 30 14C30 22 18 32 18 32Z"
+              fill="#2d8a3e" opacity="0.15"/>
+        <path d="M18 28C10 20 10 14 18 8C26 14 26 20 18 28Z" fill="#2d8a3e"/>
+        <ellipse cx="11" cy="18" rx="5" ry="8" fill="#60d978" transform="rotate(-35,11,18)"/>
+        <ellipse cx="25" cy="18" rx="5" ry="8" fill="#3aad50" transform="rotate(35,25,18)"/>
+      </svg>
+      <span class="nav-logo-text">Green<span>Harvest</span></span>
+    </a>
+
+    <!-- NAV LINKS (desktop) -->
+    <nav class="nav" id="navMenu">
+      <ul class="nav-links">
+
+        <li class="dropdown">
+          <a href="../index.html">Home <span class="arrow">▾</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../index.html">Home 1</a></li>
+            <li><a href="../Home2/Home.html">Home 2</a></li>
+          </ul>
+        </li>
+
+        <li><a href="../services/services.html">Services</a></li>
+        <li><a href="../blog/blog.html">Blog</a></li>
+        <li><a href="../about/about.html">About Us</a></li>
+        <li><a href="../contact/contact.html">Contact</a></li>
+        <li><a href="../Dashboard/Dashboard.html" class="dashboard-link">Dashboard</a></li>
+
+        <!-- mobile-only login -->
+        <li class="mobile-only"><a href="../login/login.html">Login</a></li>
+      </ul>
+    </nav>
+
+    <!-- RIGHT ACTIONS -->
+    <div class="nav-actions">
+      <button id="themeToggle" title="Toggle dark mode">🌙</button>
+      <button id="dirToggle"   title="Toggle RTL / LTR">LTR</button>
+      <a href="../login/login.html" class="login-btn">Login</a>
+      <!-- hamburger — last so it sits right of theme btn on mobile -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+
+<section class="blog-hero">
+
+  <div class="blog-hero-content">
+
+    <div class="hero-left">
+     
+
+      <h1>
+        Fresh <span>Insights</span><br>
+        for Smarter Farming
+      </h1>
+
+      <p>
+        Expert guides, vendor success stories, market trends and practical advice —
+        written by farmers and researchers.
+      </p>
+
+      <div class="stats">
+        <div><strong>6</strong><span>Articles</span></div>
+        <div><strong>4</strong><span>Authors</span></div>
+        <div><strong>12K+</strong><span>Readers</span></div>
+      </div>
+
+      <div class="topics">
+        <span>AI</span>
+        <span>Soil</span>
+        <span>Market</span>
+        <span>Sustainability</span>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+<div class="bd-progress" id="bdProgress"></div>
+
+<!-- ══════════════════════════════════════
+     ARTICLE HERO / HEADER
+══════════════════════════════════════ -->
+<section class="bd-hero">
+  <div class="bd-hero-inner">
+
+    <!-- Breadcrumb -->
+    <div class="bd-breadcrumb">
+     
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      <span id="bdBreadcrumbCurrent">How AI is Predicting Harvest Yields</span>
+    </div>
+
+    <!-- Post selector -->
+    <div class="bd-post-tabs" id="bdPostTabs">
+      <button class="bd-post-tab active" data-post="0">AI &amp; Harvest Yields</button>
+      <button class="bd-post-tab" data-post="1">Direct-to-Consumer Sales</button>
+      <button class="bd-post-tab" data-post="2">Soil Fertility</button>
+      <button class="bd-post-tab" data-post="3">Post-Harvest Loss</button>
+      <button class="bd-post-tab" data-post="4">Sustainable Packaging</button>
+      <button class="bd-post-tab" data-post="5">Precision Irrigation</button>
+    </div>
+
+    <!-- Dynamic header content -->
+    <div class="bd-art-meta" id="bdArtMeta">
+      <span class="bd-cat-tag" id="bdCatTag">
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        <span id="bdCatText">Technology</span>
+      </span>
+      <span class="bd-meta-item">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        <span id="bdDate">April 2, 2025</span>
+      </span>
+      <span class="bd-meta-item">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <span id="bdReadTime">7 min read</span>
+      </span>
+      <span class="bd-meta-item">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+        <span id="bdViews">3,840 views</span>
+      </span>
+    </div>
+
+    <h1 class="bd-art-title" id="bdArtTitle">How AI is <em>Predicting</em> Harvest Yields</h1>
+    <p class="bd-art-excerpt" id="bdArtExcerpt">Machine learning models trained on satellite imagery, soil sensors, and historical weather data are giving farmers a 6-week advance view of what their fields will produce — transforming planning, logistics, and pricing.</p>
+
+    <div class="bd-author-row">
+      <div class="bd-author">
+        <div class="bd-av"><img id="bdAuthorImg" src="../images/author-1.jpg" alt="Author"/></div>
+        <div>
+          <div class="bd-author-name" id="bdAuthorName">Priya Krishnamurthy</div>
+          <div class="bd-author-role" id="bdAuthorRole">Head of Research, GreenHarvest</div>
+        </div>
+      </div>
+      <div class="bd-share-row">
+        <span class="bd-share-lbl">Share:</span>
+        <button class="bd-share-btn" title="Twitter/X">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.4 5.6 3.9 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+        </button>
+        <button class="bd-share-btn" title="LinkedIn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </button>
+        <button class="bd-share-btn" title="Copy link" id="bdCopyBtn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cover image -->
+  <div class="bd-cover">
+    <img id="bdCoverImg" src="../images/card-img-2.jpg" alt="Cover"/>
+    <div class="bd-cover-caption" id="bdCoverCaption">AI-powered analytics dashboard used by GreenHarvest vendors — Hyderabad, 2025.</div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     MAIN LAYOUT — ARTICLE + SIDEBAR
+══════════════════════════════════════ -->
+<div class="bd-layout">
+
+  <!-- ────────── ARTICLE BODY ────────── -->
+  <main class="bd-body">
+
+    <!-- POST 1: AI Harvest Yields -->
+    <div class="bd-article-panel active" id="bdPanel0">
+      <div class="bd-content" id="bdContent0">
+        <p>For generations, farmers estimated harvest yields by walking their fields, touching the soil, and relying on decades of accumulated intuition. That knowledge is irreplaceable — but it is now being augmented by something powerful: machine learning models that process satellite imagery, soil moisture sensors, and historical weather data to forecast yields up to six weeks in advance.</p>
+
+        <div class="bd-stat-box reveal">
+          <div class="bdsb-item"><div class="bdsb-num">94<span>%</span></div><div class="bdsb-label">Prediction accuracy achieved in pilot trials</div></div>
+          <div class="bdsb-item"><div class="bdsb-num">6</div><div class="bdsb-label">Weeks ahead — forecast lead time</div></div>
+          <div class="bdsb-item"><div class="bdsb-num">38<span>%</span></div><div class="bdsb-label">Reduction in post-harvest waste for early adopters</div></div>
+        </div>
+
+        <h2>How the Models Work</h2>
+        <p>Modern harvest prediction systems combine three primary data streams. First, multispectral satellite imagery — captured every 5–7 days — measures the Normalized Difference Vegetation Index (NDVI), a proxy for plant health and density. Second, ground-level IoT sensors measure soil moisture, temperature, and nitrogen content in real time. Third, historical yield data from thousands of fields provides the training labels that teach the model what a good season looks like versus a stressed one.</p>
+
+        <div class="bd-highlight reveal">
+          <div class="bd-highlight-head">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Key Finding
+          </div>
+          <p>Farmers using AI-assisted yield forecasts in Telangana's 2024 Kharif season reduced input overuse by 22% — cutting costs while maintaining yield quality. The models correctly flagged water stress conditions two weeks before visible crop symptoms appeared.</p>
+        </div>
+
+        <h2>What This Means for Farmers on GreenHarvest</h2>
+        <p>When you know what you will harvest six weeks out, everything changes. You can pre-negotiate prices with restaurant buyers. You can coordinate delivery schedules with confidence. You can adjust your listings on GreenHarvest to reflect realistic availability — which builds buyer trust and reduces last-minute cancellations.</p>
+
+        <blockquote>
+          "I used to guess how many kilograms of tomatoes I could commit to. Now the model tells me within 8% accuracy. My restaurant customers stopped looking elsewhere because I stopped letting them down."
+          <cite>— Krishnamurthy, Tomato Farmer, Nellore District</cite>
+        </blockquote>
+
+        <h2>Practical Access for Small Farmers</h2>
+        <p>The barrier to entry has dropped dramatically. Satellite data is now free through programmes like ESA's Sentinel-2. GreenHarvest's Pro plan integrates with regional soil sensor networks, giving vendors access to yield estimates without requiring any hardware investment. The computation happens in the cloud; the farmer sees a simple dashboard number and a confidence band.</p>
+
+        <div class="bd-tip reveal">
+          <div class="bd-highlight-head">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            Practical Tip
+          </div>
+          <p>Start by logging your actual harvests into the GreenHarvest platform every season. The more historical data you contribute, the more accurate your personal yield model becomes. Within two full growing cycles, your predictions will be tailored to your specific field conditions.</p>
+        </div>
+
+        <div class="bd-img reveal">
+          <img src="../images/card-img-1.jpg" alt="Farmers using smartphones"/>
+          <div class="bd-img-caption">A vendor in Warangal checking predicted yield data before confirming a bulk restaurant order.</div>
+        </div>
+
+        <h2>Limitations to Know</h2>
+        <p>No model is perfect. Cloud cover can interrupt satellite passes for 10–14 days during heavy monsoon periods, reducing NDVI data quality precisely when it matters most. Models trained on one crop variety may perform poorly when applied to a new variety. And all predictions carry uncertainty — the 94% accuracy figure represents controlled pilots, not universal performance.</p>
+
+        <p>Despite these limitations, the directional value is enormous. A farmer who knows there is a 70% chance of a below-average harvest has information that a farmer relying on intuition alone does not. That 70% signal, acted on early, is the difference between managing a shortage gracefully and scrambling at the last moment.</p>
+      </div>
+
+      <!-- Tags + Share -->
+      <div class="bd-art-footer reveal">
+        <div class="bd-tags-wrap">
+          <span class="bd-tag-lbl">Tags:</span>
+          <span class="bd-tag">AI in Agriculture</span>
+          <span class="bd-tag">Yield Prediction</span>
+          <span class="bd-tag">Smart Farming</span>
+          <span class="bd-tag">Machine Learning</span>
+        </div>
+        <div class="bd-share-footer">
+          <span class="bd-sf-lbl">Share:</span>
+          <button class="bd-sf-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.4 5.6 3.9 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>Twitter</button>
+          <button class="bd-sf-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn</button>
+        </div>
+      </div>
+
+      <!-- Author Card -->
+      <div class="bd-author-card reveal">
+        <div class="bd-av-lg"><img src="../images/author-1.jpg" alt=""/></div>
+        <div>
+          <div class="bd-author-badge">Written by</div>
+          <div class="bd-author-nm">Priya Krishnamurthy</div>
+          <div class="bd-author-rl">Head of Research &amp; Insights, GreenHarvest</div>
+          <div class="bd-author-bio">Former Google engineer and daughter of a rice farmer from Nellore. Priya leads GreenHarvest's research into agricultural technology and farmer income patterns. She has published 24 reports on India's farm-to-consumer economy.</div>
+          <div class="bd-author-socials">
+            <button class="bd-asoc"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.4 5.6 3.9 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></button>
+            <button class="bd-asoc"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></button>
+            <button class="bd-asoc"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comments -->
+      <div class="bd-comments reveal">
+        <div class="bd-comments-head">Comments <span class="bd-cmt-count">3 responses</span></div>
+        <div class="bd-cmt-list">
+          <div class="bd-cmt">
+            <div class="bd-cmt-av"><img src="../images/author-2.jpg" alt=""/></div>
+            <div>
+              <div class="bd-cmt-head"><span class="bd-cmt-name">Raju Venkatesh</span><span class="bd-cmt-date">April 3, 2025</span><span class="bd-cmt-verified">Verified Vendor</span></div>
+              <div class="bd-cmt-text">Tried the yield estimate feature last Rabi season. My chilli forecast was off by only 6%. I pre-sold to two restaurants in Hyderabad at a fixed price. Best season I have had in eight years.</div>
+              <div class="bd-cmt-actions">
+                <button class="bd-cmt-act"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14z"/><path d="M7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>18 Helpful</button>
+                <button class="bd-cmt-act"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Reply</button>
+              </div>
+            </div>
+          </div>
+          <div class="bd-cmt reply">
+            <div class="bd-cmt-av"><img src="../images/author-1.jpg" alt=""/></div>
+            <div>
+              <div class="bd-cmt-head"><span class="bd-cmt-name">Priya Krishnamurthy</span><span class="bd-cmt-date">April 3, 2025</span><span class="bd-cmt-author-badge">Author</span></div>
+              <div class="bd-cmt-text">Thank you Raju! Your result is exactly what the model is designed to enable. We are working on improving monsoon-season accuracy where cloud cover reduces satellite data — the next update targets that specifically.</div>
+              <div class="bd-cmt-actions"><button class="bd-cmt-act"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14z"/></svg>4 Helpful</button></div>
+            </div>
+          </div>
+          <div class="bd-cmt">
+            <div class="bd-cmt-av"><img src="../images/author-3.jpg" alt=""/></div>
+            <div>
+              <div class="bd-cmt-head"><span class="bd-cmt-name">Lalitha Devi</span><span class="bd-cmt-date">April 4, 2025</span><span class="bd-cmt-verified">Verified Vendor</span></div>
+              <div class="bd-cmt-text">Is this feature available on the free plan or only Pro? I cannot afford the subscription yet but I would love to try the yield prediction tool before committing.</div>
+              <div class="bd-cmt-actions">
+                <button class="bd-cmt-act"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14z"/></svg>11 Helpful</button>
+                <button class="bd-cmt-act"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Reply</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Comment Form -->
+        <div class="bd-cmt-form reveal">
+          <div class="bd-cmt-form-title">Leave a Response</div>
+          <div class="bd-form-grid">
+            <input class="bd-fi" type="text" placeholder="Your name *"/>
+            <input class="bd-fi" type="email" placeholder="Email address *"/>
+          </div>
+          <textarea class="bd-fta" placeholder="Share your thoughts, experience, or questions..."></textarea>
+          <button class="bd-form-submit" id="bdCommentBtn">
+            <span class="bd-sub-txt" style="display:flex;align-items:center;gap:8px;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Post Comment
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- POST 2: Direct-to-Consumer -->
+    <div class="bd-article-panel" id="bdPanel1">
+      <div class="bd-content">
+        <p>India's agricultural middlemen have historically captured 40–60% of the value between the farm gate and the consumer's table. That model is fracturing. Across South India, a new generation of farmers is selling directly to urban buyers — and keeping the margin that was previously lost in the chain.</p>
+
+        <div class="bd-stat-box reveal">
+          <div class="bdsb-item"><div class="bdsb-num">4<span>x</span></div><div class="bdsb-label">Average income increase for D2C vendors</div></div>
+          <div class="bdsb-item"><div class="bdsb-num">85<span>K+</span></div><div class="bdsb-label">Active buyers on GreenHarvest</div></div>
+          <div class="bdsb-item"><div class="bdsb-num">0<span>%</span></div><div class="bdsb-label">Commission taken by our platform</div></div>
+        </div>
+
+        <h2>Why Direct Sales Are Rising Now</h2>
+        <p>Three forces converged in the early 2020s to make this shift possible. Smartphone penetration in rural India crossed 60%. Mobile data prices dropped to among the lowest in the world. And consumer preference for knowing the source of food — accelerated by pandemic-era food anxiety — created a willing market. The infrastructure was ready; the demand was there.</p>
+
+        <blockquote>
+          "When I sell through a middleman, I receive ₹8 per kg of spinach. When I sell directly to a family in Hyderabad, I receive ₹40. The spinach is identical. Only the route changed."
+          <cite>— Sunita Rao, Vegetable Farmer, Medak</cite>
+        </blockquote>
+
+        <h2>Building a Loyal Buyer Base</h2>
+        <p>The D2C advantage compounds over time. A vendor who builds 200 regular buyers on GreenHarvest earns more predictably than one who sells to spot-market buyers every week. Repeat buyers pay more, complain less, and refer others. The economics of loyalty are far better than the economics of acquisition.</p>
+
+        <div class="bd-highlight reveal">
+          <div class="bd-highlight-head"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Platform Insight</div>
+          <p>GreenHarvest vendors with more than 100 followers earn an average of 2.3x more per kilogram than vendors with fewer than 10. Building your digital audience is as important as growing your crop.</p>
+        </div>
+
+        <h2>What You Need to Start</h2>
+        <p>You need a smartphone, a GreenHarvest account, and photographs of your products. That is the minimum. Vendors who invest an additional two hours into writing a genuine farm story — describing their land, their methods, their family — convert visitors into followers at three times the rate of those with blank profiles.</p>
+
+        <div class="bd-tip reveal">
+          <div class="bd-highlight-head"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Quick Tip</div>
+          <p>Post a photo of your field every Monday morning with a short update about what is ready to harvest. Buyers who see this routine develop a habit of checking your stall. That habit is worth more than any advertisement.</p>
+        </div>
+
+        <div class="bd-art-footer reveal">
+          <div class="bd-tags-wrap"><span class="bd-tag-lbl">Tags:</span><span class="bd-tag">Direct Sales</span><span class="bd-tag">Farmer Income</span><span class="bd-tag">D2C</span><span class="bd-tag">Market Strategy</span></div>
+        </div>
+        <div class="bd-author-card reveal">
+          <div class="bd-av-lg"><img src="../images/author-4.jpg" alt=""/></div>
+          <div><div class="bd-author-badge">Written by</div><div class="bd-author-nm">Arjun Rao</div><div class="bd-author-rl">CEO &amp; Co-Founder, GreenHarvest</div><div class="bd-author-bio">Former cotton farmer from Guntur who sold his tractor to fund GreenHarvest's first prototype. Arjun writes about farm economics and the structural shift from wholesale to direct sales.</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- POST 3: Soil Fertility -->
+    <div class="bd-article-panel" id="bdPanel2">
+      <div class="bd-content">
+        <p>Chemical fertilisers deliver fast results but degrade soil biology over time, creating dependency and raising input costs. These five natural practices have been proven — across hundreds of farms in Telangana and AP — to improve long-term soil fertility while reducing external input costs by 30–50%.</p>
+
+        <div class="bd-stat-box reveal">
+          <div class="bdsb-item"><div class="bdsb-num">30<span>%</span></div><div class="bdsb-label">Input cost reduction with natural methods</div></div>
+          <div class="bdsb-item"><div class="bdsb-num">5</div><div class="bdsb-label">Proven natural fertility methods</div></div>
+          <div class="bdsb-item"><div class="bdsb-num">2<span>yrs</span></div><div class="bdsb-label">Average time to see full soil health benefits</div></div>
+        </div>
+
+        <h2>1. Vermicomposting</h2>
+        <p>Earthworm castings are 5x richer in available nitrogen, 7x richer in available phosphate, and 11x richer in available potassium than ordinary topsoil. A basic vermicompost bed requires farm waste, moisture, and worms — all materials already available on most farms. Cost: near zero. Benefit: year-round organic fertiliser.</p>
+
+        <h2>2. Green Manure Cover Crops</h2>
+        <p>Planting leguminous cover crops — dhaincha, sunhemp, or cowpea — between seasons and then ploughing them into the soil before flowering adds 80–120 kg of nitrogen per acre per season. This single practice can replace 40% of recommended urea applications.</p>
+
+        <div class="bd-highlight reveal">
+          <div class="bd-highlight-head"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Research Finding</div>
+          <p>Farms in Nalgonda district that adopted green manure cover crops for three consecutive seasons showed a 28% increase in organic carbon content and a measurable improvement in water retention — reducing irrigation needs by approximately 18%.</p>
+        </div>
+
+        <h2>3. Mulching</h2>
+        <p>A 5–8 cm layer of dry leaves, rice straw, or sugarcane trash applied around plant bases reduces soil temperature by 4–6 degrees Celsius, suppresses 70% of weeds, retains moisture for 2–3x longer between irrigation cycles, and decomposes to feed soil organisms over time.</p>
+
+        <h2>4. Microbial Biofertilisers</h2>
+        <p>Products containing Rhizobium, Azospirillum, and Phosphate Solubilising Bacteria (PSB) introduce beneficial microorganisms that fix atmospheric nitrogen and make locked soil phosphate available to plant roots. Applied as a seed treatment, these biofertilisers cost ₹200–400 per acre and typically reduce nitrogen and phosphate fertiliser requirements by 20–25%.</p>
+
+        <h2>5. Biochar Application</h2>
+        <p>Biochar — charcoal produced by burning organic material in low-oxygen conditions — improves soil water retention, increases cation exchange capacity, and provides a stable carbon form that remains in soil for hundreds of years. Applied once at 500 kg per acre, benefits persist for 5–10 growing seasons without reapplication.</p>
+
+        <div class="bd-art-footer reveal">
+          <div class="bd-tags-wrap"><span class="bd-tag-lbl">Tags:</span><span class="bd-tag">Soil Health</span><span class="bd-tag">Organic Farming</span><span class="bd-tag">Natural Fertiliser</span><span class="bd-tag">Sustainability</span></div>
+        </div>
+        <div class="bd-author-card reveal">
+          <div class="bd-av-lg"><img src="../images/author-5.jpg" alt=""/></div>
+          <div><div class="bd-author-badge">Written by</div><div class="bd-author-nm">Vikram Singh</div><div class="bd-author-rl">Head of Vendor Success, GreenHarvest</div><div class="bd-author-bio">Spent 5 years visiting farms across Telangana before joining GreenHarvest. Vikram writes about practical, low-cost agronomy techniques for small-scale farmers.</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- POST 4: Post-Harvest Loss -->
+    <div class="bd-article-panel" id="bdPanel3">
+      <div class="bd-content">
+        <p>India loses approximately 15–18% of its fruit and vegetable production between harvest and the consumer — roughly ₹1.53 lakh crore annually. For small farmers selling perishable produce, a logistics failure is not an inconvenience; it is a financial crisis. These strategies reduce that risk.</p>
+
+        <div class="bd-stat-box reveal">
+          <div class="bdsb-item"><div class="bdsb-num">18<span>%</span></div><div class="bdsb-label">Avg post-harvest loss in Indian agriculture</div></div>
+          <div class="bdsb-item"><div class="bdsb-num">₹1.5<span>L Cr</span></div><div class="bdsb-label">Annual value lost to post-harvest spoilage</div></div>
+          <div class="bdsb-item"><div class="bdsb-num">6<span>°C</span></div><div class="bdsb-label">Ideal storage temperature for most vegetables</div></div>
+        </div>
+
+        <h2>Harvest at the Right Time</h2>
+        <p>Most post-harvest loss begins at the moment of harvest — specifically, harvesting at the wrong maturity stage or in the wrong weather conditions. Tomatoes harvested at breaker stage (first colour change) tolerate transit far better than fully ripe ones. Leafy greens harvested in early morning, before heat builds, last 30–40% longer than afternoon-harvested leaves.</p>
+
+        <h2>Pre-Cooling Before Transport</h2>
+        <p>Field heat is the primary enemy of shelf life. Reducing produce temperature from 35°C to 15°C within two hours of harvest can extend shelf life by 3–5x. This can be achieved without a cold room — shade structures and evaporative cooling using wet jute sacking are effective for most vegetables.</p>
+
+        <div class="bd-highlight reveal">
+          <div class="bd-highlight-head"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Low-Cost Solution</div>
+          <p>Zero Energy Cool Chambers (ZECC) — built from bricks, sand, and water at a cost of under ₹5,000 — maintain interior temperatures 10–15°C below ambient even on 40°C days. Over 200 GreenHarvest vendors have built ZECCs and reduced waste by an average of 43%.</p>
+        </div>
+
+        <h2>Route Optimisation in Delivery</h2>
+        <p>The GreenHarvest delivery management system batches orders by proximity and suggests optimal routes to minimise time in transit. For vendors delivering leafy greens and soft fruits, route optimisation alone reduced spoilage by 26% in a 2024 platform trial across 80 vendors in the Hyderabad metropolitan area.</p>
+
+        <div class="bd-art-footer reveal">
+          <div class="bd-tags-wrap"><span class="bd-tag-lbl">Tags:</span><span class="bd-tag">Post-Harvest</span><span class="bd-tag">Logistics</span><span class="bd-tag">Food Waste</span><span class="bd-tag">Cold Chain</span></div>
+        </div>
+        <div class="bd-author-card reveal">
+          <div class="bd-av-lg"><img src="../images/author-6.jpg" alt=""/></div>
+          <div><div class="bd-author-badge">Written by</div><div class="bd-author-nm">Meena Patel</div><div class="bd-author-rl">Head of Design &amp; Operations, GreenHarvest</div><div class="bd-author-bio">Meena leads the design of GreenHarvest's logistics tools and writes about supply chain challenges facing small-scale farmers in South India.</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- POST 5: Sustainable Packaging -->
+    <div class="bd-article-panel" id="bdPanel4">
+      <div class="bd-content">
+        <p>Plastic packaging is convenient and cheap — but it is increasingly a liability for farmers selling direct-to-consumer. Urban buyers in Hyderabad, Bangalore, and Chennai are actively choosing vendors who use sustainable packaging. This is no longer just ethics; it is a commercial advantage.</p>
+
+        <div class="bd-stat-box reveal">
+          <div class="bdsb-item"><div class="bdsb-num">64<span>%</span></div><div class="bdsb-label">Buyers who prefer eco-packaged produce</div></div>
+          <div class="bdsb-item"><div class="bdsb-num">18<span>%</span></div><div class="bdsb-label">Price premium for eco-certified packaging</div></div>
+          <div class="bdsb-item"><div class="bdsb-num">3</div><div class="bdsb-label">Packaging switches that cost near zero to make</div></div>
+        </div>
+
+        <h2>Banana Leaf Wrapping</h2>
+        <p>Banana leaves have been used for food wrapping across South India for centuries — for good reason. They are antimicrobial, breathable, fully compostable, and available on or near most farms at no cost. For leafy greens and herbs, banana leaf wrapping reduces moisture loss and extends shelf life by up to 48 hours compared to uncovered bunches.</p>
+
+        <h2>Bamboo Baskets and Crates</h2>
+        <p>Reusable bamboo crates are lighter than plastic, allow airflow around produce (reducing heat build-up), and last 3–5 seasons with minimal maintenance. Upfront cost per crate is ₹180–280 versus ₹120 for single-use plastic — but the break-even point is reached on the third use.</p>
+
+        <h2>Newspaper and Recycled Paper</h2>
+        <p>Wrapping individual items in newspaper or recycled kraft paper before placing in crates dramatically reduces bruising during transport. This single change reduced returns and complaints from restaurant buyers in our 2024 packaging trial by 34%.</p>
+
+        <div class="bd-tip reveal">
+          <div class="bd-highlight-head"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Marketing Tip</div>
+          <p>Add a small handwritten note or a printed card in each delivery describing your eco-packaging choices. GreenHarvest vendors who do this receive 22% more repeat orders and significantly more positive reviews mentioning quality of care.</p>
+        </div>
+
+        <div class="bd-art-footer reveal">
+          <div class="bd-tags-wrap"><span class="bd-tag-lbl">Tags:</span><span class="bd-tag">Packaging</span><span class="bd-tag">Sustainability</span><span class="bd-tag">Eco Farming</span><span class="bd-tag">Consumer Preferences</span></div>
+        </div>
+        <div class="bd-author-card reveal">
+          <div class="bd-av-lg"><img src="../images/author-7.jpg" alt=""/></div>
+          <div><div class="bd-author-badge">Written by</div><div class="bd-author-nm">Anita Reddy</div><div class="bd-author-rl">Vendor Success Manager, GreenHarvest</div><div class="bd-author-bio">A GreenHarvest vendor-turned-team-member, Anita spent 3 years running her own vegetable stall before joining to help other farmers grow their businesses.</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- POST 6: Precision Irrigation -->
+    <div class="bd-article-panel" id="bdPanel5">
+      <div class="bd-content">
+        <p>Agriculture accounts for roughly 80% of India's freshwater consumption. On most smallholder farms, 40–60% of that water is wasted — applied at the wrong time, in excess quantities, to soil that cannot absorb it. Precision irrigation addresses this with simple, affordable technology that pays for itself in one season.</p>
+
+        <div class="bd-stat-box reveal">
+          <div class="bdsb-item"><div class="bdsb-num">50<span>%</span></div><div class="bdsb-label">Water saving with drip irrigation vs flood</div></div>
+          <div class="bdsb-item"><div class="bdsb-num">28<span>%</span></div><div class="bdsb-label">Yield increase observed in Telangana drip trials</div></div>
+          <div class="bdsb-item"><div class="bdsb-num">1</div><div class="bdsb-label">Season typical payback period for drip systems</div></div>
+        </div>
+
+        <h2>Drip Irrigation: The Foundation</h2>
+        <p>Drip systems deliver water directly to the root zone at low pressure and low flow rates. This eliminates evaporation from soil surfaces and interception by leaves — the two primary water losses in overhead irrigation. For tomatoes, chilli, and vegetables, the yield response to switching from flood to drip is typically 20–35% improvement alongside a 45–55% reduction in water use.</p>
+
+        <h2>Soil Moisture Sensors</h2>
+        <p>Low-cost capacitive soil moisture sensors — available for ₹500–1,500 per unit — tell you when your soil actually needs water, rather than relying on schedule or intuition. Farms using sensor-triggered irrigation in 2024 Telangana trials applied water 31% less frequently with no yield reduction — in some cases with yield improvement due to reduced root disease from overwatering.</p>
+
+        <div class="bd-highlight reveal">
+          <div class="bd-highlight-head"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Subsidy Available</div>
+          <p>The Government of Telangana's Micro Irrigation Scheme (PMKSY) provides 55–90% subsidy on drip and sprinkler systems for farmers with holdings under 5 acres. GreenHarvest's vendor support team can help you navigate the application process — contact us through the Help Center.</p>
+        </div>
+
+        <h2>Fertigation: Irrigation + Fertilisation Together</h2>
+        <p>When a drip system is in place, soluble fertilisers can be injected directly into the irrigation water — delivering nutrition precisely to the root zone at precisely the growth stage when the plant needs it. Fertigation reduces fertiliser use by 30–40% compared to broadcast application while improving uptake efficiency. The savings on fertiliser typically pay for the cost of a basic drip system within one season.</p>
+
+        <div class="bd-art-footer reveal">
+          <div class="bd-tags-wrap"><span class="bd-tag-lbl">Tags:</span><span class="bd-tag">Irrigation</span><span class="bd-tag">Water Management</span><span class="bd-tag">Drip Irrigation</span><span class="bd-tag">Smart Farming</span></div>
+        </div>
+        <div class="bd-author-card reveal">
+          <div class="bd-av-lg"><img src="../images/author-1.jpg" alt=""/></div>
+          <div><div class="bd-author-badge">Written by</div><div class="bd-author-nm">Priya Krishnamurthy</div><div class="bd-author-rl">Head of Research &amp; Insights, GreenHarvest</div><div class="bd-author-bio">Priya leads GreenHarvest's research into agricultural technology. Her reports on irrigation efficiency have been cited by the Telangana State Agricultural Department.</div></div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ────────── SIDEBAR ────────── -->
+  <aside class="bd-sidebar">
+
+    <!-- Reading progress -->
+    <div class="bd-reading-info reveal">
+      <div class="bd-ri-row"><span class="bd-ri-lbl">Reading progress</span><span class="bd-ri-val" id="bdRiPct">0%</span></div>
+      <div class="bd-ri-track"><div class="bd-ri-fill" id="bdRiFill"></div></div>
+      <div class="bd-ri-row"><span class="bd-ri-lbl">Est. time left</span><span class="bd-ri-val" id="bdTimeLeft">7 min</span></div>
+    </div>
+
+    <!-- TOC — dynamic per post -->
+    <div class="bd-widget reveal rv1">
+      <div class="bd-widget-title">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+        Table of Contents
+      </div>
+      <div class="bd-toc-list" id="bdTOC"></div>
+    </div>
+
+    <!-- All posts -->
+    <div class="bd-widget reveal rv2">
+      <div class="bd-widget-title">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+        All Blog Posts
+      </div>
+      <div class="bd-all-posts" id="bdAllPosts"></div>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="bd-nl-widget reveal rv3">
+      <div class="bd-nl-title">Weekly Farm Digest</div>
+      <div class="bd-nl-desc">Get the best farming tips and market updates every Tuesday morning.</div>
+      <input class="bd-nl-inp" type="email" placeholder="your@email.com"/>
+      <button class="bd-nl-btn" id="bdNlBtn">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        Subscribe Now
+      </button>
+      <div class="bd-nl-note">No spam. Unsubscribe anytime. 4,200+ subscribers.</div>
+    </div>
+
+    <!-- Tags -->
+    <div class="bd-widget reveal rv3">
+      <div class="bd-widget-title">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+        Popular Tags
+      </div>
+      <div class="bd-tags-cloud">
+        <span class="bd-stag">Organic Farming</span>
+        <span class="bd-stag">AI in Agriculture</span>
+        <span class="bd-stag">Irrigation</span>
+        <span class="bd-stag">Soil Health</span>
+        <span class="bd-stag">Direct Sales</span>
+        <span class="bd-stag">Post-Harvest</span>
+        <span class="bd-stag">Packaging</span>
+        <span class="bd-stag">Smart Farming</span>
+        <span class="bd-stag">Market Trends</span>
+      </div>
+    </div>
+  </aside>
+</div>
+
+
+<!-- ══════════════════════════════════════
+     RELATED ARTICLES
+══════════════════════════════════════ -->
+<section class="bd-related" id="bdRelated">
+  <div class="bd-related-inner">
+    <div class="bd-related-eyebrow reveal">More to Read</div>
+    <h2 class="bd-related-title reveal rv1">You Might Also <em>Enjoy</em></h2>
+    <div class="bd-related-grid" id="bdRelatedGrid"></div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer" id="footer">
+
+
+
+  <div class="footer-inner">
+
+    <!-- ── Col 1: Brand ── -->
+    <div class="footer-brand">
+      <a href="../index.html" class="footer-logo">
+        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 32C18 32 6 22 6 14C6 8 11 4 18 4C25 4 30 8 30 14C30 22 18 32 18 32Z" fill="#2d8a3e" opacity="0.2"/>
+          <path d="M18 28C10 20 10 14 18 8C26 14 26 20 18 28Z" fill="#2d8a3e"/>
+          <ellipse cx="11" cy="18" rx="5" ry="8" fill="#60d978" transform="rotate(-35,11,18)"/>
+          <ellipse cx="25" cy="18" rx="5" ry="8" fill="#3aad50" transform="rotate(35,25,18)"/>
+        </svg>
+        <span class="footer-logo-text">Green<span>Harvest</span></span>
+      </a>
+      <p class="footer-desc">
+        Connecting ethical farmers with conscious families across India. Fresh, natural, and always honest — from soil to your table.
+      </p>
+      <div class="footer-socials">
+        <a href="#" class="social-btn" title="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="#" class="social-btn" title="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+        <a href="#" class="social-btn" title="Twitter / X">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="#" class="social-btn" title="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="var(--footer-bg)"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- ── Col 2: Quick Links ── -->
+    <div class="footer-col">
+      <h4 class="footer-col-title">Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../services/services.html">Services</a></li>
+        <li><a href="../blog/blog.html">Blog</a></li>
+        <li><a href="../about/about.html">About Us</a></li>
+        <li><a href="../contact/contact.html">Contact</a></li>
+        <li><a href="../Dashboard/Dashboard.html">Dashboard</a></li>
+      </ul>
+    </div>
+
+    <!-- ── Col 3: Shop ── -->
+  <div class="footer-col">
+      <h4 class="footer-col-title">Shop</h4>
+      <ul class="footer-links">
+       <li><a href="../index.html#wheat">Wheat</a></li>
+        <li><a href="../index.html#basmati-rice">Basmati Rice</a></li>
+        <li><a href="../index.html#moong-dal">Organic Moong Dal</a></li>
+        <li><a href="../index.html#mustard-oil">Mustard Oil</a></li>
+        <li><a href="../index.html#jaggery">Jaggery</a></li>
+        <li><a href="../index.html#turmeric">Lakadong Turmeric</a></li>
+      </ul>
+    </div>
+
+    <!-- ── Col 4: Contact ── -->
+   <div class="footer-col">
+  <h4 class="footer-col-title">Contact Us</h4>
+  <ul class="footer-contact">
+    <li>
+      <span class="contact-icon"><i class="fa-solid fa-location-dot"></i></span>
+      <span>42, Green Valley Road,<br>Hyderabad, TS 500032</span>
+    </li>
+    <li>
+      <span class="contact-icon"><i class="fa-solid fa-phone"></i></span>
+      <a href="tel:+919876543210">+91 98765 43210</a>
+    </li>
+    <li>
+      <span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
+      <a href="mailto:hello@greenharvest.in">hello@greenharvest.in</a>
+    </li>
+    <li>
+      <span class="contact-icon"><i class="fa-solid fa-clock"></i></span>
+      <span>Mon–Sat: 8am – 8pm</span>
+    </li>
+  </ul>
+</div>
+
+
+    <!-- ── Col 5: Newsletter ── -->
+    <div class="footer-col footer-newsletter">
+      <h4 class="footer-col-title">Stay Fresh</h4>
+      <p class="newsletter-desc">Get weekly harvest updates, seasonal recipes and exclusive offers.</p>
+      <div class="newsletter-form">
+        <input type="email" id="newsletterEmail" placeholder="Your email address" autocomplete="email"/>
+        <button id="newsletterBtn">Subscribe</button>
+      </div>
+      <p class="newsletter-msg" id="newsletterMsg"></p>
+     
+    </div>
+
+  </div>
+
+  <!-- ── Bottom bar ── -->
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <p class="footer-copy">© <span id="footerYear">2026</span> GreenHarvest. All rights reserved.</p>
+      <ul class="footer-legal">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Refund Policy</a></li>
+      </ul>
+    </div>
+  </div>
+
+</footer>
+
+
+
+
+
+<script src="../js/footer.js"></script>
+<script src="../js/nav.js"></script>
+<script src="../blog details/blog details.js"></script>
+</body>
+</html>

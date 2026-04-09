@@ -1,0 +1,454 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto;
+}
+
+/* =========================
+   BODY
+========================= */
+body{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#f5f2eb;
+  transition:0.3s;
+}
+
+/* =========================
+   TOP BUTTONS
+========================= */
+.top-controls{
+  position:fixed;
+  top:20px;
+  right:20px;
+  display:flex;
+  gap:10px;
+}
+
+.top-controls button{
+  padding:11px 17px;   /* 🔥 bigger size */
+  font-size:14px;      /* text bigger */
+  border-radius:12px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+  background:white;
+   box-shadow:0 8px 20px rgba(0,0,0,0.15);
+  transition:0.3s;
+}
+.top-controls button:hover{
+  transform:translateY(-2px);
+}
+/* =========================
+   CONTAINER
+========================= */
+.container{
+  width:90%;
+  max-width:1000px;
+  height:80vh;
+  display:grid;
+  grid-template-columns:0.9fr 1.1fr;
+  border-radius:22px;
+  overflow:hidden;
+  background:#fff;
+  box-shadow:0 30px 70px rgba(0,0,0,0.15);
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+/* =========================
+   LEFT PANEL
+========================= */
+.left{
+  background:linear-gradient(135deg,#dff3e3,#b7d7be);
+  padding:40px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.nav-logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.nav-logo svg{
+  width:40px;
+}
+
+.nav-logo-text{
+  font-size:26px;
+  font-weight:700;
+  color:#1b5e20;
+}
+
+.nav-logo-text span{
+  color:#f59e0b;
+}
+
+.tagline{
+  margin:15px 0 25px;
+  color:#4b5563;
+}
+
+.features{
+  list-style:none;
+}
+
+.features li{
+  margin-bottom:12px;
+}
+
+/* =========================
+   RIGHT PANEL
+========================= */
+.right{
+  padding:40px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+   border-left: 1px solid rgba(0,0,0,0.08);
+}
+
+h2{
+  margin-bottom:8px;
+}
+
+.subtitle{
+  color:#6b7280;
+  margin-bottom:10px;
+}
+
+.signup-text{
+  margin-bottom:20px;
+  color:#6b7280;
+}
+
+.signup-text a{
+  color:#15803d;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* =========================
+   FORM
+========================= */
+form{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+input{
+  padding:14px;
+  border-radius:12px;
+  border:1px solid #e5e7eb;
+  background:#f9fafb;
+}
+
+input:focus{
+  outline:none;
+  border-color:#22c55e;
+  box-shadow:0 0 0 3px rgba(34,197,94,0.2);
+}
+
+.row-between{
+  display:flex;
+  justify-content:space-between;
+  font-size:13px;
+}
+
+a{
+  color:#15803d;
+  text-decoration:none;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.primary-btn{
+  background:linear-gradient(135deg,#15803d,#22c55e);
+  color:white;
+  padding:14px;
+  border:none;
+  border-radius:12px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.primary-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 10px 25px rgba(34,197,94,0.3);
+}
+
+/* =========================
+   SOCIAL BUTTONS
+========================= */
+.socials{
+  display:flex;
+  gap:10px;
+}
+
+.social-btn{
+  flex:1;
+  padding:12px;
+  border-radius:12px;
+  border:1px solid #e5e7eb;
+  background:white;
+  cursor:pointer;
+  font-weight:500;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  transition:all 0.25s ease;
+}
+
+.social-btn i{
+  font-size:16px;
+  transition:0.3s;
+}
+
+.social-btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+  border-color:#22c55e;
+}
+
+.social-btn:hover i{
+  transform:scale(1.2);
+}
+
+/* =========================
+   HELPER
+========================= */
+.helper-box{
+  margin-top:10px;
+  font-size:13px;
+  color:#6b7280;
+}
+
+/* =========================
+   DARK MODE (FULL FIX 🔥)
+========================= */
+body.dark{
+  background:black;
+  color:#e5e7eb;
+}
+
+/* container */
+body.dark .container{
+  background:#0b1220;
+  box-shadow:0 30px 70px rgba(0,0,0,0.8);
+      border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+}
+
+/* left */
+body.dark .left{
+  background:#020617;
+     border: 1px solid rgba(255,255,255,0.08);
+
+}
+
+/* right */
+body.dark .right{
+  background:#1e293b;
+  border-left: 1px solid rgba(255,255,255,0.06);
+}
+
+/* text */
+body.dark h2{
+  color:#ffffff;
+}
+
+body.dark p,
+body.dark .subtitle,
+body.dark .signup-text,
+body.dark .tagline{
+  color:#94a3b8;
+}
+
+/* links */
+body.dark a{
+  color:#22c55e;
+}
+
+body.dark a:hover{
+  color:#4ade80;
+}
+
+/* inputs */
+body.dark input{
+  background:#334155;
+  color:#e5e7eb;
+  border:1px solid #475569;
+}
+
+body.dark input::placeholder{
+  color:#94a3b8;
+}
+
+/* button */
+body.dark .primary-btn{
+  background:linear-gradient(135deg,#16a34a,#22c55e);
+}
+
+body.dark .primary-btn:hover{
+  box-shadow:0 10px 25px rgba(34,197,94,0.4);
+}
+
+/* social buttons */
+body.dark .social-btn{
+  background:#334155;
+  border:1px solid #475569;
+  color:#e5e7eb;
+}
+
+body.dark .social-btn:hover{
+  background:#475569;
+  border-color:#22c55e;
+  box-shadow:0 10px 25px rgba(0,0,0,0.6);
+}
+
+body.dark .social-btn i{
+  color:#ffffff;
+}
+
+/* logo */
+body.dark .nav-logo-text{
+  color:#22c55e;
+}
+
+body.dark .nav-logo-text span{
+  color:#facc15;
+}
+
+/* helper */
+body.dark .helper-box{
+  color:#64748b;
+}
+
+/* top buttons */
+body.dark .top-controls button{
+  background:#1e293b;
+  color:#e5e7eb;
+}
+
+/* =========================
+   RTL
+========================= */
+html[dir="rtl"]{
+  direction:rtl;
+}
+
+
+
+
+
+
+
+
+/* ══════════════════════════════════════════
+   ULITMATE LOGIN PAGE RESPONSIVE FIX
+══════════════════════════════════════════ */
+
+/* 💻 TABLET & MOBILE (Under 1024px) */
+@media screen and (max-width: 1024px) {
+    body {
+        height: auto !important; /* Allow page to scroll */
+        min-height: 100vh;
+        padding: 40px 15px !important;
+        display: block !important; /* Remove center alignment for scrolling */
+    }
+
+    .container {
+        display: flex !important; /* Switch from Grid to Flex */
+        flex-direction: column !important; /* Stack vertically */
+        height: auto !important;
+        width: 100% !important;
+        max-width: 500px !important;
+        margin: 0 auto !important;
+        overflow: visible !important;
+    }
+
+    .left {
+        padding: 40px 25px !important;
+        text-align: center;
+        align-items: center;
+    }
+
+    .right {
+        padding: 40px 25px !important;
+        border-left: none !important;
+        border-top: 1px solid rgba(0,0,0,0.08) !important;
+    }
+
+    /* Top buttons (Theme/Dir) stay tucked away */
+    .top-controls {
+        position: relative !important;
+        top: 0;
+        right: 0;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}
+
+/* 📱 SMALL MOBILE (Under 640px) */
+@media screen and (max-width: 640px) {
+    .nav-logo-text {
+        font-size: 22px !important;
+    }
+
+    .tagline {
+        font-size: 14px !important;
+        margin: 10px 0 !important;
+    }
+
+    /* Hide the bullet points on mobile to get to the form faster */
+    .features {
+        display: none !important;
+    }
+
+    /* Make input fields and buttons full width */
+    input, .primary-btn, .social-btn {
+        padding: 12px !important;
+        font-size: 15px !important;
+    }
+
+    /* Stack the social buttons (Google/LinkedIn) */
+    .socials {
+        flex-direction: column !important;
+        gap: 10px !important;
+    }
+
+    h2 {
+        font-size: 1.5rem !important;
+        text-align: center;
+    }
+
+    .subtitle, .signup-text {
+        text-align: center;
+        font-size: 14px !important;
+    }
+
+    /* Fix for the Remember Me / Forgot Pass row */
+    .row-between {
+        flex-direction: column !important;
+        gap: 10px;
+        align-items: center;
+    }
+}
+
+/* 🌙 DARK MODE SPECIFIC BORDER FIX */
+@media screen and (max-width: 1024px) {
+  body.dark .right {
+    border-top: 1px solid rgba(255,255,255,0.1) !important;
+  }
+}
+
+
+

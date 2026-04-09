@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GreenHarvest Login</title>
+
+<link rel="stylesheet" href="../login/login.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<!-- TOGGLES -->
+<div class="top-controls">
+  <button id="themeToggle">🌙</button>
+  <button id="dirToggle">LTR</button>
+</div>
+
+<div class="container">
+
+  <!-- LEFT -->
+  <div class="left">
+
+    <a href="../index.html" class="nav-logo">
+      <svg viewBox="0 0 36 36">
+        <path d="M18 32C18 32 6 22 6 14C6 8 11 4 18 4C25 4 30 8 30 14C30 22 18 32 18 32Z" fill="#2d8a3e" opacity="0.15"/>
+        <path d="M18 28C10 20 10 14 18 8C26 14 26 20 18 28Z" fill="#2d8a3e"/>
+        <ellipse cx="11" cy="18" rx="5" ry="8" fill="#60d978" transform="rotate(-35,11,18)"/>
+        <ellipse cx="25" cy="18" rx="5" ry="8" fill="#3aad50" transform="rotate(35,25,18)"/>
+      </svg>
+      <span class="nav-logo-text">Green<span>Harvest</span></span>
+    </a>
+
+    <p class="tagline">
+      Welcome back! Access your dashboard and manage your farm business easily.
+    </p>
+
+    <ul class="features">
+      <li>✔ View your products</li>
+      <li>✔ Manage orders</li>
+      <li>✔ Track earnings</li>
+      <li>✔ Connect with buyers</li>
+    </ul>
+
+  </div>
+
+  <!-- RIGHT -->
+  <div class="right">
+
+    <h2>Welcome Back </h2>
+
+    <p class="subtitle">
+      Login to manage your farm, orders, and earnings easily.
+    </p>
+
+    <p class="signup-text">
+      Don’t have an account? <a href="../signup/signup.html">Create one</a>
+    </p>
+
+    <form>
+
+      <input type="email" placeholder="Email">
+      <input type="password" placeholder="Password">
+
+      <div class="row-between">
+        <label><input type="checkbox"> Remember me</label>
+        <a href="#">Forgot password?</a>
+      </div>
+
+      <button class="primary-btn">Login →</button>
+
+      <div class="divider">or</div>
+
+      <div class="socials">
+        <button type="button" class="social-btn">
+          <i class="fa-brands fa-google"></i> Google
+        </button>
+        <button type="button" class="social-btn">
+          <i class="fa-brands fa-apple"></i> Apple
+        </button>
+      </div>
+
+      <div class="helper-box">
+        🔒 Your data is secure and encrypted.
+      </div>
+
+    </form>
+
+  </div>
+
+</div>
+
+<script src="../login/login.js"></script>
+
+</body>
+</html>

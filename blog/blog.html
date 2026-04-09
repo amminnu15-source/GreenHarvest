@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GreenHarvest</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../blog/blog.css">
+</head>
+<body>
+
+
+<header class="navbar" id="navbar">
+  <div class="container nav-container">
+
+   
+    <a href="../index.html" class="nav-logo">
+      <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 32C18 32 6 22 6 14C6 8 11 4 18 4C25 4 30 8 30 14C30 22 18 32 18 32Z"
+              fill="#2d8a3e" opacity="0.15"/>
+        <path d="M18 28C10 20 10 14 18 8C26 14 26 20 18 28Z" fill="#2d8a3e"/>
+        <ellipse cx="11" cy="18" rx="5" ry="8" fill="#60d978" transform="rotate(-35,11,18)"/>
+        <ellipse cx="25" cy="18" rx="5" ry="8" fill="#3aad50" transform="rotate(35,25,18)"/>
+      </svg>
+      <span class="nav-logo-text">Green<span>Harvest</span></span>
+    </a>
+
+    
+    <nav class="nav" id="navMenu">
+      <ul class="nav-links">
+
+        <li class="dropdown">
+          <a href="../index.html">Home <span class="arrow">▾</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../index.html">Home 1</a></li>
+            <li><a href="../Home2/Home.html">Home 2</a></li>
+          </ul>
+        </li>
+
+        <li><a href="../services/services.html">Services</a></li>
+        <li><a href="../blog/blog.html">Blog</a></li>
+        <li><a href="../about/about.html">About Us</a></li>
+        <li><a href="../contact/contact.html">Contact</a></li>
+        <li><a href="../Dashboard/Dashboard.html" class="dashboard-link">Dashboard</a></li>
+
+    
+        <li class="mobile-only"><a href="../login/login.html">Login</a></li>
+      </ul>
+    </nav>
+
+    
+    <div class="nav-actions">
+      <button id="themeToggle" title="Toggle dark mode">🌙</button>
+      <button id="dirToggle"   title="Toggle RTL / LTR">LTR</button>
+      <a href="../login/login.html" class="login-btn">Login</a>
+     
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+
+
+
+
+
+<section class="magazine-hero-fixed">
+  <div class="hero-bg">
+    <img src="../images/blog-hero.jpg" alt="Background">
+    <div class="hero-overlay-gradient"></div>
+  </div>
+
+  <div class="hero-inner-content">
+    <div class="glass-story-panel">
+      <div class="panel-meta">
+        <span class="tag-orange">EDITOR'S CHOICE</span>
+        <span class="separator-line"></span>
+        <span class="date-text">APRIL 2026</span>
+      </div>
+
+      <h1 class="panel-title">
+        Cultivating <br>
+        <span class="italic-text">Knowledge</span> for a <br>
+        Greener Future.
+      </h1>
+
+      <p class="panel-desc">
+        Expert insights, market trends, and sustainable farming strategies 
+        curated for the modern Indian agricultural community.
+      </p>
+
+      <div class="panel-btns">
+        <a href="../blog details/blog details.html" class="btn-fill">Explore the Journal</a>
+        <a href="../blog details/blog details.html" class="btn-link">Read the Latest Story <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<section class="blog-section">
+  <div class="blog-container">
+    
+    <div class="blog-header">
+      <div class="badge-container center">
+        <span class="line"></span>
+        <span class="badge-text">FARMER'S JOURNAL</span>
+        <span class="line"></span>
+      </div>
+      <h2 class="blog-title">Insights for <span>Sustainable</span> Growth</h2>
+      
+      <div class="blog-controls">
+        <div class="search-wrapper">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="blogSearch" placeholder="Search by title...">
+        </div>
+        
+        <div class="filter-group">
+          <button class="filter-btn active" data-filter="all">All Articles</button>
+          <button class="filter-btn" data-filter="tech">Agri-Tech</button>
+          <button class="filter-btn" data-filter="market">Market Trends</button>
+          <button class="filter-btn" data-filter="farming">Farming Tips</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog-grid" id="blogGrid">
+      
+      <div class="blog-card" data-category="tech">
+        <div class="blog-img">
+          <img src="../images/blog-img-1.jpg" alt="Tech">
+          <span class="blog-tag">Agri-Tech</span>
+        </div>
+        <div class="blog-info">
+          <span class="blog-date">April 12, 2026</span>
+          <h3>How AI is Predicting Harvest Yields</h3>
+          <p>Explore the new tools helping farmers minimize risk during unpredictable monsoon seasons.</p>
+          <a href="../blog details/blog details.html" class="read-more">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="market">
+        <div class="blog-img">
+          <img src="../images/OUR MISSION.jpg" alt="Market">
+          <span class="blog-tag">Market Trends</span>
+        </div>
+        <div class="blog-info">
+          <span class="blog-date">March 28, 2026</span>
+          <h3>The Rise of Direct-to-Consumer Sales</h3>
+          <p>Why modern urban families are ditching supermarkets for direct farm subscriptions.</p>
+          <a href="../blog details/blog details.html" class="read-more">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="farming">
+        <div class="blog-img">
+          <img src="../images/service-soil.jpg" alt="Farming">
+          <span class="blog-tag">Farming Tips</span>
+        </div>
+        <div class="blog-info">
+          <span class="blog-date">March 15, 2026</span>
+          <h3>5 Natural Ways to Improve Soil Fertility</h3>
+          <p>Traditional methods meeting modern science to revive tired soil without chemicals.</p>
+          <a href="../blog details/blog details.html" class="read-more">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="market">
+        <div class="blog-img">
+          <img src="../images/card-img-3.jpg" alt="Logistics">
+          <span class="blog-tag">Market Trends</span>
+        </div>
+        <div class="blog-info">
+          <span class="blog-date">March 02, 2026</span>
+          <h3>Reducing Post-Harvest Loss in Logistics</h3>
+          <p>Smart cold-chain solutions that ensure your fresh produce reaches the buyer in perfect condition.</p>
+          <a href="../blog details/blog details.html" class="read-more">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="tech">
+        <div class="blog-img">
+          <img src="../images/blog-img-5.jpg" alt="Packaging">
+          <span class="blog-tag">Agri-Tech</span>
+        </div>
+        <div class="blog-info">
+          <span class="blog-date">Feb 20, 2026</span>
+          <h3>Sustainable Packaging for Small Farms</h3>
+          <p>How eco-friendly biodegradable materials can help you charge a premium price for your products.</p>
+          <a href="../blog details/blog details.html" class="read-more">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+
+<div class="blog-card" data-category="farming">
+  <div class="blog-img">
+    <img src="../images/blog-img-6.jpg" alt="Water Management">
+    <span class="blog-tag">Farming Tips</span>
+  </div>
+  <div class="blog-info">
+    <span class="blog-date">Feb 05, 2026</span>
+    <h3>Precision Irrigation for Small-Scale Farms</h3>
+    <p>How to implement drip systems and soil sensors to save 40% more water while increasing crop health.</p>
+    <a href="../blog details/blog details.html" class="read-more">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<section class="agro-split-grid">
+  <div class="split-container">
+    
+    <div class="split-image-box reveal">
+      <img src="../images/blog-1.jpg" alt="Farmer Field">
+      <div class="floating-stat">
+        <span class="fs-num">01</span>
+        <span class="fs-text">MOST READ THIS WEEK</span>
+      </div>
+    </div>
+
+    <div class="split-content-box">
+      <div class="content-top reveal delay-1">
+        <div class="badge-container">
+          <span class="line"></span>
+          <span class="badge-text">SPOTLIGHT ARTICLE</span>
+        </div>
+        <h2 class="split-title">The New Era of <span>Precision Farming</span></h2>
+      </div>
+
+      <div class="content-bottom reveal delay-2">
+        <p class="split-description">
+          Modern agriculture is no longer just about seeds and soil. It's about <strong>real-time data, satellite imagery, and automated logistics</strong>. Discover how the next generation of farmers is using GreenHarvest to double their efficiency.
+        </p>
+        <p class="split-description">
+          With platforms like GreenHarvest, farmers can optimize operations, reach wider markets, and grow more efficiently than ever before.
+        </p>
+        
+        <div class="feature-list">
+          <div class="f-item"><i class="fa-solid fa-bolt"></i> Real-time yield tracking</div>
+          <div class="f-item"><i class="fa-solid fa-droplet"></i> Smart irrigation tips</div>
+          <div class="f-item"><i class="fa-solid fa-shield-halved"></i> Pest control alerts</div>
+        </div>
+
+        <a href="../blog details/blog details.html" class="split-cta">
+          Explore the Guide <i class="fa-solid fa-arrow-right-long"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<section class="gh-full-newsletter">
+  <div class="newsletter-inner">
+    
+    <div class="n-content-side">
+      <div class="n-badge">
+        <span class="pulse-icon"></span>
+        WEEKLY UPDATES
+      </div>
+      <h2>Join the <span>Green List</span></h2>
+      <p>Market prices, farming tips, and agri-tech news delivered every Monday.</p>
+    </div>
+
+    <div class="n-form-side">
+      <form id="full-width-form" class="n-input-wrapper">
+        <input type="email" id="n-email" placeholder="Your email address..." required>
+        <button type="submit" class="n-submit-btn">
+          <span>Subscribe</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </form>
+      <div class="n-trust-tag">
+        <i class="fa-solid fa-circle-check"></i>
+        <span>Join 5,000+ modern farmers today.</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<footer class="footer" id="footer">
+
+
+
+  <div class="footer-inner">
+
+
+    <div class="footer-brand">
+      <a href="../index.html" class="footer-logo">
+        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 32C18 32 6 22 6 14C6 8 11 4 18 4C25 4 30 8 30 14C30 22 18 32 18 32Z" fill="#2d8a3e" opacity="0.2"/>
+          <path d="M18 28C10 20 10 14 18 8C26 14 26 20 18 28Z" fill="#2d8a3e"/>
+          <ellipse cx="11" cy="18" rx="5" ry="8" fill="#60d978" transform="rotate(-35,11,18)"/>
+          <ellipse cx="25" cy="18" rx="5" ry="8" fill="#3aad50" transform="rotate(35,25,18)"/>
+        </svg>
+        <span class="footer-logo-text">Green<span>Harvest</span></span>
+      </a>
+      <p class="footer-desc">
+        Connecting ethical farmers with conscious families across India. Fresh, natural, and always honest — from soil to your table.
+      </p>
+      <div class="footer-socials">
+        <a href="#" class="social-btn" title="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="#" class="social-btn" title="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+        <a href="#" class="social-btn" title="Twitter / X">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="#" class="social-btn" title="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="var(--footer-bg)"/></svg>
+        </a>
+      </div>
+    </div>
+
+   
+    <div class="footer-col">
+      <h4 class="footer-col-title">Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../services/services.html">Services</a></li>
+        <li><a href="../blog/blog.html">Blog</a></li>
+        <li><a href="../about/about.html">About Us</a></li>
+        <li><a href="../contact/contact.html">Contact</a></li>
+        <li><a href="../Dashboard/Dashboard.html">Dashboard</a></li>
+      </ul>
+    </div>
+
+   
+  <div class="footer-col">
+      <h4 class="footer-col-title">Shop</h4>
+      <ul class="footer-links">
+       <li><a href="../index.html#wheat">Wheat</a></li>
+        <li><a href="../index.html#basmati-rice">Basmati Rice</a></li>
+        <li><a href="../index.html#moong-dal">Organic Moong Dal</a></li>
+        <li><a href="../index.html#mustard-oil">Mustard Oil</a></li>
+        <li><a href="../index.html#jaggery">Jaggery</a></li>
+        <li><a href="../index.html#turmeric">Lakadong Turmeric</a></li>
+      </ul>
+    </div>
+
+   
+   <div class="footer-col">
+  <h4 class="footer-col-title">Contact Us</h4>
+  <ul class="footer-contact">
+    <li>
+      <span class="contact-icon"><i class="fa-solid fa-location-dot"></i></span>
+      <span>42, Green Valley Road,<br>Hyderabad, TS 500032</span>
+    </li>
+    <li>
+      <span class="contact-icon"><i class="fa-solid fa-phone"></i></span>
+      <a href="tel:+919876543210">+91 98765 43210</a>
+    </li>
+    <li>
+      <span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
+      <a href="mailto:hello@greenharvest.in">hello@greenharvest.in</a>
+    </li>
+    <li>
+      <span class="contact-icon"><i class="fa-solid fa-clock"></i></span>
+      <span>Mon–Sat: 8am – 8pm</span>
+    </li>
+  </ul>
+</div>
+
+
+    <div class="footer-col footer-newsletter">
+      <h4 class="footer-col-title">Stay Fresh</h4>
+      <p class="newsletter-desc">Get weekly harvest updates, seasonal recipes and exclusive offers.</p>
+      <div class="newsletter-form">
+        <input type="email" id="newsletterEmail" placeholder="Your email address" autocomplete="email"/>
+        <button id="newsletterBtn">Subscribe</button>
+      </div>
+      <p class="newsletter-msg" id="newsletterMsg"></p>
+     
+    </div>
+
+  </div>
+
+
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <p class="footer-copy">© <span id="footerYear">2026</span> GreenHarvest. All rights reserved.</p>
+      <ul class="footer-legal">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Refund Policy</a></li>
+      </ul>
+    </div>
+  </div>
+
+</footer>
+
+
+
+
+<script src="../js/footer.js"></script>
+<script src="../js/nav.js"></script>
+<script src="../blog/blog.js"></script>
+</body>
+</html>

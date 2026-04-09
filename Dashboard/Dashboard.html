@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenHarvest • Dashboard</title>
+
+  <link rel="stylesheet" href="../Dashboard/Dashboard.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+
+  <!-- OVERLAY -->
+<div class="overlay" id="overlay"></div>
+
+<!-- ═══ SIDEBAR ═══ -->
+<aside class="sidebar" id="sidebar">
+
+  <!-- Logo -->
+  <div class="sb-top">
+ <div class="sb-logo">
+  <a href="../index.html" class="nav-logo">
+    <svg viewBox="0 0 36 36" fill="none">
+      <path d="M18 32C18 32 6 22 6 14C6 8 11 4 18 4C25 4 30 8 30 14C30 22 18 32 18 32Z"
+            fill="#2d8a3e" opacity="0.15"/>
+      <path d="M18 28C10 20 10 14 18 8C26 14 26 20 18 28Z" fill="#2d8a3e"/>
+      <ellipse cx="11" cy="18" rx="5" ry="8" fill="#60d978" transform="rotate(-35,11,18)"/>
+      <ellipse cx="25" cy="18" rx="5" ry="8" fill="#3aad50" transform="rotate(35,25,18)"/>
+    </svg>
+
+    <span class="nav-logo-text">
+      Green<span>Harvest</span>
+    </span>
+  </a>
+</div>
+    <button class="close-btn" id="closeSidebar" aria-label="Close">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Nav -->
+  <nav class="sb-nav">
+    <div class="sb-section-label">Main</div>
+
+    <a class="sb-link active" href="#">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+      </svg>
+      Overview
+    </a>
+
+    <a class="sb-link" href="#">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+        <polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/>
+      </svg>
+      Products
+      <span class="sb-badge">34</span>
+    </a>
+
+    <a class="sb-link" href="#">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+        <line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/>
+      </svg>
+      Orders
+      <span class="sb-badge">5</span>
+    </a>
+
+    <a class="sb-link" href="#">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="1" y="3" width="15" height="13" rx="1"/>
+        <path d="M16 8h4l3 5v4h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>
+      </svg>
+      Logistics
+    </a>
+
+    <div class="sb-section-label">Insights</div>
+
+    <a class="sb-link" href="#">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>
+      </svg>
+      Analytics
+    </a>
+
+    <a class="sb-link" href="#">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+      </svg>
+      Messages
+      <span class="sb-badge">3</span>
+    </a>
+
+    <div class="sb-section-label">Account</div>
+
+    <a class="sb-link" href="#">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/>
+        <path d="M17.66 7.34a6 6 0 0 1 0 9.32M6.34 7.34a6 6 0 0 0 0 9.32"/>
+      </svg>
+      Settings
+    </a>
+  </nav>
+
+  <!-- User footer -->
+  <div class="sb-footer">
+    <div class="sb-user">
+      <div class="sb-avatar">A</div>
+      <div>
+        <div class="sb-user-name">Admin</div>
+        <div class="sb-user-role">Platform Administrator</div>
+      </div>
+    </div>
+    <button class="sb-logout">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+        <polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/>
+      </svg>
+      Logout
+    </button>
+  </div>
+</aside>
+
+<!-- ═══ MAIN ═══ -->
+<div class="main">
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+      <div class="topbar-title">
+        <h1>Dashboard</h1>
+        <p>Welcome back, manage your marketplace activity.</p>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <div class="search-box">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input type="text" placeholder="Search orders, products…"/>
+      </div>
+      <button class="ctrl-btn" id="themeBtn" title="Toggle theme">
+        <svg id="themeIco" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+      <button class="dir-ctrl" id="dirBtn">LTR</button>
+      <button class="ctrl-btn" id="notifBtn" title="Notifications" style="position:relative;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+          <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+        </svg>
+        <span class="notif-dot"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- CONTENT -->
+  <main class="content">
+
+    <!-- STAT CARDS -->
+    <div class="stats-grid">
+      <div class="stat-card fade-up" style="animation-delay:0s;">
+        <div class="stat-icon si-green">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+        </div>
+        <div class="stat-body">
+          <div class="stat-label">Total Orders</div>
+          <div class="stat-value" id="statOrders">0</div>
+          <span class="stat-chip chip-up">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="18 15 12 9 6 15"/></svg>
+            +12%
+          </span>
+        </div>
+      </div>
+
+      <div class="stat-card fade-up" style="animation-delay:0.08s;">
+        <div class="stat-icon si-accent">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="1" x2="12" y2="23"/>
+            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+          </svg>
+        </div>
+        <div class="stat-body">
+          <div class="stat-label">Revenue</div>
+          <div class="stat-value" id="statRevenue">₹0</div>
+          <span class="stat-chip chip-up">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="18 15 12 9 6 15"/></svg>
+            +8%
+          </span>
+        </div>
+      </div>
+
+      <div class="stat-card fade-up" style="animation-delay:0.16s;">
+        <div class="stat-icon si-blue">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+          </svg>
+        </div>
+        <div class="stat-body">
+          <div class="stat-label">Products</div>
+          <div class="stat-value" id="statProducts">0</div>
+          <span class="stat-chip chip-neu">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            steady
+          </span>
+        </div>
+      </div>
+
+      <div class="stat-card fade-up" style="animation-delay:0.24s;">
+        <div class="stat-icon si-gold">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+        </div>
+        <div class="stat-body">
+          <div class="stat-label">Avg Rating</div>
+          <div class="stat-value" id="statRating">0.0</div>
+          <span class="stat-chip chip-down">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="6 9 12 15 18 9"/></svg>
+            -0.1
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- MID GRID -->
+    <div class="mid-grid">
+
+      <!-- Sales Chart -->
+      <div class="card fade-up" style="animation-delay:0.32s;">
+        <div class="card-head">
+          <h3>Sales Overview</h3>
+          <div class="pill-group">
+            <button class="pill active" data-range="7">7d</button>
+            <button class="pill" data-range="30">30d</button>
+            <button class="pill" data-range="90">90d</button>
+          </div>
+        </div>
+        <div class="chart-wrap">
+          <canvas id="salesChart" height="150"></canvas>
+        </div>
+        <div class="chart-note">Switch range to update chart.</div>
+      </div>
+
+      <!-- Activity -->
+      <div class="card fade-up" style="animation-delay:0.40s;">
+        <div class="card-head">
+          <h3>Latest Activity</h3>
+          <button class="link-btn">View all</button>
+        </div>
+        <ul class="activity-list" id="activityList"></ul>
+      </div>
+    </div>
+
+    <!-- Orders Table -->
+    <div class="card fade-up" style="animation-delay:0.48s;">
+      <div class="card-head">
+        <h3>Recent Orders</h3>
+        <button class="add-btn">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+          </svg>
+          Add Product
+        </button>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>Customer</th>
+              <th>Product</th>
+              <th>Status</th>
+              <th>Amount</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody id="ordersBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+
+<script src="../Dashboard/Dashboard.js"></script>
+</body>
+</html>

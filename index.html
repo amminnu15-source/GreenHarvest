@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GreenHarvest</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+
+<header class="navbar" id="navbar">
+  <div class="container nav-container">
+
+    <a href="./index.html" class="nav-logo">
+      <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 32C18 32 6 22 6 14C6 8 11 4 18 4C25 4 30 8 30 14C30 22 18 32 18 32Z"
+              fill="#2d8a3e" opacity="0.15"/>
+        <path d="M18 28C10 20 10 14 18 8C26 14 26 20 18 28Z" fill="#2d8a3e"/>
+        <ellipse cx="11" cy="18" rx="5" ry="8" fill="#60d978" transform="rotate(-35,11,18)"/>
+        <ellipse cx="25" cy="18" rx="5" ry="8" fill="#3aad50" transform="rotate(35,25,18)"/>
+      </svg>
+      <span class="nav-logo-text">Green<span>Harvest</span></span>
+    </a>
+
+    <nav class="nav" id="navMenu">
+      <ul class="nav-links">
+
+        <li class="dropdown">
+          <a href="./index.html">Home <span class="arrow">▾</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="./index.html">Home 1</a></li>
+            <li><a href="./Home2/Home.html">Home 2</a></li>
+          </ul>
+        </li>
+
+        <li><a href="./services/services.html">Services</a></li>
+        <li><a href="./blog/blog.html">Blog</a></li>
+        <li><a href="./about/about.html">About Us</a></li>
+        <li><a href="./contact/contact.html">Contact</a></li>
+        <li><a href="./Dashboard/Dashboard.html">Dashboard</a></li>
+
+        <li class="mobile-only"><a href="./login/login.html">Login</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <button id="themeToggle" title="Toggle dark mode">🌙</button>
+      <button id="dirToggle" title="Toggle RTL / LTR">LTR</button>
+      <a href="./login/login.html" class="login-btn">Login</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+
+<section class="hero">
+  <div class="hero-bg-img"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-vignette"></div>
+
+  <div class="hero-body">
+    <div class="hero-main">
+
+      
+      <div class="hero-left">
+
+        <div class="hero-eyebrow">
+          <span class="eyebrow-line"></span>
+          Farmers Market Vendor Platform
+        </div>
+
+        <h1 class="hero-headline">
+  Your Harvest.<br>
+  Your <span class="italic">Market.</span><br>
+  <span class="stroke-text">Your Growth.</span>
+</h1>
+
+        <p class="hero-para">
+          GreenHarvest empowers local farmers to sell directly to thousands of buyers. Set up your stall, manage products, and grow revenue — no middlemen, no commissions.
+        </p>
+
+        <div class="cta-row">
+          <a href="./service details/service details.html" class="btn-cta-primary">
+            Start Selling Today
+            <span class="ico">→</span>
+          </a>
+         
+        </div>
+
+       
+        <div class="clients-row">
+          <div class="avatars">
+            <div class="avatar"><img src="./images/avatar-1.jpg" alt=""/></div>
+            <div class="avatar"><img src="./images/avatar-2.jpg" alt=""/></div>
+            <div class="avatar"><img src="./images/avatar-3.jpg" alt=""/></div>
+            <div class="avatar"><img src="./images/avatar-4.jpg" alt=""/></div>
+            <div class="avatar" style="background:rgba(240,128,10,0.35);font-size:11px;font-weight:700;color:#f0800a;">+85K</div>
+          </div>
+          <div class="clients-text">
+            <div class="clients-count">85,000+</div>
+            <div class="clients-label">Happy customers & vendors</div>
+          </div>
+        </div>
+
+        <div class="rating-row">
+          <div class="stars-display">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+            <span class="star">★</span><span class="star">★</span>
+          </div>
+          <span class="rating-num">4.9</span>
+          <span class="rating-sep"></span>
+          <span class="rating-count">Based on 3,200+ reviews</span>
+        </div>
+
+      </div>
+
+      
+      <div class="hero-right">
+
+       
+        <div class="info-card">
+          <div class="card-row">
+           
+            <div>
+              <div class="card-label">Monthly Earnings</div>
+              <div class="card-value">₹1,28,400</div>
+              <div class="card-sub">↑ 32% from last month</div>
+            </div>
+            <div class="card-divider"></div>
+            <div>
+              <div class="card-label">Orders</div>
+              <div class="card-value">864</div>
+              <div class="card-sub">This month</div>
+            </div>
+          </div>
+          <div class="progress-wrap">
+            <div class="progress-head">
+              <span>Monthly goal</span>
+              <span>82% reached</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" style="--pct:82%"></div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="info-card">
+          <div class="card-row">
+            
+            <div style="flex:1">
+              <div class="card-label">Active Market Stalls</div>
+              <div class="card-value">3 Locations</div>
+              <div class="card-sub">Hyderabad · Secunderabad · Karimnagar</div>
+            </div>
+            <div style="background:rgba(61,140,61,0.18);border:1px solid rgba(61,140,61,0.3);border-radius:100px;padding:0.28rem 0.7rem;font-size:0.7rem;font-weight:700;color:#7cd67c;white-space:nowrap;">
+              All Live
+            </div>
+          </div>
+        </div>
+
+       
+        <div class="testi-card">
+          <div class="testi-stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <div class="testi-quote">
+            "GreenHarvest doubled my sales in just 2 months. Managing my stall online has never been this simple — I can track orders even from the field!"
+          </div>
+          <div class="testi-person">
+            <div class="testi-avatar">RS</div>
+            <div>
+              <div class="testi-name">Ramesh Sharma</div>
+              <div class="testi-role">Organic Farmer, Hyderabad</div>
+            </div>
+            <div class="verified-badge">
+              <span>✓</span> Verified
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    
+    <div class="bottom-bar">
+      <div class="trust-item">
+         Secure &amp; Encrypted
+      </div>
+      <div class="trust-dot"></div>
+      <div class="trust-item">
+         Setup in 5 Minutes
+      </div>
+      <div class="trust-dot"></div>
+      <div class="trust-item">
+        Real-time Analytics
+      </div>
+      <div class="trust-dot"></div>
+      <div class="trust-item">
+         Zero Commission
+      </div>
+      <div class="trust-dot"></div>
+      <div class="trust-item">
+         Multilingual Support
+      </div>
+      <div class="trust-dot"></div>
+     <div class="trust-item">
+     24/7 Customer Support
+  </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="solution" id="solution">
+
+  <div class="solution-wrapper">
+
+  
+    <div class="solution-left">
+      <img src="./images/Greenery.jpg" alt="Agriculture">
+    </div>
+
+  
+    <div class="solution-right">
+
+      <h2>
+        Empowering <span>the Agricultural Ecosystem</span> 
+      </h2>
+
+      <h4 class="subtitle">
+        A Smart Digital Bridge Between Producers & Buyers 
+      </h4>
+
+<p>
+        Our platform connects farmers, cooperatives, and producers directly with 
+        industrial buyers, food manufacturers, and retailers through a secure and 
+        efficient digital marketplace.
+      </p>
+
+      <p>
+        We simplify agricultural trade by enabling transparent pricing, real-time 
+        product listings, and seamless communication between all stakeholders in 
+        the supply chain.
+      </p>
+
+      <p>
+        With integrated logistics support, quality verification options, and secure 
+        online payments, we ensure safe and reliable transactions from farm to factory.
+      </p>
+<p>
+  By bringing technology and agriculture together, we help farmers expand their market reach, reduce intermediaries, and grow their business with confidence in the digital era.
+</p>
+
+      <div class="solution-buttons">
+        <a href="./services/services.html" class="btn-outline" id="exploreBtn">Explore</a>
+<a href="./about/about.html" class="btn-outline" id="aboutBtn">Learn More</a>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+<section class="why-us" id="whyUs">
+    <div class="wu-bg-dots"></div>
+
+    <div class="wu-container">
+        <div class="wu-header">
+            <div class="wu-eyebrow">
+                <span class="line"></span> WHY CHOOSE US <span class="line"></span>
+            </div>
+            <h2 class="wu-title">Why Choose <span>GreenHarvest?</span></h2>
+            <p class="wu-subtitle">Empowering farmers and connecting communities through trust, technology, and transparency.</p>
+        </div>
+
+        <div class="wu-stats-band">
+            <div class="stat-item">
+                <h3 data-target="12000" data-suffix="K+" class="counter">0</h3>
+                <span>Active Vendors</span>
+            </div>
+            <div class="stat-sep"></div>
+            <div class="stat-item">
+                <h3 data-target="85000" data-suffix="K+" class="counter">0</h3>
+                <span>Happy Buyers</span>
+            </div>
+            <div class="stat-sep"></div>
+            <div class="stat-item">
+                <h3 data-target="98" data-suffix="%" class="counter">0</h3>
+                <span>Satisfaction Rate</span>
+            </div>
+            <div class="stat-sep"></div>
+            <div class="stat-item">
+                <h3 class="counter">0%</h3>
+                <span>Commission Taken</span>
+            </div>
+        </div>
+
+        <div class="wu-grid">
+            <div class="wu-card">
+                <div class="wu-card-num"></div>
+                <div class="wu-icon-box green-box">
+                    <i class="fa-solid fa-wheat-awn"></i>
+                </div>
+                <h3>Direct From Farmers</h3>
+                <p>No middlemen. Get fresh produce directly from trusted farmers. Better quality, fair pricing, and direct support for local growers.</p>
+                <div class="wu-tags">
+                    <span class="tag tag-green">Zero Middlemen</span>
+                    <span class="tag tag-green">Farm Fresh</span>
+                </div>
+            </div>
+
+            <div class="wu-card">
+                <div class="wu-card-num"></div>
+                <div class="wu-icon-box amber-box">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                </div>
+                <h3>Fair Pricing</h3>
+                <p>Transparent pricing ensures farmers earn more and buyers pay less. Our system eliminates hidden costs and creates a fair marketplace.</p>
+                <div class="wu-tags">
+                    <span class="tag tag-amber">Transparent</span>
+                    <span class="tag tag-amber">No Hidden Fees</span>
+                </div>
+            </div>
+
+            <div class="wu-card">
+                <div class="wu-card-num"></div>
+                <div class="wu-icon-box blue-box">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h3>Real-Time Listings</h3>
+                <p>Stay updated with live product availability and instant farm updates for faster procurement decisions and fresh stock.</p>
+                <div class="wu-tags">
+                    <span class="tag tag-blue">Live Updates</span>
+                    <span class="tag tag-blue">Instant Alerts</span>
+                </div>
+            </div>
+
+            <div class="wu-card">
+                <div class="wu-card-num"></div>
+                <div class="wu-icon-box purple-box">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h3>Secure Payments</h3>
+                <p>Safe and reliable payment systems for smooth transactions. Secure gateways protect your data and ensure worry-free purchases.</p>
+                <div class="wu-tags">
+                    <span class="tag tag-purple">UPI & Cards</span>
+                    <span class="tag tag-purple">Encrypted</span>
+                </div>
+            </div>
+
+            <div class="wu-card">
+                <div class="wu-card-num"></div>
+                <div class="wu-icon-box teal-box">
+                    <i class="fa-solid fa-truck-fast"></i>
+                </div>
+                <h3>Fast Logistics</h3>
+                <p>Efficient delivery network from farm to your doorstep. Our logistics system ensures quick delivery while maintaining freshness.</p>
+                <div class="wu-tags">
+                    <span class="tag tag-teal">Same-Day</span>
+                    <span class="tag tag-teal">GPS Tracked</span>
+                </div>
+            </div>
+
+            <div class="wu-card">
+                <div class="wu-card-num"></div>
+                <div class="wu-icon-box green-box">
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+                <h3>Sustainable Future</h3>
+                <p>Supporting eco-friendly farming and reducing waste. We promote sustainable agriculture practices for future generations.</p>
+                <div class="wu-tags">
+                    <span class="tag tag-green">Eco Friendly</span>
+                    <span class="tag tag-green">Zero Waste</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="wu-trust-bar">
+            <span>SSL Secured Platform</span>
+            <span class="dot"></span>
+            <span>Zero Commission on Sales</span>
+            <span class="dot"></span>
+            <span>Setup In Under 5 Minutes</span>
+            <span class="dot"></span>
+            <span>12,000+ Active Vendors</span>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="how-works">
+
+  <h5 class="section-sub">HOW IT WORKS</h5>
+
+  <div class="steps">
+
+   
+    <div class="step">
+      <div class="img-wrap">
+        <img src="./images/step1.jpg" alt="">
+        <span class="step-num">1</span>
+      </div>
+      <h3>Shop What’s In Season</h3>
+      <p>
+        Browse our selection of freshly harvested produce, pantry staples,
+        and farm-made goods — all grown and packed right here on our farm.
+      </p>
+    </div>
+
+
+    <div class="step">
+      <div class="img-wrap">
+        <img src="./images/step2.jpg" alt="">
+        <span class="step-num">2</span>
+      </div>
+      <h3>Choose Delivery or Pickup</h3>
+      <p>
+        Get your order delivered to your door or pick it up locally.
+        You can also subscribe to our weekly Farm Box for seasonal favorites.
+      </p>
+    </div>
+
+
+    <div class="step">
+      <div class="img-wrap">
+        <img src="./images/step3.jpg" alt="">
+        <span class="step-num">3</span>
+      </div>
+      <h3>Enjoy Real Food, Grown with Love</h3>
+      <p>
+        Cook with confidence knowing your food is organic, sustainable,
+        and straight from our soil — just the way nature intended.
+      </p>
+    </div>
+
+  </div>
+
+  <a href="./services/services.html" class="start-btn">Start Shopping</a>
+
+</section>
+
+
+
+<section class="products-explore" id="products">
+    <div class="pe-bg-dots"></div>
+    
+    <div class="pe-container">
+        <div class="pe-header">
+            <div class="pe-eyebrow">
+                <span class="line"></span> Fresh From Farms <span class="line"></span>
+            </div>
+            <h2 class="pe-title">Explore Our <span>Harvest</span></h2>
+            <p class="pe-subtitle">Premium quality agricultural products sourced directly from local farmers with complete price transparency.</p>
+        </div>
+
+        <div class="pe-grid">
+            <div class="pe-card" id="wheat">
+                <div class="pe-img-wrap">
+                    <img src="./images/wheat.jpg" alt="Wheat">
+                    <div class="pe-badge">Top Quality</div>
+                </div>
+                <div class="pe-content">
+                    <span class="pe-category">Grains</span>
+                    <h3>Premium Sharbati Wheat</h3>
+                    <p>Directly sourced from Sehore, known for its golden texture and high protein content.</p>
+                    <div class="pe-footer">
+                        <div class="pe-price-info">
+                            <span class="pe-label">Direct Price</span>
+                            <span class="pe-amount">₹2,850 / Qtl</span>
+                        </div>
+                        <div class="pe-btn-circle"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pe-card" id="basmati-rice">
+                <div class="pe-img-wrap">
+                    <img src="./images/rice.jpg" alt="Rice">
+                </div>
+                <div class="pe-content">
+                    <span class="pe-category">Grains</span>
+                    <h3>Basmati Rice (Long Grain)</h3>
+                    <p>Aromatic long-grain Basmati rice, aged for 12 months for the perfect texture.</p>
+                    <div class="pe-footer">
+                        <div class="pe-price-info">
+                            <span class="pe-label">Direct Price</span>
+                            <span class="pe-amount">₹6,400 / Qtl</span>
+                        </div>
+                        <div class="pe-btn-circle"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pe-card" id="moong-dal">
+                <div class="pe-img-wrap">
+                    <img src="./images/Moong Dal.jpg" alt="Pulses">
+                </div>
+                <div class="pe-content">
+                    <span class="pe-category">Pulses</span>
+                    <h3>Organic Moong Dal</h3>
+                    <p>Unpolished and chemical-free yellow moong dal, rich in dietary fiber.</p>
+                    <div class="pe-footer">
+                        <div class="pe-price-info">
+                            <span class="pe-label">Direct Price</span>
+                            <span class="pe-amount">₹110 / Kg</span>
+                        </div>
+                        <div class="pe-btn-circle"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pe-card" id="mustard-oil">
+                <div class="pe-img-wrap">
+                    <img src="./images/oil.jpg" alt="Oil">
+                </div>
+                <div class="pe-content">
+                    <span class="pe-category">Oilseeds</span>
+                    <h3>Cold Pressed Mustard Oil</h3>
+                    <p>Traditionally extracted oil with zero additives, maintaining all natural nutrients.</p>
+                    <div class="pe-footer">
+                        <div class="pe-price-info">
+                            <span class="pe-label">Direct Price</span>
+                            <span class="pe-amount">₹185 / Ltr</span>
+                        </div>
+                        <div class="pe-btn-circle"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pe-card" id="jaggery">
+                <div class="pe-img-wrap">
+                    <img src="./images/Jaggery.jpg" alt="Sugar">
+                </div>
+                <div class="pe-content">
+                    <span class="pe-category">Organic</span>
+                    <h3>Pure Organic Jaggery</h3>
+                    <p>Made from organic sugarcane juice without using any harmful clarifying agents.</p>
+                    <div class="pe-footer">
+                        <div class="pe-price-info">
+                            <span class="pe-label">Direct Price</span>
+                            <span class="pe-amount">₹75 / Kg</span>
+                        </div>
+                        <div class="pe-btn-circle"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pe-card" id="turmeric">
+                <div class="pe-img-wrap">
+                    <img src="./images/Turmeric.jpg" alt="Spices">
+                </div>
+                <div class="pe-content">
+                    <span class="pe-category">Spices</span>
+                    <h3>Lakadong Turmeric</h3>
+                    <p>High curcumin turmeric sourced from Meghalaya, famous for medicinal properties.</p>
+                    <div class="pe-footer">
+                        <div class="pe-price-info">
+                            <span class="pe-label">Direct Price</span>
+                            <span class="pe-amount">₹320 / Kg</span>
+                        </div>
+                        <div class="pe-btn-circle"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="cta-section">
+  <div class="cta-container">
+
+    <h2>Fresh From Farm to Your Home </h2>
+    <p>
+      Support local farmers and enjoy fresh, organic, chemical-free products
+      delivered straight to your doorstep.
+    </p>
+
+    <div class="cta-buttons">
+      <a href="./service details/service details.html" class="btn-primary">Shop Now</a>
+      <a href="./services/services.html" class="btn-outline">Explore Products</a>
+    </div>
+
+  </div>
+</section>
+
+
+
+<footer class="footer" id="footer">
+
+
+
+  <div class="footer-inner">
+
+    
+    <div class="footer-brand">
+      <a href="./index.html" class="footer-logo">
+        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 32C18 32 6 22 6 14C6 8 11 4 18 4C25 4 30 8 30 14C30 22 18 32 18 32Z" fill="#2d8a3e" opacity="0.2"/>
+          <path d="M18 28C10 20 10 14 18 8C26 14 26 20 18 28Z" fill="#2d8a3e"/>
+          <ellipse cx="11" cy="18" rx="5" ry="8" fill="#60d978" transform="rotate(-35,11,18)"/>
+          <ellipse cx="25" cy="18" rx="5" ry="8" fill="#3aad50" transform="rotate(35,25,18)"/>
+        </svg>
+        <span class="footer-logo-text">Green<span>Harvest</span></span>
+      </a>
+      <p class="footer-desc">
+        Connecting ethical farmers with conscious families across India. Fresh, natural, and always honest — from soil to your table.
+      </p>
+      <div class="footer-socials">
+        <a href="#" class="social-btn" title="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="#" class="social-btn" title="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+        <a href="#" class="social-btn" title="Twitter / X">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="#" class="social-btn" title="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="var(--footer-bg)"/></svg>
+        </a>
+      </div>
+    </div>
+
+   
+    <div class="footer-col">
+      <h4 class="footer-col-title">Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./services/services.html">Services</a></li>
+        <li><a href="./blog/blog.html">Blog</a></li>
+        <li><a href="./about/about.html">About Us</a></li>
+        <li><a href="./contact/contact.html">Contact</a></li>
+        <li><a href="./Dashboard/Dashboard.html">Dashboard</a></li>
+      </ul>
+    </div>
+
+
+    <div class="footer-col">
+      <h4 class="footer-col-title">Shop</h4>
+      <ul class="footer-links">
+       <li><a href="./index.html#wheat">Wheat</a></li>
+        <li><a href="./index.html#basmati-rice">Basmati Rice</a></li>
+        <li><a href="./index.html#moong-dal">Organic Moong Dal</a></li>
+        <li><a href="./index.html#mustard-oil">Mustard Oil</a></li>
+        <li><a href="./index.html#jaggery">Jaggery</a></li>
+        <li><a href="./index.html#turmeric">Lakadong Turmeric</a></li>
+      </ul>
+    </div>
+
+  
+    <div class="footer-col">
+  <h4 class="footer-col-title">Contact Us</h4>
+  <ul class="footer-contact">
+    <li>
+      <span class="contact-icon"><i class="fa-solid fa-location-dot"></i></span>
+      <span>42, Green Valley Road,<br>Hyderabad, TS 500032</span>
+    </li>
+    <li>
+      <span class="contact-icon"><i class="fa-solid fa-phone"></i></span>
+      <a href="tel:+919876543210">+91 98765 43210</a>
+    </li>
+    <li>
+      <span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
+      <a href="mailto:hello@greenharvest.in">hello@greenharvest.in</a>
+    </li>
+    <li>
+      <span class="contact-icon"><i class="fa-solid fa-clock"></i></span>
+      <span>Mon–Sat: 8am – 8pm</span>
+    </li>
+  </ul>
+</div>
+
+  
+    <div class="footer-col footer-newsletter">
+      <h4 class="footer-col-title">Stay Fresh</h4>
+      <p class="newsletter-desc">Get weekly harvest updates, seasonal recipes and exclusive offers.</p>
+      <div class="newsletter-form">
+        <input type="email" id="newsletterEmail" placeholder="Your email address" autocomplete="email"/>
+        <button id="newsletterBtn">Subscribe</button>
+      </div>
+      <p class="newsletter-msg" id="newsletterMsg"></p>
+     
+    </div>
+
+  </div>
+
+
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <p class="footer-copy">© <span id="footerYear">2026</span> GreenHarvest. All rights reserved.</p>
+      <ul class="footer-legal">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Refund Policy</a></li>
+      </ul>
+    </div>
+  </div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+<script src="./js/footer.js"></script>
+
+<script src="./index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

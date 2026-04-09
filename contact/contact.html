@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GreenHarvest</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../contact/contact.css">
+</head>
+<body>
+
+
+<header class="navbar" id="navbar">
+  <div class="container nav-container">
+
+   
+    <a href="../index.html" class="nav-logo">
+      <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 32C18 32 6 22 6 14C6 8 11 4 18 4C25 4 30 8 30 14C30 22 18 32 18 32Z"
+              fill="#2d8a3e" opacity="0.15"/>
+        <path d="M18 28C10 20 10 14 18 8C26 14 26 20 18 28Z" fill="#2d8a3e"/>
+        <ellipse cx="11" cy="18" rx="5" ry="8" fill="#60d978" transform="rotate(-35,11,18)"/>
+        <ellipse cx="25" cy="18" rx="5" ry="8" fill="#3aad50" transform="rotate(35,25,18)"/>
+      </svg>
+      <span class="nav-logo-text">Green<span>Harvest</span></span>
+    </a>
+
+    <!-- NAV LINKS (desktop) -->
+    <nav class="nav" id="navMenu">
+      <ul class="nav-links">
+
+        <li class="dropdown">
+          <a href="../index.html">Home <span class="arrow">▾</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../index.html">Home 1</a></li>
+            <li><a href="../Home2/Home.html">Home 2</a></li>
+          </ul>
+        </li>
+
+        <li><a href="../services/services.html">Services</a></li>
+        <li><a href="../blog/blog.html">Blog</a></li>
+        <li><a href="../about/about.html">About Us</a></li>
+        <li><a href="../contact/contact.html">Contact</a></li>
+        <li><a href="../Dashboard/Dashboard.html" class="dashboard-link">Dashboard</a></li>
+
+        <!-- mobile-only login -->
+        <li class="mobile-only"><a href="../login/login.html">Login</a></li>
+      </ul>
+    </nav>
+
+    <!-- RIGHT ACTIONS -->
+    <div class="nav-actions">
+      <button id="themeToggle" title="Toggle dark mode">🌙</button>
+      <button id="dirToggle"   title="Toggle RTL / LTR">LTR</button>
+      <a href="../login/login.html" class="login-btn">Login</a>
+      <!-- hamburger — last so it sits right of theme btn on mobile -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+
+
+<section class="contact-hero">
+
+  <div class="contact-overlay"></div>
+
+  <div class="contact-content">
+
+    <h1 class="contact-title fade-up">
+      We're Here to <span><em>Help You</em> Grow</span>
+    </h1>
+
+    <p class="contact-sub fade-up delay-1">
+      Whether you have a question about getting started, need technical support, or want to discuss an enterprise partnership — our team responds within 2 hours.
+    </p>
+
+    <div class="contact-buttons fade-up delay-2">
+      <a href="../contact/contact.html" class="btn-primary">Get in Touch</a>
+      <a href="../contact/contact.html" class="btn-outline">Contact Support</a>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+<section class="contact-wrap">
+  <div class="contact-section">
+
+    <!-- LEFT -->
+    <div class="info-col">
+
+  <div class="info-card">
+    <div class="ic-bubble ic-pink">
+      <i class="fa-solid fa-location-dot"></i>
+    </div>
+    <div class="ic-text">
+      <div class="ic-title">Our Office</div>
+      <div class="ic-body">
+        GreenHarvest Technologies Pvt Ltd<br>
+        4th Floor, T-Hub Phase 2<br>
+        Raidurgam, Hyderabad — 500 032<br>
+        Telangana, India
+      </div>
+    </div>
+  </div>
+
+  <div class="info-card">
+    <div class="ic-bubble ic-coral">
+      <i class="fa-solid fa-phone-volume"></i>
+    </div>
+    <div class="ic-text">
+      <div class="ic-title">Phone &amp; WhatsApp</div>
+      <div class="ic-body">
+        <a href="tel:+918040001234">+91 80400 01234</a> (Sales)<br>
+        <a href="tel:+918040001235">+91 80400 01235</a> (Support)
+      </div>
+      <div class="ic-meta">Mon–Sat, 9AM to 7PM IST</div>
+    </div>
+  </div>
+
+  <div class="info-card">
+    <div class="ic-bubble ic-mint">
+      <i class="fa-solid fa-envelope-open-text"></i>
+    </div>
+    <div class="ic-text">
+      <div class="ic-title">Email Us</div>
+      <div class="ic-body">
+        <a href="mailto:hello@greenharvest.in">hello@greenharvest.in</a> — General<br>
+        <a href="mailto:support@greenharvest.in">support@greenharvest.in</a> — Support<br>
+        <a href="mailto:sales@greenharvest.in">sales@greenharvest.in</a> — Enterprise
+      </div>
+    </div>
+  </div>
+
+  <div class="info-card">
+    <div class="ic-bubble ic-purple">
+      <i class="fa-solid fa-clock"></i>
+    </div>
+    <div class="ic-text" style="width:100%">
+      <div class="ic-title">Support Hours</div>
+      <div class="hours-grid">
+        <div class="hours-row">
+          <span class="hours-day">Mon–Fri</span>
+          <span class="hours-time">9AM – 7PM</span>
+        </div>
+        <div class="hours-row">
+          <span class="hours-day">Saturday</span>
+          <span class="hours-time">10AM – 5PM</span>
+        </div>
+        <div class="hours-row">
+          <span class="hours-day">Sunday</span>
+          <span class="hours-time closed">Closed</span>
+        </div>
+        <div class="hours-row">
+          <span class="hours-day">Holidays</span>
+          <span class="hours-time emerg">Emergency only</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="info-card">
+    <div class="ic-bubble ic-blue">
+      <i class="fa-solid fa-share-nodes"></i>
+    </div>
+    <div class="ic-text">
+      <div class="ic-title">Follow Us</div>
+      <div class="ic-body">Stay updated with market tips and platform news.</div>
+      <div class="social-row">
+        <a href="#" class="soc-btn"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="soc-btn"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" class="soc-btn"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="soc-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" class="soc-btn"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+    <!-- RIGHT -->
+    <div class="form-col">
+
+      <div id="formBody">
+        <h2 class="form-heading">Send Us a Message</h2>
+        <p class="form-subheading">We typically respond within 2 business hours.</p>
+
+        <form id="contactForm" novalidate>
+
+          <div class="field-row">
+            <div class="field-group">
+              <label class="field-label">First Name <span>*</span></label>
+              <input class="field-input" type="text" id="cf-fname" placeholder="Name"/>
+              <div class="field-err" id="cf-fname-err">First name is required.</div>
+            </div>
+            <div class="field-group">
+              <label class="field-label">Last Name <span>*</span></label>
+              <input class="field-input" type="text" id="cf-lname" placeholder="Last Name"/>
+              <div class="field-err" id="cf-lname-err">Last name is required.</div>
+            </div>
+          </div>
+
+          <div class="field-group">
+            <label class="field-label">Email Address <span>*</span></label>
+            <input class="field-input" type="email" id="cf-email" placeholder="aaa@example.com"/>
+            <div class="field-err" id="cf-email-err">Please enter a valid email address.</div>
+          </div>
+
+          <div class="field-group">
+            <label class="field-label">Phone Number</label>
+            <input class="field-input" type="tel" id="cf-phone" placeholder="+91 xxxxxxxxxx"/>
+          </div>
+
+          <div class="field-group">
+            <label class="field-label">I'm a… <span>*</span></label>
+            <div class="select-wrap">
+              <select class="field-input field-select" id="cf-role">
+                <option value="">Select your role</option>
+                <option>Farmer / Vendor</option>
+                <option>Buyer / Customer</option>
+                <option>Restaurant / Business</option>
+                <option>Media / Press</option>
+                <option>Investor / Partner</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field-err" id="cf-role-err">Please select your role.</div>
+          </div>
+
+          <div class="field-group">
+            <label class="field-label">Subject <span>*</span></label>
+            <input class="field-input" type="text" id="cf-subject" placeholder="How can we help?"/>
+            <div class="field-err" id="cf-subject-err">Subject is required.</div>
+          </div>
+
+          <div class="field-group">
+            <label class="field-label">Message <span>*</span></label>
+            <textarea class="field-input field-textarea" id="cf-message" placeholder="Tell us more about your question or request…"></textarea>
+            <div class="field-err" id="cf-message-err">Please enter your message.</div>
+          </div>
+
+          <div class="check-row">
+            <div class="custom-check" id="waCheck" role="checkbox" aria-checked="false" tabindex="0"></div>
+            <span class="check-label" onclick="toggleWA()">I prefer to be contacted via WhatsApp</span>
+          </div>
+
+          <button type="submit" class="btn-send" id="sendBtn">
+            <span class="btn-inner">
+              Send Message
+              <span class="btn-arrow">→</span>
+            </span>
+          </button>
+
+          <p class="security-note"> Your information is safe. We never spam or sell your data.</p>
+
+        </form>
+      </div>
+
+      <div class="form-success" id="formSuccess">
+        <div class="fs-check">✅</div>
+        <h3>Message Sent!</h3>
+        <p>Thanks for reaching out! Our team will reply to your email within 2 business hours.</p>
+        <button class="btn-reset" onclick="resetForm()">Send another message</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="ct-toast" id="ctToast">✅ Message sent! We'll reply within 2 hours.</div>
+
+</section>
+
+
+
+<section class="map-section">
+
+  <!-- HEADING -->
+  <div class="map-head">
+    <h2 class="map-title">
+      Find <span>Our Location</span>
+    </h2>
+    <p class="map-sub">
+      Visit our office or get directions to reach us
+    </p>
+  </div>
+
+  <!-- MAP -->
+  <div class="map-wrapper">
+
+    <iframe 
+      src="https://www.google.com/maps?q=Hyderabad,India&output=embed"
+      loading="lazy">
+    </iframe>
+
+    <!-- FLOATING CARD -->
+    <div class="map-card">
+      <h3>Visit Our Office</h3>
+      <p>GreenHarvest Technologies Pvt Ltd</p>
+      <span>Raidurgam, Hyderabad, Telangana</span>
+
+      <a href="#" class="map-btn">
+        Get Directions →
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<section class="support-section">
+  <div class="support-inner">
+
+    <!-- Header -->
+    <div class="support-header">
+      <div class="support-eyebrow">
+        <span class="eyebrow-line"></span>
+        QUICK HELP
+        <span class="eyebrow-line"></span>
+      </div>
+      <h2 class="support-title">Other Ways to Get <em>Support</em></h2>
+    </div>
+
+    <!-- Cards -->
+    <div class="support-grid">
+
+      <!-- Help Center -->
+      <div class="support-card">
+        <div class="sc-icon-wrap sc-icon-green">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="6" width="14" height="18" rx="2.5" fill="#4CAF50" opacity="0.9"/>
+            <rect x="8" y="4" width="14" height="18" rx="2.5" fill="#E53935" opacity="0.85"/>
+            <rect x="12" y="7" width="14" height="18" rx="2.5" fill="#43A047"/>
+            <rect x="15" y="10" width="8" height="1.5" rx="0.75" fill="white" opacity="0.7"/>
+            <rect x="15" y="13.5" width="6" height="1.5" rx="0.75" fill="white" opacity="0.7"/>
+            <rect x="15" y="17" width="7" height="1.5" rx="0.75" fill="white" opacity="0.7"/>
+          </svg>
+        </div>
+        <h3 class="sc-title">Help Center</h3>
+        <p class="sc-desc">Browse 200+ articles and video guides for all common questions and troubleshooting.</p>
+        <a href="../blog details/blog details.html" class="sc-btn sc-btn-outline">Browse Articles →</a>
+      </div>
+
+      <!-- Live Chat -->
+      <div class="support-card support-card-featured">
+        <div class="sc-icon-wrap sc-icon-purple">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 8C6 6.895 6.895 6 8 6H24C25.105 6 26 6.895 26 8V20C26 21.105 25.105 22 24 22H17L11 27V22H8C6.895 22 6 21.105 6 20V8Z" fill="#9575CD" opacity="0.9"/>
+            <circle cx="11.5" cy="14.5" r="1.5" fill="white" opacity="0.85"/>
+            <circle cx="16" cy="14.5" r="1.5" fill="white" opacity="0.85"/>
+            <circle cx="20.5" cy="14.5" r="1.5" fill="white" opacity="0.85"/>
+          </svg>
+        </div>
+        <h3 class="sc-title">Live Chat</h3>
+        <p class="sc-desc">Chat with our support team in real-time. Available in Telugu, Hindi, and English.</p>
+        <a href="../signup/signup.html" class="sc-btn sc-btn-solid">Start Chat →</a>
+      </div>
+
+      <!-- Vendor Community -->
+      <div class="support-card">
+        <div class="sc-icon-wrap sc-icon-indigo">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="11" r="4" fill="#5C6BC0"/>
+            <circle cx="22" cy="11" r="3.2" fill="#5C6BC0" opacity="0.75"/>
+            <path d="M2 25C2 20.582 6.477 17 12 17C17.523 17 22 20.582 22 25" stroke="#5C6BC0" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <path d="M22 17.5C25.866 17.5 29 20.134 29 23.5" stroke="#5C6BC0" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.75"/>
+          </svg>
+        </div>
+        <h3 class="sc-title">Vendor Community</h3>
+        <p class="sc-desc">Join 5,000+ farmers in our WhatsApp groups, share tips, and learn from top vendors.</p>
+        <a href="../contact/contact.html" class="sc-btn sc-btn-outline">Join Community →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<footer class="footer" id="footer">
+
+
+
+  <div class="footer-inner">
+
+    <!-- ── Col 1: Brand ── -->
+    <div class="footer-brand">
+      <a href="../index.html" class="footer-logo">
+        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 32C18 32 6 22 6 14C6 8 11 4 18 4C25 4 30 8 30 14C30 22 18 32 18 32Z" fill="#2d8a3e" opacity="0.2"/>
+          <path d="M18 28C10 20 10 14 18 8C26 14 26 20 18 28Z" fill="#2d8a3e"/>
+          <ellipse cx="11" cy="18" rx="5" ry="8" fill="#60d978" transform="rotate(-35,11,18)"/>
+          <ellipse cx="25" cy="18" rx="5" ry="8" fill="#3aad50" transform="rotate(35,25,18)"/>
+        </svg>
+        <span class="footer-logo-text">Green<span>Harvest</span></span>
+      </a>
+      <p class="footer-desc">
+        Connecting ethical farmers with conscious families across India. Fresh, natural, and always honest — from soil to your table.
+      </p>
+      <div class="footer-socials">
+        <a href="#" class="social-btn" title="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="#" class="social-btn" title="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+        <a href="#" class="social-btn" title="Twitter / X">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="#" class="social-btn" title="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="var(--footer-bg)"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- ── Col 2: Quick Links ── -->
+    <div class="footer-col">
+      <h4 class="footer-col-title">Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../services/services.html">Services</a></li>
+        <li><a href="../blog/blog.html">Blog</a></li>
+        <li><a href="../about/about.html">About Us</a></li>
+        <li><a href="../contact/contact.html">Contact</a></li>
+        <li><a href="../Dashboard/Dashboard.html">Dashboard</a></li>
+      </ul>
+    </div>
+
+    <!-- ── Col 3: Shop ── -->
+  <div class="footer-col">
+      <h4 class="footer-col-title">Shop</h4>
+      <ul class="footer-links">
+       <li><a href="../index.html#wheat">Wheat</a></li>
+        <li><a href="../index.html#basmati-rice">Basmati Rice</a></li>
+        <li><a href="../index.html#moong-dal">Organic Moong Dal</a></li>
+        <li><a href="../index.html#mustard-oil">Mustard Oil</a></li>
+        <li><a href="../index.html#jaggery">Jaggery</a></li>
+        <li><a href="../index.html#turmeric">Lakadong Turmeric</a></li>
+      </ul>
+    </div>
+
+    <!-- ── Col 4: Contact ── -->
+   <div class="footer-col">
+  <h4 class="footer-col-title">Contact Us</h4>
+  <ul class="footer-contact">
+    <li>
+      <span class="contact-icon"><i class="fa-solid fa-location-dot"></i></span>
+      <span>42, Green Valley Road,<br>Hyderabad, TS 500032</span>
+    </li>
+    <li>
+      <span class="contact-icon"><i class="fa-solid fa-phone"></i></span>
+      <a href="tel:+919876543210">+91 98765 43210</a>
+    </li>
+    <li>
+      <span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
+      <a href="mailto:hello@greenharvest.in">hello@greenharvest.in</a>
+    </li>
+    <li>
+      <span class="contact-icon"><i class="fa-solid fa-clock"></i></span>
+      <span>Mon–Sat: 8am – 8pm</span>
+    </li>
+  </ul>
+</div>
+
+
+    <!-- ── Col 5: Newsletter ── -->
+    <div class="footer-col footer-newsletter">
+      <h4 class="footer-col-title">Stay Fresh</h4>
+      <p class="newsletter-desc">Get weekly harvest updates, seasonal recipes and exclusive offers.</p>
+      <div class="newsletter-form">
+        <input type="email" id="newsletterEmail" placeholder="Your email address" autocomplete="email"/>
+        <button id="newsletterBtn">Subscribe</button>
+      </div>
+      <p class="newsletter-msg" id="newsletterMsg"></p>
+     
+    </div>
+
+  </div>
+
+  <!-- ── Bottom bar ── -->
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <p class="footer-copy">© <span id="footerYear">2026</span> GreenHarvest. All rights reserved.</p>
+      <ul class="footer-legal">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Refund Policy</a></li>
+      </ul>
+    </div>
+  </div>
+
+</footer>
+
+
+
+
+<script src="../js/footer.js"></script>
+<script src="../js/nav.js"></script>
+<script src="../contact/contact.js"></script>
+</body>
+</html>

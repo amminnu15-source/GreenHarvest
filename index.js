@@ -1,0 +1,169 @@
+const html        = document.documentElement;
+const navbar      = document.getElementById('navbar');
+const menuToggle  = document.getElementById('menuToggle');
+const navMenu     = document.getElementById('navMenu');
+const themeToggle = document.getElementById('themeToggle');
+const dirToggle   = document.getElementById('dirToggle');
+const dropdowns   = document.querySelectorAll('.dropdown');
+
+
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 8);
+});
+
+
+menuToggle.addEventListener('click', (e) => {
+  e.stopPropagation();
+  const open = navMenu.classList.toggle('open');
+  menuToggle.classList.toggle('open', open);
+  document.body.style.overflow = open ? 'hidden' : '';
+});
+
+document.addEventListener('click', (e) => {
+  if (!navbar.contains(e.target)) {
+    closeMobileMenu();
+  }
+});
+
+function closeMobileMenu() {
+  navMenu.classList.remove('open');
+  menuToggle.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+
+dropdowns.forEach(drop => {
+  drop.querySelector('a').addEventListener('click', (e) => {
+    if (window.innerWidth <= 992) {        /* FIXED: was 768, now matches CSS breakpoint */
+      e.preventDefault();
+      const wasOpen = drop.classList.contains('open');
+      dropdowns.forEach(d => d.classList.remove('open'));
+      drop.classList.toggle('open', !wasOpen);
+    }
+  });
+});
+
+
+applyTheme(localStorage.getItem('gh-theme') || 'light');
+themeToggle.addEventListener('click', () => {
+  const next = html.dataset.theme === 'dark' ? 'light' : 'dark';
+  applyTheme(next);
+  localStorage.setItem('gh-theme', next);
+});
+function applyTheme(t) {
+  html.dataset.theme = t;
+  themeToggle.textContent = t === 'dark' ? '☀️' : '🌙';
+}
+
+
+applyDir(localStorage.getItem('gh-dir') || 'ltr');
+dirToggle.addEventListener('click', () => {
+  const next = html.dir === 'rtl' ? 'ltr' : 'rtl';
+  applyDir(next);
+  localStorage.setItem('gh-dir', next);
+});
+function applyDir(d) {
+  html.dir  = d;
+  html.lang = d === 'rtl' ? 'ar' : 'en';
+  dirToggle.textContent = d.toUpperCase();
+}
+
+
+const page = location.pathname.split('/').pop() || 'index.html';
+document.querySelectorAll('.nav-links a').forEach(a => {
+  if (a.getAttribute('href') === page) a.closest('li').classList.add('active');
+});
+
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 992) closeMobileMenu();  
+});
+
+
+
+
+const observerOptions = {
+    threshold: 0.25 
+};
+
+const solutionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("animate");
+            
+        }
+    });
+}, observerOptions);
+
+const solutionSection = document.querySelector(".solution");
+if (solutionSection) {
+    solutionObserver.observe(solutionSection);
+}
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll('.counter');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const el = entry.target;
+                const target = parseInt(el.getAttribute('data-target'));
+                const suffix = el.getAttribute('data-suffix') || '';
+                let current = 0;
+                const duration = 2000;
+                const step = target / (duration / 16);
+
+                const update = () => {
+                    current += step;
+                    if (current < target) {
+                        el.innerText = Math.ceil(current).toLocaleString() + suffix;
+                        requestAnimationFrame(update);
+                    } else {
+                        el.innerText = target.toLocaleString() + suffix;
+                    }
+                };
+                update();
+                observer.unobserve(el);
+            }
+        });
+    }, { threshold: 0.5 });
+    counters.forEach(c => observer.observe(c));
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const filterBtns = document.querySelectorAll('.pe-cat-btn');
+    const cards = document.querySelectorAll('.pe-card');
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const filterValue = btn.innerText.toLowerCase();
+
+            cards.forEach(card => {
+                const category = card.querySelector('.pe-category').innerText.toLowerCase();
+                if (filterValue === 'all products' || category === filterValue) {
+                    card.style.display = 'block';
+                    card.style.animation = 'fadeIn 0.5s ease forwards';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+});
+

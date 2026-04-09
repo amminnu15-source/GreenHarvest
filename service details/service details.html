@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GreenHarvest</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../service details/service details.css">
+</head>
+<body>
+
+
+<header class="navbar" id="navbar">
+  <div class="container nav-container">
+
+   
+    <a href="../index.html" class="nav-logo">
+      <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 32C18 32 6 22 6 14C6 8 11 4 18 4C25 4 30 8 30 14C30 22 18 32 18 32Z"
+              fill="#2d8a3e" opacity="0.15"/>
+        <path d="M18 28C10 20 10 14 18 8C26 14 26 20 18 28Z" fill="#2d8a3e"/>
+        <ellipse cx="11" cy="18" rx="5" ry="8" fill="#60d978" transform="rotate(-35,11,18)"/>
+        <ellipse cx="25" cy="18" rx="5" ry="8" fill="#3aad50" transform="rotate(35,25,18)"/>
+      </svg>
+      <span class="nav-logo-text">Green<span>Harvest</span></span>
+    </a>
+
+    <!-- NAV LINKS (desktop) -->
+    <nav class="nav" id="navMenu">
+      <ul class="nav-links">
+
+        <li class="dropdown">
+          <a href="../index.html">Home <span class="arrow">▾</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../index.html">Home 1</a></li>
+            <li><a href="../Home2/Home.html">Home 2</a></li>
+          </ul>
+        </li>
+
+        <li><a href="../services/services.html">Services</a></li>
+        <li><a href="../blog/blog.html">Blog</a></li>
+        <li><a href="../about/about.html">About Us</a></li>
+        <li><a href="../contact/contact.html">Contact</a></li>
+        <li><a href="../Dashboard/Dashboard.html" class="dashboard-link">Dashboard</a></li>
+
+        <!-- mobile-only login -->
+        <li class="mobile-only"><a href="../login/login.html">Login</a></li>
+      </ul>
+    </nav>
+
+    <!-- RIGHT ACTIONS -->
+    <div class="nav-actions">
+      <button id="themeToggle" title="Toggle dark mode">🌙</button>
+      <button id="dirToggle"   title="Toggle RTL / LTR">LTR</button>
+      <a href="../login/login.html" class="login-btn">Login</a>
+      <!-- hamburger — last so it sits right of theme btn on mobile -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+
+
+
+
+
+<section class="service-hero">
+
+  <!-- Background -->
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+
+  <div class="hero-container">
+
+    <div class="hero-content fade-up">
+
+      <p class="hero-badge">
+        <span></span> SERVICE DETAILS <span></span>
+      </p>
+
+      <h1 class="hero-title">
+        Precision Farming <span>Solutions</span>
+      </h1>
+
+      <p class="hero-desc">
+        Transform your agricultural operations with data-driven insights, 
+        smart irrigation systems, and modern technologies designed to 
+        maximize yield and efficiency.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="../signup/signup.html" class="btn-primary">Get Started</a>
+        <a href="../contact/contact.html" class="btn-outline">Contact Us</a>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="how-it-works-section">
+  <div class="hiw-container">
+    
+    <div class="hiw-header">
+      <div class="badge-container center">
+        <span class="line"></span>
+        <span class="badge-text">THE PROCESS</span>
+        <span class="line"></span>
+      </div>
+      <h2 class="hiw-title">Your Path to a <span>Digital Harvest</span></h2>
+      <p class="hiw-subtitle">We’ve simplified the tech so you can focus on the soil. Here is how you get started.</p>
+    </div>
+
+    <div class="hiw-grid">
+      <div class="hiw-item fade-up">
+        <div class="hiw-number">01</div>
+        <div class="hiw-icon-box">
+          <i class="fa-solid fa-id-card"></i>
+        </div>
+        <h3>Register Your Farm</h3>
+        <p>Sign up in minutes. Enter your location and farm story to let local buyers know who you are.</p>
+      </div>
+
+      <div class="hiw-item fade-up delay-1">
+        <div class="hiw-number">02</div>
+        <div class="hiw-icon-box">
+          <i class="fa-solid fa-basket-shopping"></i>
+        </div>
+        <h3>List Your Products</h3>
+        <p>Snap a photo, set your price, and go live. Manage seasonal availability with a single toggle.</p>
+      </div>
+
+      <div class="hiw-item fade-up delay-2">
+        <div class="hiw-number">03</div>
+        <div class="hiw-icon-box">
+          <i class="fa-solid fa-truck-fast"></i>
+        </div>
+        <h3>Reach Local Buyers</h3>
+        <p>Your products appear on the local map instantly. Buyers can follow your farm for updates.</p>
+      </div>
+
+      <div class="hiw-item fade-up delay-3">
+        <div class="hiw-number">04</div>
+        <div class="hiw-icon-box">
+          <i class="fa-solid fa-wallet"></i>
+        </div>
+        <h3>Get Paid Instantly</h3>
+        <p>No waiting periods. Secure payments go directly to your bank account as soon as the order is placed.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="sd-full-features">
+  <div class="sd-container">
+    
+    <div class="sd-header">
+      <div class="badge-container center">
+        <span class="line"></span>
+        <span class="badge-text">FULL ECOSYSTEM</span>
+        <span class="line"></span>
+      </div>
+      <h2 class="sd-title">Everything You Need to <span>Scale Your Farm</span></h2>
+      <p class="sd-subtitle">A deep dive into the six core pillars of the GreenHarvest platform, designed specifically for the modern Indian agricultural landscape.</p>
+    </div>
+
+    <div class="sd-feature-grid">
+      
+      <div class="sd-big-card reveal">
+        <div class="sd-card-top">
+          <div class="sd-icon-hex"><i class="fa-solid fa-store"></i></div>
+        
+        </div>
+        <h3>Vendor Storefront</h3>
+        <p>Your digital stall is your brand's home. We provide a professional, SEO-optimized storefront that works seamlessly on mobile and desktop, allowing customers to browse your entire inventory with ease.</p>
+        <ul class="sd-spec-list">
+          <li><i class="fa-solid fa-check"></i> <strong>Custom Branding:</strong> Upload farm logos, story videos, and banners.</li>
+          <li><i class="fa-solid fa-check"></i> <strong>SEO Ready:</strong> Rank for "Organic vegetables near me" automatically.</li>
+          <li><i class="fa-solid fa-check"></i> <strong>Real-time Stock:</strong> Instant updates across all buyer devices.</li>
+        </ul>
+      </div>
+
+      <div class="sd-big-card reveal delay-1">
+        <div class="sd-card-top">
+          <div class="sd-icon-hex"><i class="fa-solid fa-chart-pie"></i></div>
+         
+        </div>
+        <h3>Smart Dashboard</h3>
+        <p>Data-driven farming simplified. Our dashboard turns complex sales data into visual charts that anyone can understand, helping you make better planting and pricing decisions based on actual demand.</p>
+        <ul class="sd-spec-list">
+          <li><i class="fa-solid fa-check"></i> <strong>Sales Analytics:</strong> Track daily, weekly, and seasonal revenue trends.</li>
+          <li><i class="fa-solid fa-check"></i> <strong>Low Stock Alerts:</strong> Automated WhatsApp notifications for inventory.</li>
+          <li><i class="fa-solid fa-check"></i> <strong>Demand Heatmap:</strong> See which areas are buying most of your produce.</li>
+        </ul>
+      </div>
+
+      <div class="sd-big-card reveal delay-2">
+        <div class="sd-card-top">
+          <div class="sd-icon-hex"><i class="fa-solid fa-truck-fast"></i></div>
+         
+        </div>
+        <h3>Delivery Management</h3>
+        <p>Bridge the gap between the field and the kitchen. Our logistics engine optimizes delivery routes, saving you fuel and time while keeping your customers informed with live tracking updates.</p>
+        <ul class="sd-spec-list">
+          <li><i class="fa-solid fa-check"></i> <strong>Route Optimization:</strong> Intelligent batching for local drop-offs.</li>
+          <li><i class="fa-solid fa-check"></i> <strong>Live GPS:</strong> Buyers track their fresh delivery on a live map.</li>
+          <li><i class="fa-solid fa-check"></i> <strong>Digital Proof:</strong> Snap photo confirmations for every delivery.</li>
+        </ul>
+      </div>
+
+      <div class="sd-big-card reveal">
+        <div class="sd-card-top">
+          <div class="sd-icon-hex"><i class="fa-solid fa-credit-card"></i></div>
+       
+        </div>
+        <h3>Secure Payments</h3>
+        <p>Accept payments with total confidence. Our integrated gateway supports all Indian payment methods with 0% commission on starter plans and instant settlement directly to your bank.</p>
+        <ul class="sd-spec-list">
+          <li><i class="fa-solid fa-check"></i> <strong>Multi-Mode:</strong> Accept UPI, Credit/Debit cards, and Wallets.</li>
+          <li><i class="fa-solid fa-check"></i> <strong>Fast Settlements:</strong> Funds reach your account in 24-48 hours.</li>
+          <li><i class="fa-solid fa-check"></i> <strong>Automated GST:</strong> Generate tax-ready invoices for every sale.</li>
+        </ul>
+      </div>
+
+      <div class="sd-big-card reveal delay-1">
+        <div class="sd-card-top">
+          <div class="sd-icon-hex"><i class="fa-solid fa-users-gear"></i></div>
+        
+        </div>
+        <h3>Customer Management</h3>
+        <p>Build your loyal "Farm Family." Track repeat buyer habits, send personal thank-you notes, and manage all your customer feedback in one organized, searchable communication hub.</p>
+        <ul class="sd-spec-list">
+          <li><i class="fa-solid fa-check"></i> <strong>Buyer Profiles:</strong> Know your customer's favorite seasonal items.</li>
+          <li><i class="fa-solid fa-check"></i> <strong>Direct Messaging:</strong> One-on-one chat for bulk or custom orders.</li>
+          <li><i class="fa-solid fa-check"></i> <strong>Loyalty Rewards:</strong> Automatic discounts for your top repeat buyers.</li>
+        </ul>
+      </div>
+
+      <div class="sd-big-card reveal delay-2">
+        <div class="sd-card-top">
+          <div class="sd-icon-hex"><i class="fa-solid fa-bullhorn"></i></div>
+         
+        </div>
+        <h3>Marketing Tools</h3>
+        <p>Blast your harvest announcements to the world. Create professional marketing campaigns on WhatsApp and SMS to clear your stock faster and reach thousands of new local customers.</p>
+        <ul class="sd-spec-list">
+          <li><i class="fa-solid fa-check"></i> <strong>WhatsApp Broadcast:</strong> Share today's harvest with one click.</li>
+          <li><i class="fa-solid fa-check"></i> <strong>Coupon Engine:</strong> Create festival-specific discounts easily.</li>
+          <li><i class="fa-solid fa-check"></i> <strong>Flash Sales:</strong> Run limited-time offers to move perishable stock.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section class="pricing-section">
+  <div class="pricing-container">
+    
+    <div class="pricing-header">
+      <div class="badge-container center">
+        <span class="line"></span>
+        <span class="badge-text">PRICING</span>
+        <span class="line"></span>
+      </div>
+      <h2 class="pricing-title">Simple, <span>Honest</span> Pricing</h2>
+      <p class="pricing-subtitle">No hidden fees. No surprises. Start free and scale as your business grows.</p>
+    </div>
+
+    <div class="pricing-grid">
+      
+      <div class="price-card reveal">
+        <div class="pc-head">
+          <span class="tier-name">STARTER</span>
+          <div class="pc-amount">₹0 <small>/ month forever</small></div>
+        </div>
+        <ul class="pc-features">
+          <li><i class="fa-solid fa-check"></i> Up to 20 product listings</li>
+          <li><i class="fa-solid fa-check"></i> Basic analytics</li>
+          <li><i class="fa-solid fa-check"></i> 1 market location</li>
+          <li><i class="fa-solid fa-check"></i> Buyer messaging</li>
+          <li class="no"><i class="fa-solid fa-xmark"></i> Priority listing</li>
+          <li class="no"><i class="fa-solid fa-xmark"></i> Delivery management</li>
+        </ul>
+        <a href="../signup/signup.html" class="btn-price-outline">Get Started Free</a>
+      </div>
+
+      <div class="price-card reveal delay-1">
+        
+        <div class="pc-head">
+          <span class="tier-name">GROWTH</span>
+          <div class="pc-amount">₹499 <small>/ month</small></div>
+        </div>
+        <ul class="pc-features">
+          <li><i class="fa-solid fa-check"></i> Unlimited product listings</li>
+          <li><i class="fa-solid fa-check"></i> Advanced analytics</li>
+          <li><i class="fa-solid fa-check"></i> Up to 5 market locations</li>
+          <li><i class="fa-solid fa-check"></i> Priority buyer messaging</li>
+          <li><i class="fa-solid fa-check"></i> Priority listing placement</li>
+          <li class="no"><i class="fa-solid fa-xmark"></i> Delivery management</li>
+        </ul>
+        <a href="../signup/signup.html" class="btn-price-orange">Start 14-Day Trial</a>
+      </div>
+
+      <div class="price-card reveal delay-2">
+        <div class="pc-head">
+          <span class="tier-name">PRO</span>
+          <div class="pc-amount">₹999 <small>/ month</small></div>
+        </div>
+        <ul class="pc-features">
+          <li><i class="fa-solid fa-check"></i> Everything in Growth</li>
+          <li><i class="fa-solid fa-check"></i> Unlimited locations</li>
+          <li><i class="fa-solid fa-check"></i> Delivery management</li>
+          <li><i class="fa-solid fa-check"></i> Bulk order management</li>
+          <li><i class="fa-solid fa-check"></i> Custom vendor storefront</li>
+          <li><i class="fa-solid fa-check"></i> Dedicated support</li>
+        </ul>
+        <a href="../signup/signup.html" class="btn-price-outline">Get Pro Access</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="sd-full-cta">
+  <div class="cta-wrapper">
+    
+    <div class="cta-info">
+      <div class="cta-badge">FINAL STEP</div>
+      <h2>Ready to Digitise your <span>Harvest?</span></h2>
+      <p>Join 500+ farmers. No credit card required. 14-day free trial.</p>
+      
+      <div class="cta-actions">
+        <a href="../signup/signup.html" class="btn-main">Start Free Trial</a>
+        
+      </div>
+    </div>
+
+    <div class="cta-image-side">
+      <img src="../images/sd-cta.jpg" alt="Farmer">
+      <div class="status-pill">
+        <span class="live-dot"></span> 12 Vendors Online
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<footer class="footer" id="footer">
+
+
+
+  <div class="footer-inner">
+
+    <!-- ── Col 1: Brand ── -->
+    <div class="footer-brand">
+      <a href="../index.html" class="footer-logo">
+        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 32C18 32 6 22 6 14C6 8 11 4 18 4C25 4 30 8 30 14C30 22 18 32 18 32Z" fill="#2d8a3e" opacity="0.2"/>
+          <path d="M18 28C10 20 10 14 18 8C26 14 26 20 18 28Z" fill="#2d8a3e"/>
+          <ellipse cx="11" cy="18" rx="5" ry="8" fill="#60d978" transform="rotate(-35,11,18)"/>
+          <ellipse cx="25" cy="18" rx="5" ry="8" fill="#3aad50" transform="rotate(35,25,18)"/>
+        </svg>
+        <span class="footer-logo-text">Green<span>Harvest</span></span>
+      </a>
+      <p class="footer-desc">
+        Connecting ethical farmers with conscious families across India. Fresh, natural, and always honest — from soil to your table.
+      </p>
+      <div class="footer-socials">
+        <a href="#" class="social-btn" title="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="#" class="social-btn" title="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+        <a href="#" class="social-btn" title="Twitter / X">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="#" class="social-btn" title="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="var(--footer-bg)"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- ── Col 2: Quick Links ── -->
+    <div class="footer-col">
+      <h4 class="footer-col-title">Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../services/services.html">Services</a></li>
+        <li><a href="../blog/blog.html">Blog</a></li>
+        <li><a href="../about/about.html">About Us</a></li>
+        <li><a href="../contact/contact.html">Contact</a></li>
+        <li><a href="../Dashboard/Dashboard.html">Dashboard</a></li>
+      </ul>
+    </div>
+
+    <!-- ── Col 3: Shop ── -->
+  <div class="footer-col">
+      <h4 class="footer-col-title">Shop</h4>
+      <ul class="footer-links">
+       <li><a href="../index.html#wheat">Wheat</a></li>
+        <li><a href="../index.html#basmati-rice">Basmati Rice</a></li>
+        <li><a href="../index.html#moong-dal">Organic Moong Dal</a></li>
+        <li><a href="../index.html#mustard-oil">Mustard Oil</a></li>
+        <li><a href="../index.html#jaggery">Jaggery</a></li>
+        <li><a href="../index.html#turmeric">Lakadong Turmeric</a></li>
+      </ul>
+    </div>
+
+    <!-- ── Col 4: Contact ── -->
+   <div class="footer-col">
+  <h4 class="footer-col-title">Contact Us</h4>
+  <ul class="footer-contact">
+    <li>
+      <span class="contact-icon"><i class="fa-solid fa-location-dot"></i></span>
+      <span>42, Green Valley Road,<br>Hyderabad, TS 500032</span>
+    </li>
+    <li>
+      <span class="contact-icon"><i class="fa-solid fa-phone"></i></span>
+      <a href="tel:+919876543210">+91 98765 43210</a>
+    </li>
+    <li>
+      <span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
+      <a href="mailto:hello@greenharvest.in">hello@greenharvest.in</a>
+    </li>
+    <li>
+      <span class="contact-icon"><i class="fa-solid fa-clock"></i></span>
+      <span>Mon–Sat: 8am – 8pm</span>
+    </li>
+  </ul>
+</div>
+
+
+    <!-- ── Col 5: Newsletter ── -->
+    <div class="footer-col footer-newsletter">
+      <h4 class="footer-col-title">Stay Fresh</h4>
+      <p class="newsletter-desc">Get weekly harvest updates, seasonal recipes and exclusive offers.</p>
+      <div class="newsletter-form">
+        <input type="email" id="newsletterEmail" placeholder="Your email address" autocomplete="email"/>
+        <button id="newsletterBtn">Subscribe</button>
+      </div>
+      <p class="newsletter-msg" id="newsletterMsg"></p>
+     
+    </div>
+
+  </div>
+
+  <!-- ── Bottom bar ── -->
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <p class="footer-copy">© <span id="footerYear">2026</span> GreenHarvest. All rights reserved.</p>
+      <ul class="footer-legal">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Refund Policy</a></li>
+      </ul>
+    </div>
+  </div>
+
+</footer>
+
+
+
+
+
+<script src="../js/footer.js"></script>
+<script src="../js/nav.js"></script>
+<script src="../service details/service details.js"></script>
+</body>
+</html>

@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GreenHarvest</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../services/services.css">
+</head>
+<body>
+
+
+<header class="navbar" id="navbar">
+  <div class="container nav-container">
+
+   
+    <a href="../index.html" class="nav-logo">
+      <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 32C18 32 6 22 6 14C6 8 11 4 18 4C25 4 30 8 30 14C30 22 18 32 18 32Z"
+              fill="#2d8a3e" opacity="0.15"/>
+        <path d="M18 28C10 20 10 14 18 8C26 14 26 20 18 28Z" fill="#2d8a3e"/>
+        <ellipse cx="11" cy="18" rx="5" ry="8" fill="#60d978" transform="rotate(-35,11,18)"/>
+        <ellipse cx="25" cy="18" rx="5" ry="8" fill="#3aad50" transform="rotate(35,25,18)"/>
+      </svg>
+      <span class="nav-logo-text">Green<span>Harvest</span></span>
+    </a>
+
+    <!-- NAV LINKS (desktop) -->
+    <nav class="nav" id="navMenu">
+      <ul class="nav-links">
+
+        <li class="dropdown">
+          <a href="../index.html">Home <span class="arrow">▾</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../index.html">Home 1</a></li>
+            <li><a href="../Home2/Home.html">Home 2</a></li>
+          </ul>
+        </li>
+
+        <li><a href="../services/services.html">Services</a></li>
+        <li><a href="../blog/blog.html">Blog</a></li>
+        <li><a href="../about/about.html">About Us</a></li>
+        <li><a href="../contact/contact.html">Contact</a></li>
+        <li><a href="../Dashboard/Dashboard.html" class="dashboard-link">Dashboard</a></li>
+
+        <!-- mobile-only login -->
+        <li class="mobile-only"><a href="../login/login.html">Login</a></li>
+      </ul>
+    </nav>
+
+    <!-- RIGHT ACTIONS -->
+    <div class="nav-actions">
+      <button id="themeToggle" title="Toggle dark mode">🌙</button>
+      <button id="dirToggle"   title="Toggle RTL / LTR">LTR</button>
+      <a href="../login/login.html" class="login-btn">Login</a>
+      <!-- hamburger — last so it sits right of theme btn on mobile -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+
+<section class="services-hero">
+
+  <!-- Background -->
+  <div class="services-hero-bg"></div>
+  <div class="services-hero-overlay"></div>
+
+  <div class="services-hero-container">
+
+    <!-- LEFT CONTENT -->
+    <div class="services-hero-left">
+      <p class="hero-sub">OUR SERVICES</p>
+
+      <h1 class="hero-title">
+        Smart Solutions for <br>
+        <span>Modern Farming</span>
+      </h1>
+
+      <p class="hero-desc">
+        From direct farmer sales to smart analytics, GreenHarvest provides 
+        powerful tools to grow your business and connect with customers easily.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="../service details/service details.html" class="btn-primary">Explore Services</a>
+        <a href="../contact/contact.html" class="btn-secondary">Contact Us</a>
+      </div>
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="services-hero-right">
+      <img src="../images/services-hero.jpg" alt="Farming Services">
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<section class="services">
+
+  <!-- HEADER -->
+  <div class="services-header">
+
+  <p class="services-sub">
+    <span></span> OUR SERVICES <span></span>
+  </p>
+
+  <h2 class="services-title">
+    Everything You Need to <span>Sell & Grow</span>
+  </h2>
+
+  <p class="services-desc">
+    Tools built specifically for farmers' markets — not generic e-commerce software.
+  </p>
+
+</div>
+
+  <!-- CARDS -->
+  <div class="services-grid">
+
+    <!-- CARD 1 -->
+    <div class="service-card fade-up">
+      <div class="card-img">
+        <img src="../images/card-img-1.jpg" alt="">
+        <span class="badge">Core Feature</span>
+      </div>
+
+      <div class="card-body">
+       
+
+        <h3>Vendor Storefront</h3>
+
+        <p>
+          Your own branded online stall. Showcase your products, farm story,
+          and seasonal availability to thousands of local buyers.
+        </p>
+
+        <ul>
+          <li>Custom farm branding & banner</li>
+          <li>Unlimited product listings</li>
+          <li>Seasonal availability calendar</li>
+          <li>Buyer follow & notification system</li>
+        </ul>
+
+        <div class="card-footer">
+          <span class="price">Free <small>/ starter</small></span>
+          <a href="../service details/service details.html">Learn More →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="service-card fade-up">
+      <div class="card-img">
+        <img src="../images/card-img-2.jpg" alt="">
+        <span class="badge">Analytics</span>
+      </div>
+
+      <div class="card-body">
+        
+
+        <h3>Smart Dashboard</h3>
+
+        <p>
+          Real-time sales analytics, inventory tracking, and buyer insights —
+          presented in a dashboard even your grandpa can read.
+        </p>
+
+        <ul>
+          <li>Daily/weekly/monthly revenue</li>
+          <li>Best-selling product insights</li>
+          <li>Peak buying hours heatmap</li>
+          <li>Inventory low-stock alerts</li>
+        </ul>
+
+        <div class="card-footer">
+          <span class="price">₹499 <small>/ month</small></span>
+          <a href="../service details/service details.html">Learn More →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="service-card fade-up">
+      <div class="card-img">
+        <img src="../images/card-img-3.jpg" alt="">
+        <span class="badge">Logistics</span>
+      </div>
+
+      <div class="card-body">
+  
+
+        <h3>Delivery Management</h3>
+
+        <p>
+          Offer home delivery or local pick-up. Manage routes, track riders,
+          and auto-notify buyers — all from one screen.
+        </p>
+
+        <ul>
+          <li>Local delivery zone mapping</li>
+          <li>Real-time rider tracking</li>
+          <li>Automated buyer SMS alerts</li>
+          <li>Bulk order batching & routing</li>
+        </ul>
+
+        <div class="card-footer">
+          <span class="price">₹999 <small>/ month</small></span>
+          <a href="../service details/service details.html">Learn More →</a>
+        </div>
+      </div>
+    </div>
+
+
+<div class="service-card fade-up">
+  <div class="card-img">
+    <img src="../images/card-img-4.jpg" alt="">
+    <span class="badge">Payments</span>
+  </div>
+
+  <div class="card-body">
+    <h3>Secure Payments</h3>
+
+    <p>
+      Accept online payments from customers with ease. Fast, secure,
+      and fully integrated with your storefront.
+    </p>
+
+    <ul>
+      <li>UPI, cards & wallet support</li>
+      <li>Instant payment confirmations</li>
+      <li>Order history tracking</li>
+      <li>Refund & cancellation tools</li>
+    </ul>
+
+    <div class="card-footer">
+      <span class="price">₹299 <small>/ month</small></span>
+      <a href="../service details/service details.html">Learn More →</a>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="service-card fade-up">
+  <div class="card-img">
+    <img src="../images/card-img-5.jpg" alt="">
+    <span class="badge">CRM</span>
+  </div>
+
+  <div class="card-body">
+    <h3>Customer Management</h3>
+
+    <p>
+      Build strong relationships with your buyers and keep them
+      coming back every week.
+    </p>
+
+    <ul>
+      <li>Customer profiles & history</li>
+      <li>Loyalty & repeat buyer tracking</li>
+      <li>Targeted promotions</li>
+      <li>Feedback & reviews system</li>
+    </ul>
+
+    <div class="card-footer">
+      <span class="price">₹399 <small>/ month</small></span>
+      <a href="../service details/service details.html">Learn More →</a>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="service-card fade-up">
+  <div class="card-img">
+    <img src="../images/card-img-6.jpg" alt="">
+    <span class="badge">Marketing</span>
+  </div>
+
+  <div class="card-body">
+    <h3>Marketing Tools</h3>
+
+    <p>
+      Promote your products and reach more local buyers with
+      built-in marketing tools.
+    </p>
+
+    <ul>
+      <li>SMS & WhatsApp campaigns</li>
+      <li>Discount & coupon creation</li>
+      <li>Festival & seasonal offers</li>
+      <li>Push notifications</li>
+    </ul>
+
+    <div class="card-footer">
+      <span class="price">₹499 <small>/ month</small></span>
+      <a href="../service details/service details.html">Learn More →</a>
+    </div>
+  </div>
+</div>
+
+
+
+  </div>
+
+</section>
+
+
+
+<section class="pricing-section">
+
+  <div class="section-header">
+    <span class="section-subtitle">— COMPARE PLANS —</span>
+    <h2 class="section-title">
+      Find Your <span>Perfect Plan</span>
+    </h2>
+  </div>
+
+  <div class="pricing-table">
+
+    <table>
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Starter</th>
+          <th class="highlight">Growth </th>
+          <th>Pro</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Product listings</td>
+          <td>20</td>
+          <td>Unlimited</td>
+          <td>Unlimited</td>
+        </tr>
+
+        <tr>
+          <td>Market locations</td>
+          <td>1</td>
+          <td>5</td>
+          <td>Unlimited</td>
+        </tr>
+
+        <tr>
+          <td>Basic analytics</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+        </tr>
+
+        <tr>
+          <td>Advanced analytics</td>
+          <td class="cross">✕</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+        </tr>
+
+        <tr>
+          <td>Priority listing</td>
+          <td class="cross">✕</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+        </tr>
+
+        <tr>
+          <td>Delivery management</td>
+          <td class="cross">✕</td>
+          <td class="cross">✕</td>
+          <td class="check">✔</td>
+        </tr>
+
+        <tr>
+          <td>Custom storefront</td>
+          <td class="cross">✕</td>
+          <td class="cross">✕</td>
+          <td class="check">✔</td>
+        </tr>
+
+        <tr>
+          <td>Dedicated support</td>
+          <td class="cross">✕</td>
+          <td class="cross">✕</td>
+          <td class="check">✔</td>
+        </tr>
+
+        <tr class="price-row">
+          <td>Monthly Price</td>
+          <td><span class="price free">Free</span></td>
+          <td><span class="price">₹499</span></td>
+          <td><span class="price">₹999</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="support-section">
+  <div class="container">
+    <div class="header-content fade-up">
+        <div class="badge-container">
+        <span class="line"></span>
+        <span class="badge-text">QUICK HELP</span>
+        <span class="line"></span>
+      </div>
+      <h1 class="main-heading">Other Ways to Get <span class="accent">Support</span></h1>
+    </div>
+
+    <div class="support-grid">
+      <div class="support-card fade-up">
+        <div class="icon-wrapper green-light">
+          <i class="fa-solid fa-book-open"></i>
+        </div>
+        <h3>Help Center</h3>
+        <p>Browse 200+ articles and video guides for all common questions and troubleshooting.</p>
+        <a href="../contact/contact.html" class="btn-filled">Browse Articles &rarr;</a>
+      </div>
+
+      <div class="support-card fade-up">
+        <div class="icon-wrapper purple-light">
+          <i class="fa-solid fa-comment-dots"></i>
+        </div>
+        <h3>Live Chat</h3>
+        <p>Chat with our support team in real-time. Available in Telugu, Hindi, and English.</p>
+        <a href="../contact/contact.html" class="btn-filled">Start Chat &rarr;</a>
+      </div>
+
+      <div class="support-card fade-up">
+        <div class="icon-wrapper blue-light">
+          <i class="fa-solid fa-users"></i>
+        </div>
+        <h3>Vendor Community</h3>
+        <p>Join 5,000+ farmers in our WhatsApp groups, share tips, and learn from top vendors.</p>
+        <a href="../signup/signup.html" class="btn-filled">Join Community &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="faq-section">
+  <div class="container">
+    <div class="badge-container">
+      <span class="line"></span>
+      <span class="badge-text">FAQ</span>
+      <span class="line"></span>
+    </div>
+
+    <h1 class="faq-title">Common <span>Questions</span></h1>
+
+    <div class="accordion">
+      <div class="accordion-item">
+        <button class="accordion-header">
+          Is GreenHarvest really free to start?
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Yes! You can sign up and list your first few products for free to get a feel for the platform. We only offer premium features for larger commercial operations.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">
+          Does GreenHarvest take a commission on sales?
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>We believe in keeping profits in the hands of the producers. We charge a flat monthly subscription rather than taking a percentage of your hard-earned sales.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">
+          What languages does the platform support?
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Currently, the dashboard and support are available in English, Telugu, and Hindi to better serve our diverse community of vendors.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">
+          How quickly do I get paid?
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Payments are processed instantly through our secure gateway and typically land in your connected bank account within 24 to 48 hours.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">
+          Can I manage multiple market locations?
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Yes, our Pro dashboard allows you to toggle between different market stalls or physical locations while keeping your inventory synchronized.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="mission-cta">
+  <div class="blob-circle blob-top-left"></div>
+  <div class="blob-circle blob-bottom-right"></div>
+
+  <div class="mission-content-wrapper">
+    <div class="mission-text-side">
+      <div class="badge-container">
+        <span class="line"></span>
+        <span class="badge-text">GET STARTED</span>
+        <span class="line"></span>
+      </div>
+      
+      <h2 class="mission-heading">Ready to Grow Your <span>Digital Harvest?</span></h2>
+      
+      <p class="mission-subtext">
+        Join over 5,000+ vendors already transforming their agricultural business. 
+        Start your 14-day free trial today—no credit card required.
+      </p>
+      
+      <div class="mission-actions">
+        <a href="../signup/signup.html" class="btn-primary-orange">Join Us</a>
+        <a href="../contact/contact.html" class="btn-outline-white">Contact Team</a>
+      </div>
+    </div>
+
+    <div class="mission-image-side">
+      <img src="../images/image-side-cta.jpg" alt="Agriculture">
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer" id="footer">
+
+
+
+  <div class="footer-inner">
+
+    <!-- ── Col 1: Brand ── -->
+    <div class="footer-brand">
+      <a href="../index.html" class="footer-logo">
+        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 32C18 32 6 22 6 14C6 8 11 4 18 4C25 4 30 8 30 14C30 22 18 32 18 32Z" fill="#2d8a3e" opacity="0.2"/>
+          <path d="M18 28C10 20 10 14 18 8C26 14 26 20 18 28Z" fill="#2d8a3e"/>
+          <ellipse cx="11" cy="18" rx="5" ry="8" fill="#60d978" transform="rotate(-35,11,18)"/>
+          <ellipse cx="25" cy="18" rx="5" ry="8" fill="#3aad50" transform="rotate(35,25,18)"/>
+        </svg>
+        <span class="footer-logo-text">Green<span>Harvest</span></span>
+      </a>
+      <p class="footer-desc">
+        Connecting ethical farmers with conscious families across India. Fresh, natural, and always honest — from soil to your table.
+      </p>
+      <div class="footer-socials">
+        <a href="#" class="social-btn" title="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="#" class="social-btn" title="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+        <a href="#" class="social-btn" title="Twitter / X">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="#" class="social-btn" title="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="var(--footer-bg)"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- ── Col 2: Quick Links ── -->
+    <div class="footer-col">
+      <h4 class="footer-col-title">Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../services/services.html">Services</a></li>
+        <li><a href="../blog/blog.html">Blog</a></li>
+        <li><a href="../about/about.html">About Us</a></li>
+        <li><a href="../contact/contact.html">Contact</a></li>
+        <li><a href="../Dashboard/Dashboard.html">Dashboard</a></li>
+      </ul>
+    </div>
+
+    <!-- ── Col 3: Shop ── -->
+  <div class="footer-col">
+      <h4 class="footer-col-title">Shop</h4>
+      <ul class="footer-links">
+       <li><a href="../index.html#wheat">Wheat</a></li>
+        <li><a href="../index.html#basmati-rice">Basmati Rice</a></li>
+        <li><a href="../index.html#moong-dal">Organic Moong Dal</a></li>
+        <li><a href="../index.html#mustard-oil">Mustard Oil</a></li>
+        <li><a href="../index.html#jaggery">Jaggery</a></li>
+        <li><a href="../index.html#turmeric">Lakadong Turmeric</a></li>
+      </ul>
+    </div>
+
+    <!-- ── Col 4: Contact ── -->
+   <div class="footer-col">
+  <h4 class="footer-col-title">Contact Us</h4>
+  <ul class="footer-contact">
+    <li>
+      <span class="contact-icon"><i class="fa-solid fa-location-dot"></i></span>
+      <span>42, Green Valley Road,<br>Hyderabad, TS 500032</span>
+    </li>
+    <li>
+      <span class="contact-icon"><i class="fa-solid fa-phone"></i></span>
+      <a href="tel:+919876543210">+91 98765 43210</a>
+    </li>
+    <li>
+      <span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
+      <a href="mailto:hello@greenharvest.in">hello@greenharvest.in</a>
+    </li>
+    <li>
+      <span class="contact-icon"><i class="fa-solid fa-clock"></i></span>
+      <span>Mon–Sat: 8am – 8pm</span>
+    </li>
+  </ul>
+</div>
+
+
+    <!-- ── Col 5: Newsletter ── -->
+    <div class="footer-col footer-newsletter">
+      <h4 class="footer-col-title">Stay Fresh</h4>
+      <p class="newsletter-desc">Get weekly harvest updates, seasonal recipes and exclusive offers.</p>
+      <div class="newsletter-form">
+        <input type="email" id="newsletterEmail" placeholder="Your email address" autocomplete="email"/>
+        <button id="newsletterBtn">Subscribe</button>
+      </div>
+      <p class="newsletter-msg" id="newsletterMsg"></p>
+     
+    </div>
+
+  </div>
+
+  <!-- ── Bottom bar ── -->
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <p class="footer-copy">© <span id="footerYear">2026</span> GreenHarvest. All rights reserved.</p>
+      <ul class="footer-legal">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Refund Policy</a></li>
+      </ul>
+    </div>
+  </div>
+
+</footer>
+
+
+
+<script src="../js/footer.js"></script>
+<script src="../js/nav.js"></script>
+<script src="../services/services.js"></script>
+</body>
+</html>

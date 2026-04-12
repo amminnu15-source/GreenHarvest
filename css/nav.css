@@ -405,3 +405,16 @@ body {
     font-size: 1.15rem;   
   }
 }
+
+
+
+
+
+
+
+
+.nav-links li.active > a {
+  color: var(--primary, #2d8a3e);
+  font-weight: 600;
+  border-bottom: 2px solid var(--primary, #2d8a3e);
+}

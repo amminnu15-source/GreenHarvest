@@ -78,7 +78,7 @@ body{
 }
 
 .nav-logo-text span{
-  color:#f59e0b;
+  color:#c47a15;
 }
 
 .tagline{
@@ -303,7 +303,7 @@ body.dark .nav-logo-text{
 }
 
 body.dark .nav-logo-text span{
-  color:#facc15;
+  color:#c47a15;
 }
 
 
@@ -345,6 +345,9 @@ html[dir="rtl"]{
 }
 
 
+body.dark .features li{
+  color:#e8eef7;
+}
 
 
 

@@ -1,7 +1,7 @@
 
 .blog-hero {
   position: relative;
-  height: 70vh; 
+  height: 90vh; 
   min-height: 500px;
   display: flex;
   align-items: center;
@@ -66,25 +66,38 @@
 
 .dot {
   width: 6px;
-  height: 6px;
+  height: 10px;
   background: #7cd67c;
   border-radius: 50%;
 }
 
-
-.hero-left h1 {
-  font-size: 2.6rem;
-  line-height: 1.2;
-}
-
-.hero-left h1 span {
-  color: #f0a030;
+.hero-left{
+  max-width: 620px;
+  padding-top: 80px;
 }
 
 
-.hero-left p {
-  color: #ddd;
-  line-height: 1.6;
+
+
+.hero-left h1{
+  font-size: 58px;
+  line-height: 1.08;
+  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+
+  margin-bottom: 22px;
+}
+
+.hero-left h1 span{
+  color:#c47a15;
+}
+
+
+.hero-left p{
+  color:#ddd;
+  line-height:1.7;
+  font-size:18px;
+  max-width:520px;
 }
 
 
@@ -151,7 +164,10 @@
 
 
 .hero-left h1 { animation-delay: 0.2s; }
-.hero-left p { animation-delay: 0.4s; }
+.hero-left p { animation-delay: 0.4s;  color: #ddd;
+  line-height: 1.7;
+  font-size: 18px;
+  max-width: 480px;}
 .stats { animation-delay: 0.6s; }
 .topics { animation-delay: 0.8s; }
 
@@ -231,7 +247,7 @@
   --green-d:   #1e5a28;
   --green-l:   rgba(45,138,62,0.10);
   --green-ll:  rgba(45,138,62,0.06);
-  --accent:    #C87820;
+  --accent:    #5f6f5f;
   --accent-l:  rgba(200,120,32,0.10);
   --border:    rgba(28,28,10,0.09);
   --border2:   rgba(28,28,10,0.05);
@@ -241,7 +257,7 @@
   --radius:    14px;
   --radius-l:  22px;
   --radius-xl: 32px;
-  --font-d:    'Cormorant Garamond', Georgia, serif;
+  --font-d:    'Playfair Display', serif;
   --font-b:    'DM Sans', sans-serif;
   --ease:      0.28s cubic-bezier(0.4,0,0.2,1);
 }
@@ -257,7 +273,7 @@
   --green-d:   #3a8a4a;
   --green-l:   rgba(74,170,90,0.12);
   --green-ll:  rgba(74,170,90,0.06);
-  --accent:    #E09030;
+  --accent:    #5f6f5f;
   --accent-l:  rgba(224,144,48,0.12);
   --border:    rgba(238,232,214,0.09);
   --border2:   rgba(238,232,214,0.05);
@@ -356,11 +372,21 @@ body::after {
 }
 
 
-.bd-art-title {
+.bd-art-title{
   font-family: var(--font-d);
-  font-size: clamp(2rem, 5vw, 3.8rem);
-  font-weight: 700; line-height: 1.06;
-  letter-spacing: -0.025em; margin-bottom: 1.25rem;
+
+  font-size: 43px;
+  font-weight: 700;
+  line-height: 1.15;
+
+
+
+  max-width: 600px;
+  width: 100%;
+
+  letter-spacing: -0.025em;
+  margin-bottom: 1.25rem;
+
   animation: bdFadeUp 0.6s ease both;
 }
 .bd-art-title em { color: var(--accent); font-style: italic; }
@@ -368,8 +394,9 @@ body::after {
 
 
 .bd-art-excerpt {
-  font-size: 1.1rem; line-height: 1.78; color: var(--text2);
-  font-weight: 300; max-width: 750px; margin-bottom: 2rem;
+ font-size: 18px; line-height: 1.78; color:#5f6f5f;;
+  font-weight: 300; max-width: 550px; 
+  margin-bottom: 2rem;
   animation: bdFadeUp 0.6s 0.1s ease both;
 }
 
@@ -455,7 +482,13 @@ body::after {
   color: var(--text); letter-spacing: -0.01em;
   margin: 2rem 0 0.75rem;
 }
-.bd-content p { margin-bottom: 1.3rem; }
+.bd-content p {
+  margin-bottom: 1.3rem;
+  max-width: 520px; /* ADD THIS */
+   color:#5f6f5f;
+  line-height:1.7;
+   font-size: 18px;
+}
 .bd-content p:last-child { margin-bottom: 0; }
 .bd-content strong { font-weight: 600; color: var(--text); }
 .bd-content em { font-style: italic; color: var(--accent); }
@@ -781,17 +814,23 @@ body::after {
 .bd-related-inner { max-width: 1220px; margin: 0 auto; }
 .bd-related-eyebrow {
   display: inline-flex; align-items: center; gap: 10px;
-  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.10em;
-  text-transform: uppercase; color: var(--accent); margin-bottom: 0.75rem;
+  font-size:15px; font-weight: 700;   letter-spacing:2px;
+  text-transform: uppercase; color:#c47a15; margin-bottom: 0.75rem;
+  display: block;        /* ADD THIS */
+  text-align: center;
 }
 .bd-related-eyebrow::before, .bd-related-eyebrow::after {
-  content: ''; display: block; width: 22px; height: 1.5px;
-  background: var(--accent); border-radius: 2px;
+ 
+  display: none;
 }
 .bd-related-title {
-  font-family: var(--font-d); font-size: clamp(1.8rem, 3vw, 2.6rem);
-  font-weight: 700; letter-spacing: -0.02em; line-height: 1.1;
+  font-family: var(--font-d); font-size: 43px;
+  font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; max-width: 600px;
+   width: 100%;
   margin-bottom: 2.5rem;
+  text-align: center;   /* ADD THIS */
+  margin-left: auto;    /* ADD THIS */
+  margin-right: auto;   
 }
 .bd-related-title em { color: var(--accent); font-style: italic; }
 .bd-related-grid {
@@ -822,11 +861,15 @@ body::after {
 .bd-rc-meta { font-size: 0.73rem; color: var(--text3); display: flex; align-items: center; gap: 0.5rem; }
 .bd-rc-title {
   font-family: var(--font-d); font-size: 1.1rem; font-weight: 700;
-  line-height: 1.25; color: var(--text);
+  line-height: 1.25; color:#c47a15;
   transition: color var(--ease);
+  max-width: 600px; /* ADD THIS */
 }
 .bd-rel-card:hover .bd-rc-title { color: var(--accent); }
-.bd-rc-excerpt { font-size: 0.8rem; color: var(--text2); line-height: 1.62; flex: 1; }
+.bd-rc-excerpt {  max-width: 520px;
+    color:#5f6f5f;
+  line-height:1.7;
+   font-size: 18px; flex: 1; }
 .bd-rc-footer {
   display: flex; align-items: center; justify-content: space-between;
   padding-top: 0.75rem; border-top: 1px solid var(--border2);
@@ -866,4 +909,72 @@ body::after {
   .bd-art-footer { flex-direction: column; }
   .bd-post-tabs { gap: 0.3rem; }
   .bd-post-tab { font-size: 0.68rem; padding: 0.35rem 0.7rem; }
+}
+
+
+
+
+
+
+
+
+[data-theme="dark"] .hero-desc {
+  color: #cfcbb5;
+}
+
+
+/* ADD THIS BELOW */
+
+[data-theme="dark"] .bd-art-title{
+  color:#f5f5f5;
+}
+
+[data-theme="dark"] .bd-art-title em{
+  color:#c47a15;
+}
+
+[data-theme="dark"] .bd-art-excerpt{
+  color:rgba(255,255,255,0.78);
+}
+
+[data-theme="dark"] .hero-left h1{
+  color:#f5f5f5;
+}
+
+[data-theme="dark"] .hero-left p{
+  color:rgba(255,255,255,0.78);
+}
+
+
+[data-theme="dark"] .bd-highlight p{
+  color:rgba(255,255,255,0.78);
+}
+
+[data-theme="dark"] .bd-content p{
+  color:rgba(255,255,255,0.78);
+}
+
+[data-theme="dark"] .bd-content h2{
+  color:#f5f5f5;
+}
+
+
+
+
+
+
+[data-theme="dark"] .bd-rc-excerpt{
+  color:rgba(255,255,255,0.78);
+}
+
+[data-theme="dark"] .bd-rc-author{
+  color:rgba(255,255,255,0.55);
+}
+
+[data-theme="dark"] .bd-related-title{
+  color:#f5f5f5;
+}
+
+[data-theme="dark"] .bd-related-title em{
+  color:#c47a15;
 }

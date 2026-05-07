@@ -59,6 +59,21 @@
     });
   });
 
+  // Persist active state based on current page
+  (function setSidebarActive(){
+    const current = location.pathname.toLowerCase().replace(/\/+$/, '');
+    document.querySelectorAll('.sb-link[href]').forEach(link => {
+      const href = link.getAttribute('href');
+      if (!href || href === '#') return;
+      const resolved = new URL(href, location.href).pathname.toLowerCase().replace(/\/+$/, '');
+      if (resolved === current ||
+          (resolved.endsWith('/index.html') && resolved.replace('/index.html','') === current)) {
+        document.querySelectorAll('.sb-link').forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+      }
+    });
+  })();
+
 
   function counter(elId, end, duration, fmt){
     const el = document.getElementById(elId);
@@ -113,7 +128,7 @@
 
   document.getElementById('ordersBody').innerHTML = orders.map((o,i) => `
     <tr class="fade-up" style="animation-delay:${0.06*i}s;">
-      <td><strong>${o.id}</strong></td>
+      <td>${o.id}</td>
       <td>${o.customer}</td>
       <td>${o.product}</td>
       <td><span class="badge ${o.status}">${o.status.charAt(0).toUpperCase()+o.status.slice(1)}</span></td>

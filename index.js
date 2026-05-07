@@ -31,11 +31,19 @@ function closeMobileMenu() {
   document.body.style.overflow = '';
 }
 
-
 dropdowns.forEach(drop => {
   drop.querySelector('a').addEventListener('click', (e) => {
-    if (window.innerWidth <= 992) {        /* FIXED: was 768, now matches CSS breakpoint */
+    if (window.innerWidth <= 992) {
+      // existing mobile behaviour
       e.preventDefault();
+      const wasOpen = drop.classList.contains('open');
+      dropdowns.forEach(d => d.classList.remove('open'));
+      drop.classList.toggle('open', !wasOpen);
+
+    } else if (window.innerWidth <= 1040) {
+      // 993px–1040px: prevent redirect, toggle dropdown
+      e.preventDefault();
+      e.stopPropagation();
       const wasOpen = drop.classList.contains('open');
       dropdowns.forEach(d => d.classList.remove('open'));
       drop.classList.toggle('open', !wasOpen);
@@ -69,10 +77,40 @@ function applyDir(d) {
 }
 
 
-const page = location.pathname.split('/').pop() || 'index.html';
-document.querySelectorAll('.nav-links a').forEach(a => {
-  if (a.getAttribute('href') === page) a.closest('li').classList.add('active');
-});
+function setActiveLink() {
+  const currentPath = location.pathname;
+
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    const href = a.getAttribute('href');
+    if (!href) return;
+
+    // resolve the href to an absolute path
+    const resolved = new URL(href, location.href).pathname;
+
+    // normalize: remove trailing slash, lowercase
+    const normalize = p => p.replace(/\/+$/, '').toLowerCase();
+
+    const isCurrent =
+      normalize(resolved) === normalize(currentPath) ||
+      // treat /index.html and / as the same
+      (normalize(resolved).endsWith('/index.html') &&
+       normalize(currentPath) === normalize(resolved).replace('/index.html', ''));
+
+    if (isCurrent) {
+      // highlight the parent <li>
+      const li = a.closest('li');
+      li.classList.add('active');
+
+      // if inside a dropdown-menu, also highlight the parent dropdown <li>
+      const dropdownParent = a.closest('.dropdown-menu');
+      if (dropdownParent) {
+        dropdownParent.closest('.dropdown').classList.add('active');
+      }
+    }
+  });
+}
+
+setActiveLink();
 
 
 window.addEventListener('resize', () => {

@@ -405,3 +405,36 @@ body {
     font-size: 1.15rem;   
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 993px) and (max-width: 1040px) {
+  /* disable hover, use only .open from JS click */
+  .dropdown:hover .dropdown-menu {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-8px);
+  }
+
+  .dropdown.open .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+  }
+}
+
+/* Active state for dropdown items */
+.dropdown-menu li.active a,
+.dropdown-menu li a.active {
+  background: var(--btn-bg);
+  color: var(--text-hover);
+  font-weight: 500;
+}

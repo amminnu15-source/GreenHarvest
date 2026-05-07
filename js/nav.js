@@ -130,3 +130,15 @@ window.addEventListener('resize', () => {
 
 
 
+const currentPath = location.pathname;
+document.querySelectorAll('.nav-links a').forEach(a => {
+  const href = a.getAttribute('href');
+  if (!href || href === '#') return;
+  const resolvedPath = new URL(href, location.href).pathname;
+  const normalize = p => p.replace(/\/index\.html$/, '/');
+  if (normalize(resolvedPath) === normalize(currentPath)) {
+    a.closest('li').classList.add('active');
+    const parentDropdown = a.closest('.dropdown');
+    if (parentDropdown) parentDropdown.classList.add('active');
+  }
+});

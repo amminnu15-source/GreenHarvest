@@ -876,7 +876,17 @@ body::after {
 }
 .bd-rc-author { font-size: 0.75rem; font-weight: 500; color: var(--text3); }
 .bd-rc-arrow { color: var(--green); display: flex; align-items: center; }
+.bd-rc-arrow {
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.35s ease, color 0.35s ease;
+}
 
+
+.bd-rel-card:hover .bd-rc-arrow {
+  transform: translateX(8px);
+  color: var(--accent);
+}
 
 .reveal {
   opacity: 0; transform: translateY(28px);
@@ -977,4 +987,12 @@ body::after {
 
 [data-theme="dark"] .bd-related-title em{
   color:#c47a15;
+}
+
+
+
+
+.bd-art-title span,
+.bd-art-title em {
+  color: #c47a15;
 }

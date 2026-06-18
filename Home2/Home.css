@@ -1,13 +1,13 @@
 
-
-/* ─── HERO SECTION ──────────────────────────────────── */
 .hero {
   position: relative;
-  min-height: 100vh;
-  padding: 100px 20px;
+   min-height: calc(100vh - 80px);
+  padding: 0px 20px;
   width: 100%;
   display: flex;
   align-items: center;
+    justify-content: center;
+
   overflow: hidden;
   background: url('../images/Greenery1.png') center/cover no-repeat;
 }
@@ -26,15 +26,17 @@
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 620px;
+  max-width: 1000px;
+   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin-left: clamp(2rem, 8vw, 120px);
+align-items: center;
+text-align: center;    
+  margin: 0 auto;  
 }
 
 
-/* ─── EYEBROW BADGE ─────────────────────────────────── */
+
 .hero-badge {
   display: inline-flex;
   align-items: center;
@@ -60,17 +62,17 @@
 }
 
 
-/* ─── HEADING ───────────────────────────────────────── */
+
 .hero h1{
   font-family:'Playfair Display', serif;
 
   font-size:52px;
-  line-height:1.06;
+  line-height:1.1;
   font-weight:700;
 
   color:#f5f5f5;
 
-  max-width:600px;
+  max-width:800px;
   width:100%;
 
   margin:0 0 24px;
@@ -78,16 +80,17 @@
   letter-spacing:-0.035em;
 }
 
-.hero h1 em {
-  color: #3aad50;
+h1 span {
+  color: #c47a15;
   font-style: italic;
 }
 
 
-/* ─── PARAGRAPH ─────────────────────────────────────── */
+
 .hero p {
-  max-width: 480px;
-  margin: 0 0 36px;
+  max-width: 850px;
+  width: 100%;
+  margin: 0 auto 36px;
   color: rgba(255, 255, 255, 0.75);
   font-size: 17px;
   line-height: 1.8;
@@ -99,7 +102,7 @@
 }
 
 
-/* ─── BUTTONS ───────────────────────────────────────── */
+
 .hero-buttons {
   display: flex;
   gap: 12px;
@@ -143,7 +146,7 @@
 }
 
 
-/* ─── STATS ROW ─────────────────────────────────────── */
+
 .hero-stats {
   display: flex;
   gap: 32px;
@@ -165,7 +168,7 @@
 }
 
 
-/* ─── RESPONSIVE ─────────────────────────────────────── */
+
 @media (max-width: 768px) {
   .hero {
     padding: 80px 20px;
@@ -329,7 +332,7 @@ html[dir="rtl"] .hero-buttons {
   }
 }
 
-/* ───────── 1024px TABLET/LAPTOP ───────── */
+
 @media (max-width:1024px){
 
   .hero{
@@ -377,7 +380,6 @@ html[dir="rtl"] .hero-buttons {
 }
 
 
-/* ───────── 768px TABLET ───────── */
 @media (max-width:768px){
 
   .hero{
@@ -514,7 +516,8 @@ html[data-theme="dark"] .agro-section {
 }
 
 .split-heading span{
-  color:#2b2b2b;
+    color: #c47a15;
+    font-style: italic;
 }
 
 
@@ -576,15 +579,27 @@ html[data-theme="dark"] .agro-text {
 
 .agro-item {
   display: flex;
-  gap: 15px;
+  gap: 14px;
   margin-bottom: 25px;
   font-size: 1.05rem;
+    align-items: flex-start;
+  position: relative;
 }
 
 .agro-item span {
   font-size: 22px;
 }
+.agro-item::before {
+  content: "";
+  width: 8px;
+  height: 8px;
 
+  min-width: 8px;
+  margin-top: 10px;
+
+  background: #c47a15;
+  border-radius: 2px; 
+}
 .agro-item p {
  margin-bottom:15px;
   max-width: 520px;
@@ -730,7 +745,8 @@ html[data-theme="dark"] .steps-section {
 }
 
 .steps-title span{
-  color:#2b2b2b;
+color: #c47a15;
+font-style: italic;
 }
 
 .steps-header p {
@@ -755,7 +771,10 @@ html[data-theme="dark"] .steps-section {
   border-radius: 20px;
   transition: 0.4s;
    border: 1px solid rgba(0, 0, 0, 0.06);
-
+text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
@@ -772,18 +791,22 @@ html[data-theme="dark"] .steps-section {
   width: 60px;
   height: 60px;
   background: #eef3ec;
-  border-radius: 15px;
+  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #2d8a3e;
   margin-bottom: 20px;
   transition: 0.3s;
+  line-height: 0;
+  overflow: hidden;
 }
 
 .step-icon svg {
   width: 30px;
   height: 30px;
+  display: block;
+  margin: auto;
 }
 
 .step-card:hover .step-icon {
@@ -1086,7 +1109,10 @@ html[data-theme="dark"] .user span {
   margin:0 auto;
 }
 
-
+.impact-title span{
+  color: #c47a15;
+  font-style: italic;
+}
 
 
 .impact-grid {
@@ -1271,7 +1297,10 @@ html[data-theme="dark"] .impact-icon {
   text-align:center;
   margin:0 auto 10px;
 }
-
+.cta-box h2 span {
+  color: #c47a15;
+  font-style: italic;
+}
 .cta-box p{
   max-width:520px;
   width:100%;

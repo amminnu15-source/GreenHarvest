@@ -4,9 +4,9 @@
   min-height: 90vh;
   display: flex;
   align-items: center;
-  justify-content: flex-start; 
-  text-align: left; 
-  padding-left: 8%; 
+  justify-content:center; 
+  text-align: center; 
+  padding-left: 0; 
 
   background: url('../images/contact-hero.jpg') center/cover no-repeat;
   overflow: hidden;
@@ -62,7 +62,7 @@
 
 .contact-buttons {
   display: flex;
-   justify-content:flex-start;
+   justify-content:center;
   gap: 15px;
   flex-wrap: wrap;
 }
@@ -284,7 +284,7 @@
 
 
 
-/* ─── CONTACT WRAP + GRID ─────────────────────────────── */
+
 .contact-wrap {
   padding: 5rem 2rem;
   background: #f5f2eb;
@@ -334,12 +334,11 @@
   font-size: 1.2rem;
   flex-shrink: 0;
   margin-top: 1px;
+
+background: #E8F5EE;
+  color: #2e7d32;
 }
-.ic-pink   { background: #FCE8F0; color: #2e7d32; }
-.ic-coral  { background: #FDECEA; color: #2e7d32; }
-.ic-mint   { background: #E8F5EE; color: #2e7d32; }
-.ic-purple { background: #EDE8FC; color: #2e7d32; }
-.ic-blue   { background: #E5F0FC; color: #2e7d32; }
+
 
 [data-theme="dark"] .ic-bubble {
   filter: brightness(1.2);
@@ -353,7 +352,7 @@
 .ic-title {
   font-size: 0.92rem;
   font-weight: 600;
-  color: #1a1a0e;
+color: #c47a15;
   margin-bottom: 4px;
 }
 .ic-body {
@@ -440,7 +439,7 @@
 .form-heading {
   font-size: 1.55rem;
   font-weight: 600;
-  color: #1a1a0e;
+ color: #c47a15;
   margin-bottom: 4px;
   letter-spacing: -0.02em;
 }
@@ -465,9 +464,9 @@
 .field-label {
   font-size: 0.8rem;
   font-weight: 600;
-  color: #1a1a0e;
+ 
 }
-.field-label span { color: #c04a00; margin-left: 2px; }
+.field-label span {  color: #c47a15; margin-left: 2px; }
 
 .field-input,
 .field-textarea {

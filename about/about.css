@@ -494,7 +494,7 @@ font-size: 43px;
 
   font-weight:700;
 
-  background:#37a948;
+  background:#1e4d2b;
 
   color:#fff;
 
@@ -504,7 +504,7 @@ font-size: 43px;
 .mission-btn:hover{
   transform:translateY(-4px);
 
-  background:#2f9440;
+  background:#2d8a3e;
 
   box-shadow:0 12px 25px rgba(55,169,72,0.25);
 }

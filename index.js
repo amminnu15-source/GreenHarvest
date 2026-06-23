@@ -205,3 +205,62 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+
+
+
+function counter(id, target, suffix=''){
+
+    let count = 0;
+
+    let speed = target / 100;
+
+    let interval = setInterval(()=>{
+
+        count += speed;
+
+        if(count >= target){
+
+            count = target;
+
+            clearInterval(interval);
+        }
+
+        document.getElementById(id).innerText =
+        Math.floor(count) + suffix;
+
+    },20);
+
+}
+
+function animateCounter(id,target,suffix=''){
+
+    let element=document.getElementById(id);
+
+    let current=0;
+
+    let increment=target/100;
+
+    let interval=setInterval(()=>{
+
+        current+=increment;
+
+        if(current>=target){
+
+            current=target;
+
+            clearInterval(interval);
+        }
+
+        element.innerText=Math.floor(current)+suffix;
+
+    },20);
+
+}
+
+animateCounter('vendors',12000,'+');
+
+animateCounter('farms',500,'+');
+
+animateCounter('cities',50,'+');
+
+animateCounter('customers',99,'%');

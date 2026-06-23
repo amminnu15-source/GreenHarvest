@@ -13,7 +13,7 @@
 .services-hero-bg {
   position: absolute;
   inset: 0;
-  background: url('../images/services-hero-bg.jpg') center/cover no-repeat;
+  background: url('../images/blog-d-hero.jpg') center/cover no-repeat;
   z-index: 1;
   transform: scale(1.1);
 }
@@ -26,20 +26,26 @@
 }
 
 
-.services-hero-container {
-  position: relative;
-  z-index: 3;
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  align-items: center;
-  gap: 40px;
-  width: 100%;
+.services-hero-container{
+
+  position:relative;
+
+  z-index:3;
+
+  width:100%;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
 }
 
 
 .services-hero-left {
   color: #fff;
   max-width: 600px;
+    text-align:center;
 }
 
 .hero-sub {
@@ -73,6 +79,8 @@
 .hero-buttons{
   display:flex;
   gap:16px;
+    justify-content:center;
+
   flex-wrap:wrap;
   margin-top:25px;
 }
@@ -93,7 +101,7 @@
 
 
 .btn-primary{
-  background:#37a948;
+  background:#1e4d2b;
 
   color:#fff;
 
@@ -1053,14 +1061,14 @@ margin:0 auto 20px;
   font-weight: 600;
   text-decoration: none;
   font-size: 0.9rem;
-  background-color: var(--btn-green);
+  background-color: #1e4d2b;
   color: white;
   transition: background 0.3s ease;
   text-align: center;
 }
 
 .btn-filled:hover {
-  background-color: #246128;
+  background-color: #2d8a3e;
   box-shadow: 0 0 12px rgba(36, 97, 40, 0.6);
 }
 
@@ -1180,13 +1188,14 @@ margin:0 auto 20px;
 
 .faq-title {
  max-width: 600px;
-   width: 100%;
-     font-family:'Playfair Display', serif;
+ width: 100%;
+font-family:'Playfair Display', serif;
 font-size: 43px;
  color:#2b2b2b;
   margin-bottom: 50px;
   text-align:center;
 margin:0 auto 20px;
+
 }
 
 .faq-title span {

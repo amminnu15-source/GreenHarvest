@@ -9,18 +9,13 @@
     justify-content: center;
 
   overflow: hidden;
-  background: url('../images/Greenery1.png') center/cover no-repeat;
+  background: url('../images/home-2_hero.jpg') center/cover no-repeat;
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.65) 0%,
-    rgba(0, 0, 0, 0.45) 60%,
-    rgba(0, 0, 0, 0.15) 100%
-  );
+  background: rgba(0, 0, 0, 0.55);
 }
 
 .hero-content {
@@ -117,14 +112,15 @@ h1 span {
   cursor: pointer;
   border: none;
   text-decoration: none;
-  background: linear-gradient(135deg, #2d8a3e, #3aad50);
+  background: #1e4d2b;
+   border: 2px solid rgba(255, 255, 255, 0.45);
   color: #fff;
   box-shadow: 0 4px 20px rgba(45, 138, 62, 0.40);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 .primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 28px rgba(45, 138, 62, 0.50);
+  background: #2d8a3e;
 }
 
 .outline {
@@ -1326,7 +1322,7 @@ html[data-theme="dark"] .impact-icon {
 .btn-primary {
   padding: 12px 26px;
   border-radius: 30px;
-  background: #4caf50;
+  background: #1e4d2b;
   color: #fff;
   text-decoration: none;
   font-weight: 600;
@@ -1334,7 +1330,7 @@ html[data-theme="dark"] .impact-icon {
 }
 
 .btn-primary:hover {
-  background: #2e7d32;
+  background: #2d8a3e;
   transform: translateY(-2px);
 }
 
@@ -1350,7 +1346,7 @@ html[data-theme="dark"] .impact-icon {
 }
 
 .btn-outline:hover {
-  background: #4caf50;
+  background: #1e4d2b;
   color: #fff;
 }
 

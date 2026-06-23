@@ -12,7 +12,7 @@
 .hero-bg{
   position: absolute;
   inset: 0;
-  background: url('../images/service-hero.jpg') center/cover no-repeat;
+  background: url('../images/service-details-hero.jpg') center/cover no-repeat;
   transform: scale(1.1);
   z-index: 1;
 }
@@ -21,7 +21,11 @@
 .hero-overlay{
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.2));
+ background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.2)
+  );
   z-index: 2;
 }
 
@@ -29,24 +33,24 @@
 .hero-container{
   position: relative;
   z-index: 3;
-  max-width: 650px;
+
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
 }
 
 .hero-content{
-  color: #fff;
+  color:#fff;
+
+  max-width:650px;
+
+  text-align:center;
 }
 
 
-.hero-badge{
-  display: flex;
-  align-items: center;
-  gap: 10px;
- color:#c47a15;
-    font-size:15px;
-  letter-spacing:2px;
-  margin-bottom: 20px;
-  opacity: 0.8;
-}
+
 
 
 
@@ -75,23 +79,28 @@
 
 
 .hero-buttons{
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
+  display:flex;
+
+  justify-content:center;
+
+  gap:15px;
+
+  flex-wrap:wrap;
 }
 
 .btn-primary{
-  background: #2b7a2b;
+  background: #1e4d2b;
   color: #fff;
   padding: 14px 30px;
-  border-radius: 8px;
+
   text-decoration: none;
   font-weight: 600;
   transition: 0.3s;
+  border-radius: 30px;
 }
 
 .btn-primary:hover{
-  background: #1e5a1e;
+  background: #2d8a3e;
   transform: translateY(-2px);
 }
 
@@ -99,7 +108,7 @@
   border: 1px solid #fff;
   color: #fff;
   padding: 14px 30px;
-  border-radius: 8px;
+ border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
   transition: 0.3s;
@@ -444,11 +453,13 @@ background: #f5f2eb;
 
 .sd-card-top {
   display: flex;
-  justify-content: space-between;
+
+  justify-content: center;
+
   align-items: center;
+
   margin-bottom: 30px;
 }
-
 
 .sd-icon-hex {
   width: 60px; height: 60px;
@@ -479,12 +490,14 @@ background: #f5f2eb;
   font-size: 25px;
    max-width: 520px;
   margin-bottom: 20px;
+   text-align:center;
  color:#c47a15;
 }
 
 .sd-big-card p {
   color: #555;
   line-height: 1.7;
+  text-align:center;
   margin-bottom: 30px;
   font-size: 1.05rem;
 }
@@ -665,7 +678,15 @@ background: #f5f2eb;
   border-color: var(--orange); 
   box-shadow: 0 25px 50px rgba(216, 139, 74, 0.12);
 }
+.price-card:nth-child(2){
 
+  border:3px solid #c47a15;
+
+  transform:translateY(-15px);
+
+  box-shadow:0 25px 20px rgba(196,122,21,0.18);
+
+}
 .popular-tag {
   position: absolute;
   top: -15px;
@@ -707,18 +728,34 @@ background: #f5f2eb;
 .pc-features li.no i { color: #ccc; }
 
 
-.btn-price-outline {
-  display: block;
-  text-align: center;
-  padding: 18px;
-  border-radius: 15px;
-  border: 1.5px solid #eee;
-  text-decoration: none;
-  color: var(--green);
-  font-weight: 700;
-  transition: 0.3s;
+.btn-price-outline{
+  display:block;
+
+  text-align:center;
+
+  padding:18px;
+
+  border-radius:15px;
+
+  border:2px solid #2d7a32;
+
+  text-decoration:none;
+
+  color:#2d7a32;
+
+  font-weight:700;
+
+  transition:0.3s;
 }
-.btn-price-outline:hover { background: var(--green); color: white; border-color: var(--green); }
+.btn-price-outline:hover{
+
+  background:#1e4d2b;
+
+  color:#fff;
+
+  border-color:#2d7a32;
+
+}
 
 .btn-price-orange {
   display: block;
@@ -731,7 +768,7 @@ background: #f5f2eb;
   font-weight: 700;
   transition: 0.3s;
 
-  background: #2d7a32;
+  background: #1e4d2b;
   color: #fff;
   box-shadow: 0 10px 20px rgba(45, 122, 50, 0.25);
 }

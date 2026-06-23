@@ -8,7 +8,7 @@
   text-align: center; 
   padding-left: 0; 
 
-  background: url('../images/contact-hero.jpg') center/cover no-repeat;
+  background: url('../images/contact_hero.jpg') center/cover no-repeat;
   overflow: hidden;
 }
 
@@ -71,7 +71,7 @@
 .btn-primary {
   padding: 14px 34px;
   border-radius: 50px;
-  background: linear-gradient(135deg, #2d8a3e, #5aaa5a);
+  background: #1e4d2b;
   color: #fff;
   text-decoration: none;
   font-weight: 600;
@@ -89,7 +89,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(120deg, transparent, rgba(232,184,64,0.6), transparent);
+  background: #1e4d2b;
   transform: translateX(-100%);
   transition: 0.6s ease;
   z-index: -1;
@@ -111,7 +111,7 @@
   color: #fff;
   text-decoration: none;
   font-weight: 500;
-  background: rgba(255,255,255,0.05);
+
   backdrop-filter: blur(6px);
 
   transition: all 0.35s ease;
@@ -119,8 +119,8 @@
 
 
 .btn-outline:hover {
-  background: linear-gradient(135deg, rgba(240,128,10,0.2), rgba(232,184,64,0.2));
-  border-color: #E8B840;
+  background: #2d8a3e;
+ 
   color: #fff;
   transform: translateY(-4px);
   box-shadow: 0 10px 30px rgba(232,184,64,0.25);
@@ -565,7 +565,7 @@ color: #c47a15;
 .btn-send {
   width: 100%;
   padding: 0.92rem 1.5rem;
-  background: #2b7a2b;
+  background: #1e4d2b;
   color: #fff;
   border: none;
   border-radius: 12px;
@@ -583,7 +583,7 @@ color: #c47a15;
   overflow: hidden;
 }
 .btn-send:hover {
-  background: #1e5a1e;
+  background: #2d8a3e;
   transform: translateY(-1px);
   box-shadow: 0 8px 28px rgba(43,122,43,0.40);
 }
@@ -1236,7 +1236,7 @@ margin:0 auto;
 }
 
 .sc-btn-outline {
-  background: #2b7a2b;
+  background:  #1e4d2b;
   border: 1.5px solid #2b7a2b;
   color: #fff;
 }
@@ -1249,14 +1249,14 @@ margin:0 auto;
 }
 
 .sc-btn-solid {
-  background: #2b7a2b;
+  background: #1e4d2b;
   border: 1.5px solid #2b7a2b;
   color: #fff;
   box-shadow: 0 4px 16px rgba(43, 122, 43, 0.30);
 }
 
 .sc-btn-solid:hover {
-  background: #1e5a1e;
+  background: #2d8a3e;
   border-color: #1e5a1e;
   box-shadow: rgba(43, 122, 43, 0.04);
   transform: translateY(-1px);

@@ -44,7 +44,7 @@
 .hero-content{
   color:#fff;
 
-  max-width:650px;
+  max-width:600px;
 
   text-align:center;
 }
@@ -216,7 +216,7 @@
 .hiw-subtitle {
   color: #666;
   font-size: 18px;
-  max-width: 600px;
+  max-width: 520px;
   margin: 0 auto;
 }
 
@@ -500,6 +500,8 @@ background: #f5f2eb;
   text-align:center;
   margin-bottom: 30px;
   font-size: 1.05rem;
+  max-width:520px;
+    margin:0 auto 30px;
 }
 
 
@@ -648,7 +650,7 @@ background: #f5f2eb;
   letter-spacing:-0.03em;
 }
 .pricing-title span {  color: #c47a15; font-style: italic; }
-.pricing-subtitle { color: #666; font-size: 1.1rem; }
+.pricing-subtitle { color: #666; font-size: 1.1rem;  max-width:520px;}
 
 
 .pricing-grid {
@@ -898,6 +900,7 @@ background: #2d7a32;
 .cta-info h2{
     font-size: 48px;
     margin: 15px 0;
+     max-width:600px;
     font-family: 'Playfair Display', serif;
 }
 

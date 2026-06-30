@@ -53,7 +53,7 @@
 
 
 .hero-left{
-  max-width:700px;
+ max-width:600px;
 
   padding-top:80px;
 
@@ -115,7 +115,7 @@
 
   font-size:18px;
 
-  max-width:600px;
+  max-width:480px;
 
   text-align:center;
 }

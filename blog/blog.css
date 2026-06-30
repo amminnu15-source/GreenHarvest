@@ -47,7 +47,7 @@
 }
 
 .glass-story-panel {
-  max-width: 680px;
+  max-width: 600px;
   padding: 60px;
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(20px);
@@ -73,6 +73,8 @@
   line-height: 1.1;
   font-weight: 700;
   margin-bottom: 20px;
+   max-width:600px;
+    margin:0 auto 20px;
 }
 .italic-text { color: var(--brand-orange); font-style: italic; font-weight: 400; }
 
@@ -81,6 +83,8 @@
   color: rgba(255,255,255,0.75);
   line-height: 1.7;
   margin-bottom: 45px;
+  max-width:520px;
+    margin:0 auto 45px;
 }
 
 .panel-btns { display: flex; align-items: center; gap: 30px; flex-wrap: wrap; justify-content:center;}
@@ -222,7 +226,7 @@
 
 .blog-title{
   font-family: 'Playfair Display', serif;
-
+max-width:600px;
   font-size: 38px;
   line-height: 1.15;
   font-weight: 700;
@@ -496,6 +500,7 @@
   line-height: 1.8;
   color: #555;
   margin-bottom: 40px;
+  max-width:520px;
 }
 
 
@@ -658,7 +663,7 @@
 .n-content-side h2 {
   font-family: 'Playfair Display', serif;
 font-size: 43px;
-
+max-width:600px;
   line-height: 1.1;
   margin-bottom: 10px;
    max-width: 600px;

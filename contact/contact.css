@@ -1922,3 +1922,23 @@ html, body {
   }
 
 }
+
+
+
+
+.contact-title,
+.form-heading,
+.map-title,
+.support-title{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-sub,
+.form-subheading,
+.map-sub{
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+}

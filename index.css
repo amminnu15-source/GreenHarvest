@@ -545,7 +545,7 @@ body {
     margin-bottom: 25px;
     color: #13592d;
     font-family:'Playfair Display', serif;
-    
+     max-width: 600px;
    
 }
 
@@ -1179,6 +1179,7 @@ color:#2b2b2b;
 
 .solution-right p {
   margin-bottom: 14px;
+    max-width: 520px;
  line-height: 1.8;
   font-size: 15.5px;
   color: #555;
@@ -1448,7 +1449,7 @@ html[dir="rtl"] .solution-buttons {
 
 .wu-title { font-family:'Playfair Display', serif; font-size: 43px; color:#2b2b2b; max-width: 600px; width: 100%; text-align:center; margin:0 auto 20px; margin-bottom: 15px; }
 .wu-title span {  color: #c47a15; font-style: italic; }
-.wu-subtitle { color: #6a7c6a; max-width: 600px; margin: 0 auto; line-height: 1.6; }
+.wu-subtitle { color: #6a7c6a; max-width: 520px; margin: 0 auto; line-height: 1.6; }
 
 
 
@@ -1880,7 +1881,8 @@ body.dark-mode .section-sub {
 }
 
 .step p {
- max-width: 520px;
+ max-width:500px;
+    margin:0 auto;
     color:#5f6f5f;
   line-height:1.7;
    font-size: 18px;
@@ -2411,4 +2413,94 @@ margin:0 auto 20px;
 
 [data-theme="dark"] .cta-container p {
  color: #9bb89f;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 360px) {
+
+    .hero-content{
+        margin-left: 0;
+        padding-top: 30px;
+    }
+
+}
+
+@media (min-width: 361px) and (max-width: 430px) {
+
+    .hero-container{
+        padding: 50px 20px 40px;
+    }
+
+    .hero-content{
+        margin-left: 0;
+        padding-top: 20px;
+    }
+
+    .hero-badge{
+        margin-top: 20px;
+        margin-bottom: 25px;
+        padding: 12px 22px;
+    }
+
+}
+
+
+
+
+@media (max-width: 600px) {
+
+  .how-works{
+    padding: 60px 15px;
+  }
+
+  .section-title{
+    font-size: 30px;
+    line-height: 1.25;
+    margin-bottom: 35px;
+  }
+
+  .steps{
+    grid-template-columns: 1fr;
+    gap: 40px;
+    width: 100%;
+  }
+
+  .step{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .img-wrap{
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 25px;
+  }
+
+  .step h3{
+    font-size: 22px;
+    line-height: 1.35;
+    padding: 0 10px;
+  }
+
+  .step p{
+    width: 100%;
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 1.7;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .start-btn{
+    width: 100%;
+    max-width: 280px;
+  }
 }
